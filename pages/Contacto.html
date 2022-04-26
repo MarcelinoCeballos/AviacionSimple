@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Inicio - Aviacion Simple</title>
+        <!--Aplicamos estilo de forma externa-->
+        <link rel="stylesheet" href="../CSS/estilos.css">
+    </head>
+
+    <body>
+        <header class="header">
+            <section>
+                <img class="header__image" src="../images/Logo.png">
+                <nav class="header__nav">
+                    <ul class="nav__menu">
+                        <li class="nav__items"><a class="nav__enlace" href="../index.html">Inicio</a></li>
+                        <li class="nav__items"><a class="nav__enlace" href="pages/Plantas.html">Plantas </a></li>
+                        <li class="nav__items"><a class="nav__enlace" href="pages/Estructura.html">Estructura </a></li>
+                        <li class="nav__items"><a class="nav__enlace" href="pages/Sistemas.html">Sistemas </a></li>
+                        <li class="nav__items"><a class="nav__enlace" href="pages/Contacto.html">Contacto</a></li>                                                        
+                    </ul>
+                </nav>    
+            </section>                                   
+        </header>
+        <main>           
+            <div class="formulario">      
+                <h1>Formulario de contacto</h1>
+                  <h3>Queremos escucharte</h3>                  
+                    <form action="submeter-formulario.php" method="post">                                    
+                        <p>
+                            <label for="nombre" class="colocar_nombre">Nombre
+                              <span class="obligatorio">*</span>
+                            </label>
+                              <input type="text" name="introducir_nombre" id="nombre" required="obligatorio" placeholder="Escribe tu nombre">
+                        </p>
+                        <p>
+                            <label for="mensaje" class="colocar_mensaje">Mensaje
+                              <span class="obligatorio">*</span>
+                            </label>                     
+                            <textarea name="introducir_mensaje" class="texto_mensaje" id="mensaje" required="obligatorio" placeholder="Deja aquí tu comentario..."></textarea> 
+                        </p>                    
+                        
+                        <button type="submit" name="enviar_formulario" id="enviar"><p>Enviar</p></button>
+          
+                        <p class="aviso">
+                            <span class="obligatorio"> * </span>los campos son obligatorios.
+                        </p>                                
+                    </form>
+                </div>
+            </main>
+            <footer class="footer">            
+                <span> <h6 class="footer__derechos">Derechos Reservados</h6></span>         
+                <span> <a href="https://www.anac.gov.ar/anac/web/" target="_blank" ><img class="footer__anac" src="../images/ANAC.jpg" alt="ANAC" width="100" height="50"></a></span>
+                <span> <a href="https://fada.org.ar/web/" target="_blank"><img class="footer__fada" src="../images/Fada.jpg" alt=""></a></span>
+                <span> <a href="https://www.facebook.com/marcelinoceballos"><img class="footer__face" src="../images/Facebook.jpg" alt=""></a></span>
+                <span> <a href="https://www.youtube.com/channel/UCc3c5Ldw0zKNUbhxEWrOBHg"><img class="footer__youtube" src="../images/Youtube.jpg" alt=""></a></span>
+            </footer>              
+        </body>
+    </html>         
+                      
+                          
+                        
+                          
+                        
+                       
+                        
+                        
+                
+            
+                                                            
+        

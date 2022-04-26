@@ -1,0 +1,722 @@
+/* RESETEO DE MÁRGENES */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* FUENTE DE LA PAGINA */
+.body {
+    position: absolute;
+    min-height: 100vh;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+/* ¿Qué es esto?  */
+.main {   
+}
+
+
+/* ENCABEZADO */
+.header {
+    /* Diseño */
+    height: 100px;
+    width: 100%;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.4);
+    /* Disposicón */
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items:center; 
+    /* Fijación */   
+    position: fixed;
+    top: 0;
+    z-index: 10;
+    background-color: aliceblue;
+} 
+/* ENCABEZADO */
+/* ISO */
+.header__image {
+    width: 125px;
+    height: 100%;
+    border-radius: 2mm;
+    margin-left: 10%;
+}
+.trends__item {
+    width: 125px;
+    height: 100%;
+}
+.trends__item img:hover {
+
+}
+/* ENCABEZADO */
+/* ESPACIO DEL NAVEGADOR */
+.nav {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content:left;
+    align-items:center;
+    width: 100%;
+    
+}
+/* ENCABEZADO */
+/* ATRIBUTOS DE LA LISTA DE NAVEGACIÓN */
+.nav__list {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content:left;
+    align-items:center;
+    list-style-type: none;
+    gap: 2rem; 
+    margin-left: 3%;
+    
+} 
+/* ENCABEZADO */
+/* ATRIBUTOS ITEMS DE NAVEGACION */
+.nav__enlace {
+    color: blue; 
+    text-decoration: none;   
+}
+.video__box {
+    display: grid;
+    border: 1px solid aliceblue;
+    width: 15%;
+    height: 0%;
+    grid-template-columns: 1fr; 
+    background-color: rgb(22, 42, 226);
+    border-radius: 10mm;
+    margin-right: 2% ;
+}
+.canal {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content:center;
+    align-items:center;
+    margin-left: %; 
+    color: aliceblue;
+    
+}
+/* ENCABEZADO */
+/* MARGEN PARA EL HEADER FIJO */
+.main {
+    display: grid;
+    margin-top: 100px;
+}
+
+
+/* INDEX.HTML */
+/* PLANTAS */
+/* FOTO */
+.encabezado__plantas {
+    display: grid;
+    background-image: url(../images/DouglasDC3.jpg);  
+    background-repeat: no-repeat;
+    background-size: cover;
+    min-height: 108vh;
+    width: 100%;   
+}
+/* INDEX.HTML */
+/* PLANTAS */
+/* TITULO FOTO */
+.encabezado__titulo--plantas {
+    margin-left: 50px;
+    padding-left: 50px;
+    padding-top: 130px;
+    font-size:350%;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    color:azure
+}
+/* INDEX.HTML */
+/* PLANTAS */
+/* "CONTENEDOR" BAJO FOTO */
+.plantas {
+    display: grid;
+    background-color: aliceblue;
+    display: grid;
+    min-height: 50vh;
+    width: 100%;
+    padding: 1rem;
+    grid-template-columns: 1fr 1fr;-
+}
+.plantas__titulo--encabezado {
+    display: flex;
+    flex-direction: column;
+    justify-content:;
+    align-items:
+}
+.plantas__titulo--descripcion {
+    display: flex;
+    flex-direction: column;
+    justify-content:space-;
+    align-items: center;
+}   
+
+
+/* INDEX.HTML */
+/* PLANTAS */
+/* SUB-CONTENEDOR IZQUIERDA BAJO FOTO */
+.plantas__left {
+    display: flex;
+    flex-direction: column ;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 65px;
+    margin-left: 100px;
+}
+/* INDEX.HTML */ 
+/* PLANTAS */    
+/* TEXTO IZQUIERDA BAJO FOTO */
+.plantas__intro {
+    font-size: 25px;
+    color:black;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    text-align:justify; 
+    border: 1px solid rgb(0, 13, 128);
+    border-radius: 2mm;
+    width: 600px;
+    height: 110%;
+    padding: 1rem;
+}
+/* INDEX.HTML */
+/* PLANTAS */
+/* SUB-CONTENEDOR DERECHA BAJO FOTO */
+.plantas__boxRight {
+    display: flex;
+    flex-direction: column;
+    justify-content: top;
+    align-items: center;
+}
+/* INDEX.HTML */
+/* PLANTAS */
+/* TEXTO DERECHA BAJO FOTO */
+.plantas__right {
+    display: grid;
+    border: 1px solid rgb(0, 13, 128);
+    width: 50%;
+    height: 95%;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(7, 1fr) ; 
+    background-color: hsl(0, 0%, 0%, 30%);
+    border-radius: 10mm;
+}
+/* INDEX.HTML */
+/* TODAS LAS SECCIÓNES */
+/* TEXTO DERECHA BAJO FOTO */
+.right__hijo {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;   
+}
+/* INDEX.HTML */
+/* ESTRUCTURA */
+/* FOTO */
+.encabezado__estructura {
+    background-image: url(../images/Fuselaje1.jpg);  
+    background-repeat: no-repeat;
+    background-size: cover;
+    min-height: 85vh;
+    width: 100%;   
+}
+/* INDEX.HTML */
+/* ESTRUCTURA */
+/* TITULO FOTO */
+/* Doy color a la parte oscura del título */
+.encabezado__titulo--estructuraL {
+    margin-left: 50px;
+    padding-left: 50px;
+    padding-top: 125px;
+    font-size:350%;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    color:rgb(218, 213, 213);
+}
+/* INDEX.HTML */
+/* ESTRUCTURA */
+/* TITULO FOTO */
+/* Posiciono y doy color a la parte blanca del título */
+.encabezado__titulo--estructuraR {
+    margin-left: 310px;
+    margin-top: -87px;
+    font-size:350%;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    color:azure
+}
+/* INDEX.HTML */
+/* ESTRUCTURA */
+/* CONTENEDOR DERECHA BAJO FOTO */ 
+.estructura__right {
+    display: grid;
+    border: 1px solid rgb(0, 13, 128);
+    width: 50%;
+    height: 95%;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(5, 1fr) ; 
+    background-color: hsl(0, 0%, 0%, 30%);
+    border-radius: 10mm;     
+}
+/* INDEX.HTML */
+/* SISTEMAS */
+/* FOTO  */
+.encabezado__sistemas {
+    background-image: url(../images/Sistemas1.jpg);  
+    background-repeat: no-repeat;
+    background-size: cover;
+    min-height: 85vh;
+    width: 100%;   
+}
+/* INDEX.HTML */
+/* SISTEMAS */
+/* TITULO FOTO */
+.encabezado__titulo--sistemas {
+    margin-left: 50px;
+    padding-left: 50px;
+    padding-top: 130px;
+    font-size:350%;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    color:azure
+}
+/* INDEX.HTML */
+/* SISTEMAS */
+/* TEXTO DERECHA BAJO FOTO */
+.sistemas__right {
+    display: grid;
+    border: 1px solid rgb(0, 13, 128);
+    width: 50%;
+    height: 95%;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(5, 1fr) ; 
+    background-color: hsl(0, 0%, 0%, 30%);
+    border-radius: 10mm
+} 
+/* INDEX.HTML */
+/* PILOTO */
+/* FOTO*/
+.encabezado__volar {
+    background-image: url(../images/Cabina.jpg);  
+    background-repeat: no-repeat;
+    background-size: cover;
+    min-height: 85vh;
+    width: 100%;   
+}
+/* INDEX.HTML */
+/* PILOTO */
+/* TITULO FOTO */
+.encabezado__titulo--piloto {
+    margin-left: 50px;
+    padding-left: 50px;
+    padding-top: 130px;
+    font-size:350%;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    color:azure
+}
+/* INDEX.HTML */
+/* PILOTO */
+/* "CONTENEDOR" BAJO FOTO */
+.piloto {
+    display: grid;
+    background-color: rgba(0, 2, 3, 0.3);
+    min-height: 50vh;
+    width: 100%;
+    padding: 2rem;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: repeat (3 1fr);
+    border-color: 2px solid blue;
+    border-radius: 10mm
+}
+/* INDEX.HTML */
+/* PILOTO */
+/* VIDEO*/
+.volar__video {
+    display: flex;
+   margin-top: -30px;
+    width: 100%;
+    height: 100%;
+    border-radius: 2mm;   
+}
+/* INDEX.HTML */
+/* PILOTO */
+/* SUB-CONTENEDOR DERECHA BAJO FOTO */ 
+.piloto__right {
+    display: grid;
+    grid-template-columns: 1fr;
+    border: 1px solid rgb(0, 13, 128);
+    width: 50%;
+    height: 100%;
+    background-color: hsl(0, 0%, 0%, 30%);
+    border-radius: 2mm;  
+}
+
+
+/* PLANTAS.HTML */
+/* CULATA */
+/* FOTO  */
+.encabezado__plantas--culata {
+    background-image: url(../images/LaCulata.jpg);  
+    background-repeat: no-repeat;
+    background-size: cover;
+    min-height: 85vh;
+    width: 100%;   
+}
+/* PLANTAS.HTML */
+/* CULATA */
+/* TITULO  */
+.encabezado__titulo--culata {
+    margin-left: 50px;
+    padding-left: 90px;
+    padding-top: 130px;
+    font-size:350%;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    color:azure
+}
+/* PLANTAS.HTML */ 
+/* CULATA */
+/* TEXTO DERECHA BAJO FOTO */
+.culata__right {
+    display: grid;
+    border: 1px solid rgb(0, 13, 128);
+    width: 50%;
+    height: 50%;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(4, 1fr) ; 
+    background-color: hsl(0, 0%, 0%, 30%);
+    border-radius: 10mm;
+    margin-top: 63px;;
+}
+/* PLANTAS.HTML */
+/* VÁLVULA */
+/* FOTO  */
+.encabezado__plantas--valvula {
+    background-image: url(../images/Válvulas1.jpg);  
+    background-repeat: no-repeat;
+    background-size: cover;
+    min-height: 85vh;
+    width: 100%;   
+}
+/* PLANTAS.HTML */
+/* VÁLVULAS */
+/* TITULO  */
+.encabezado__titulo--valvula {
+    margin-left: 50px;
+    padding-left: 90px;
+    padding-top: 130px;
+    font-size:350%;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    color:azure
+}
+/* PLANTAS.HTML */
+/* CILINDRO */
+/* FOTO  */
+.encabezado__plantas--cilindro {
+    background-image: url(../images/Cilindro1.jpg);  
+    background-repeat: no-repeat;
+    background-size: cover;
+    min-height: 85vh;
+    width: 100%;   
+}
+/* PLANTAS.HTML */
+/* CILINDRO */
+/* TITULO  */
+.encabezado__titulo--cilindro {
+    margin-left: 50px;
+    padding-left: 90px;
+    padding-top: 130px;
+    font-size:350%;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    color:azure
+}
+/* PLANTAS.HTML */
+/* PISTÓN */
+/* FOTO */
+.encabezado__plantas--piston {
+    background-image: url(../images/Piston1.jpg);  
+    background-repeat: no-repeat;
+    background-size: cover;
+    min-height: 85vh;
+    width: 100%; 
+}
+/* PLANTAS.HTML */
+/* PISTON */
+/* TITULO  */
+.encabezado__titulo--piston {
+    margin-left: 50px;
+    padding-left: 90px;
+    padding-top: 130px;
+    font-size:350%;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    color:azure
+}
+/* PLANTAS.HTML */
+/* BIELA */
+/* FOTO  */
+.encabezado__plantas--biela {
+    background-image: url(../images/Biela1.jpg);  
+    background-repeat: no-repeat;
+    background-size: cover;
+    min-height: 85vh;
+    width: 100%;   
+}
+/* PLANTAS.HTML */
+/*  BIELA */
+/* TITULO */
+.encabezado__titulo--biela {
+    margin-left: 50px;
+    padding-left: 90px;
+    padding-top: 130px;
+    font-size:350%;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    color:rgb(47, 49, 49)
+}
+/* PLANTAS.HTML */
+/* CIGÜEÑAL */
+/* FOTO */
+.encabezado__plantas--ciguenal {
+    background-image: url(../images/Cigüeñal1.jpg);  
+    background-repeat: no-repeat;
+    background-size: cover;
+    min-height: 85vh;
+    width: 100%;   
+}
+/* PLANTAS.HTML */
+/* CIGÜEÑAL */
+/* TITULO  */
+.encabezado__titulo--ciguenal {
+    margin-left: 50px;
+    padding-left: 90px;
+    padding-top: 130px;
+    font-size:350%;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    color:azure
+}
+/* PLANTAS.HTML */
+/* CÁRTER */
+/* FOTO  */
+.encabezado__plantas--carter {
+    background-image: url(../images/Cárter1.jpg);  
+    background-repeat: no-repeat;
+    background-size: cover;
+    min-height: 85vh;
+    width: 100%;   
+}
+
+
+/* FOOTER */
+/* FONDO y TAMAÑO */
+.footer {   
+    display: flex;
+    flex-direction: row;
+    justify-content:space-around;
+    align-items:center;
+    background-color: rgb(4, 35, 49); 
+    min-width: 100%;
+    min-height: 25vh;     
+}
+/* FOOTER */
+/* CONTENEDOR */
+/* Derechos Reservados */
+.footer__derechos {
+    display: flex;
+    flex-direction: row;
+    justify-content:space-between;
+    align-items:center;
+    color:aliceblue;
+    position: relative;   
+}
+/* FOOTER */
+/* CONTENEDOR */
+/* ANAC */
+.footer__anac {
+    display: flex;
+    flex-direction: row;
+    justify-content:space-between;
+    align-items:center;
+    width: 100px;
+    height: 50px;  
+}
+/* FOOTER */
+/* CONTENEDOR */
+/* FADA */
+.footer__fada {
+    display: flex;
+    flex-direction: row;
+    justify-content:space-between;
+    align-items:center;
+    width: 175px;  
+}
+/* FOOTER */
+/* CONTENEDOR */
+/* FACE */
+.footer__face {
+    display: flex;
+    flex-direction: row;
+    justify-content:space-between;
+    align-items:center;
+    width: 60px;
+    top: -30px;      
+}
+/* FOOTER */
+/* CONTENEDOR */
+/* YOUTUBE */
+.footer__youtube {
+    display: flex;
+    flex-direction: row;
+    justify-content:space-between;
+    align-items:center;
+    width: 60px;    
+}
+/* ICONO HAMBURGUESA */
+/* OCULTAR */
+.header__icono {
+    color: red; 
+    display: none;
+}
+
+
+/* MEDIA QUERYS */
+/* Desktop Inicial */
+@media screen and (max-width: 320px) {
+    /* PLANTAS */
+    /*AJUSTE TITULO  */
+    .encabezado__titulo--plantas { 
+        font-size: 200%;
+        margin-top: -50px;
+        margin-left: -20px;
+        color:black
+    }
+    /* PLANTAS */
+    /* AJUSTE ALTO FONDO GRIS */
+    .plantas {
+        height: 80vh;
+    }
+    /* PLANTAS */
+    /* AJUSTE TEXTO */
+    .plantas__left {
+      display: grid;
+      margin-left: 45px;
+      margin-top: 0px;
+    }
+    /* PLANTAS */
+    /* AJUSTE PARTES MOTOR */
+    .plantas__boxRight {
+        margin-top: 70px;
+        margin-left: 85px;
+    }
+    /* PLANTAS */
+    /* AJUSTE FONDO PARTES */
+    .plantas__right {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        gap: 1rem;
+        margin-top: 200px;
+        margin-left: -775px;
+        height: 30px;
+        width: 500px;
+    }  
+    /* ESTRUCTURA */
+    /* AJUSTE FONDO PARTES -ESTRUCTURA */
+    .estructura__right {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        gap: 1rem;
+        margin-top: 200px;
+        margin-left: -775px;
+        height: 30px;
+        width: 500px;
+        border: 1px solid rgb(0, 13, 128);
+    }  
+    /* SISTEMAS */
+    /*AJUSTE TITULO  */
+    .encabezado__titulo--sistemas { 
+        font-size: 200%;
+        margin-top: -50px;
+        margin-left: -20px;
+        color:black;
+    }
+    /* SISTEMAS */
+    /* AJUSTE FONDO PARTES -SISTEMAS */  
+    .sistemas__right {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        gap: 1rem;
+        margin-top: 200px;
+        margin-left: -775px;
+        height: 30px;
+        width: 500px;
+        border: 1px solid rgb(0, 13, 128);
+    }
+    /* PILOTO */
+    /*AJUSTE TITULO  */
+    .encabezado__titulo--piloto { 
+        font-size: 200%;
+        margin-top: -50px;
+        margin-left: -20px;
+        color:white;
+    }
+    /* PILOTO */
+    /* AJUSTE FONDO PARTES -PILOTO */
+    .piloto__right {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        gap: 1rem;
+        margin-top: 240px;
+        margin-left: -720px;+
+        height: 50px;
+        width: 500px;
+        border: 1px solid rgb(0, 13, 128);
+    }
+    /* PILOTO */
+     /* AJUSTE TAMAÑO VIDEO  */
+    .volar__video {
+        display: flex;
+        margin-top:-70px;
+        margin-left: 50px;
+        width: 500px;
+        height: 300px;
+    }
+    /* PLANTAS.html */
+    /* AJUSTE TITULO */
+    .encabezado__titulo--culata {
+        display: flex;
+        margin-top:-50px;
+        margin-left: 0px;
+        font-size: 50px;
+    }
+    /* FOOTER */
+    /* OCULTO BARRA */
+    .nav {
+        display: none;
+
+    }
+    .header {
+        display: flex;
+        flex-direction: row;
+        justify-content:space-between; 
+        align-items: center;
+        width: 100%;
+    }
+    .header__icono {
+        display:inline-block ;
+        color: black;
+    }
+}
+@media screen and (max-width: 320px){
+    .footer {
+        display: flex;
+        flex-direction: row;
+        justify-content:space-between; 
+        align-items: center;
+        color: pink;
+    }
+}
+       
+
+    
+
+
+
+
