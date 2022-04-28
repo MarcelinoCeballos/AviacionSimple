@@ -12,8 +12,8 @@
     </head>
     <body class="body"><!--Main body with "Header//subjects//video//and Footer"-->        
         <header class="header">
-            <a tittle="AviacionSimple href="index.html><img  class="header__image trends__item"  src="images/Logo.png" alt="AviacionSimple"></a>
-            <i class="header__icono fas fa-bars"></i>
+            <a tittle="AviacionSimple href="index.html><img  class="imagen__logo trends__item"  src="images/Logo.png" alt="AviacionSimple"></a>
+            <i class="icono__hamburguesa fas fa-bars"></i>
             <nav class="nav">
                 <ul id= "menu" class="nav__list">
                     <li class="nav__items"><a class="nav__enlace" href="index.html">Inicio</a></li>
@@ -21,98 +21,157 @@
                     <li class="nav__items"><a class="nav__enlace" href="pages/Estructura.html">Estructura</a></li>
                     <li class="nav__items"><a class="nav__enlace" href="pages/Sistemas.html">Sistemas</a></li>                                                     
                     <li class="nav__items"><a class="nav__enlace" href="pages/Contacto.html">Contacto</a></li>                                                        
-                </ul>
+                </ul>           
             <div class="video__box">
-                <a href="https://www.youtube.com/channel/UCc3c5Ldw0zKNUbhxEWrOBHg"><h3 class="canal">VIDEOS</h3></a>
+                <a href="https://www.youtube.com/channel/UCc3c5Ldw0zKNUbhxEWrOBHg"><h3 class="boton__videos">VIDEOS</h3></a>
             </div>
             </nav>                                      
         </header>       
+        
         <main class="main"><!--Main with four sections "three subjects plus video"-->           
-            <section CLASS="encabezado__plantas"><!--ENGINE SECTION-->
-                <h1 class="encabezado__titulo--plantas">PLANTAS DE PODER I</h1><!--Photo&title--> 
-            </section>                 
-            <section class="plantas"><!--First subject. Element father with two columns & one row-->                
-                <div class="plantas__left"><!--Left side. Element father with a column & three row-->
-                    <div ><!--Intro statement-->
-                        <p class="plantas__intro display-1">Un motor de combustión interna" es un dispositivo que produce movimiento, cuya fuente de energía es la combustión que sucede dentro del motor, en un recinto cerrado llamado cámara de combustión.</p>
-                    </div>    
-                    <div class="left__hijo plantas__link">
-                        <a href="pages/Plantas.html">Plantas</a><!--Photo-->
-                    </div>
-                </div>                   
-                <div class="plantas__boxRight"><!--Right side. Element father with a column & seven row -->
-                    <div class="plantas__right">
-                        <div class="right__hijo plantas__culata"><p>Culata</p></div>
-                        <div class="right__hijo plantas__valvulas"><p>Válvulas</p></div>
-                        <div class="right__hijo plantas__cilindro"><p>Cilindro</p></div>
-                        <div class="right__hijo plantas__pistón"><p>Pistón</p></div>
-                        <div class="right__hijo plantas__biela"><p>Biela</p></div>
-                        <div class="right__hijo plantas__cigueñal"><p>Cigüeñal</p></div>
-                        <div class="right__hijo plantas__carter"><p>Cárter</p></div>
-                    </div>
-                </div>                       
-            </section>
-            <!--AIRFRAME SECTION-->
-            <section CLASS="encabezado__estructura">
-                <h1 class="encabezado__titulo--estructuraL" class="color1">ESTRU</h1>&nbsp;<h1 class="encabezado__titulo--estructuraR" class="color2">CTURA<br/> DE LA AERONAVE I</h1>
-            </section>
-            <section class="plantas">
-                <div class="plantas__left">
+            <!--ENGINE SECTION-->
+            <section >
+                <article class="foto__plantas"><!--TITLE & PHOTO-->
+                    <div class>
+                        <h1 class="nombre__materia--plantas">PLANTAS DE PODER I</h1><!--title-->
+                    </div> 
+                </article>                          
+                <article class="contenedor__bajofoto"><!--First subject. Element father with two columns & one row--> 
                     <div >
-                        <p class="plantas__intro">La OACI define que; "Una Aeronave es una máquina capaz de sustentarse en la atmósfera por la reacción del aire sobre ella, sin que esta reacción sea contra la superficie la tierra"</p>
+                        <div class="alinear__encabezado">
+                            <h1>Motor de Combustión Interna</h1> 
+                            <h3 > "Plantas de Poder I" trata sobre estos tipos de motores</h3>
+                        </div> 
+                    </div>                 
+                    <div class="contenedor__definicionmateria">
+                        <p class="definicion__materia">La forma más simple de entender qué es un "Motor de Combustión interna" es comprender el significado de cada una de sus palabras. 
+                            "MOTOR" es un dispositivo que produce movimiento. "COMBUSTIÓN" es la acción de arder o quemarse algo. "INTERNA" es algo que sucede dentro.  
+                            Entonces; "Un motor de combustión interna es un dispositivo que produce movimiento, cuya fuente de energía es la combustión que sucede dentro del motor, en un recinto cerrado llamado cámara de combustión.</p>
                     </div>
-                    <div class="left__hijo plantas__link">
-                        <a href="pages/Plantas.html">Estructura</a>
-                    </div>
-                </div>                  
-                <div class="plantas__boxRight"><!--Right side. Element father with a column & seven row -->
-                    <div class="estructura__right">
-                        <div class="right__hijo plantas__culata"><p>Fuselaje</p></div>
-                        <div class="right__hijo plantas__valvulas"><p>Empenaje</p></div>
-                        <div class="right__hijo plantas__cilindro"><p>Ala</p></div>
-                        <div class="right__hijo plantas__pistón"><p>Tren de Aterrizaje</p></div>
-                        <div class="right__hijo plantas__biela"><p>Motor</p></div>
-                    </div>
-                </div>                       
-            </section>
-            <!--SISTEMS SECTION-->
-            <section CLASS="encabezado__sistemas">
-                <h1 class="encabezado__titulo--sistemas">SISTEMAS<br/> DE LA AERONAVE I</h1>
-            </section>
-            <section class="plantas">
-                <div class="plantas__left">
-                    <div >
-                        <p class="plantas__intro">Los diferentes sistemas permiten accionar y operar diferentes componentes o sub-sistemas a relativa distancia y, eventualmente, de elevado peso. </p>
-                    </div>
-                    <div class="left__hijo plantas__link">
-                        <a href="pages/Plantas.html">Sistemas</a>
-                    </div>
-                </div>                   
-                <div class="plantas__boxRight"><!--Right side. Element father with a column & seven row -->
-                    <div class="sistemas__right">
-                        <div class="right__hijo plantas__culata"><p>Hidráulico</p></div>
-                        <div class="right__hijo plantas__valvulas"><p>Neumático</p></div>
-                        <div class="right__hijo plantas__cilindro"><p>Combustible</p></div>
-                        <div class="right__hijo plantas__pistón"><p>Oxígeno</p></div>
-                        <div class="right__hijo plantas__biela"><p>Eléctricos</p></div>
-                    </div>
-                </div>                       
-            </section>  
-            <!--SISTEMS SECTION-->
-            <section CLASS="encabezado__volar"><h1 class="encabezado__titulo--piloto">Piloto de Avión</h1></section>  
-            <section class="plantas">
-                    <div class="plantas__left">
-                        <iframe class="volar__video"  src="https://www.youtube.com/embed/i_B4GUTYy8Q" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-                    </div>
-                    <div class="plantas__boxRight">                   
-                        <div class="piloto__right">
-                            <div class="right__hijo plantas__culata"><p>Piloto Privado</p></div>
-                            <div class="right__hijo plantas__valvulas"><p>Piloto Comercial</p></div>
-                            <div class="right__hijo plantas__cilindro"><p>Instructor de Vuelo</p></div>
-                            <div class="right__hijo plantas__pistón"><p>Piloto Comercial 1ra Clase</p></div>
-                            <div class="right__hijo plantas__biela"><p>Piloto TLA</p></div>
+                    <div>
+                        <div class="partes__del--motor" >
+                            <p>Culata</p>
+                            <p>Válvulas</p>
+                            <p>Cilindro</p>
+                            <p>Pistón</p>
+                            <p>Biela</p>
+                            <p>Cigüeñal</p>
+                            <p>Cárter</p>
                         </div>
-                    </div>        
+                    </div>
+                    <div>
+                        <h4>Para nuestro estudio consideraremos siete (7) las partes principales del motor. </h4>
+                    </div>
+                </article> 
+            </section>                             
+            <!--AIRFRAME SECTION-->
+            <section >
+                <article class="encabezado__estructura">
+                    <div>
+                        <h1 class="nombre__materia--plantas" class="color1">ESTRU</h1>&nbsp;<h1 class="encabezado__titulo--estructuraR" class="color2">CTURA<br/> DE LA AERONAVE I</h1>
+                    </div>
+                </article>                         
+                <article class="contenedor__bajofoto"><!--First subject. Element father with two columns & one row--> 
+                    <div >
+                        <div class="alinear__encabezado">
+                            <h1 >El cuerpo de la Aeronave</h1> 
+                            <h3 class="contenido__materia"> "Estructura de la Aeronave I" trata sobre las partes del avión</h3>
+                        </div> 
+                    </div>                 
+                    <div class="contenedor__definicionmateria">
+                        <p class="definicion__materia">La OACI, Organización Internacional de Aviación Civil, establece que una aeronave "Es una máquina capaz de sustentarse en la atmósfera 
+                            por la reacción del aire sobre ella, sin que esta reacción sea contra la superficie de la tierra". Esta definición resulta muy interesante 
+                            de ser analizada para determinar qué es y qué no es una aeronave. Ya que el aire debe reaccionar sobre la aeronave, la parte de la estructura 
+                            sobre la cual actúa el aire es -el Ala-. Una aeronave posee alas!!</p>
+                    </div>
+                    <div>
+                        <div class="partes__del--motor" >
+                            <p>Fuselaje</p>
+                            <p>Empenaje</p>
+                            <p>Ala</p>
+                            <p>Tren de Aterrizaje</p>
+                            <p>Motor</p>
+                        </div>
+                    </div>
+                    <div>
+                        <h4>Para nuestro estudio consideraremos cinco (5) las partes principales de la aeronave. </h4>
+                    </div>
+                </article>
+            </section>          
+            
+            
+            <!--SISTEMS SECTION-->
+            <section >
+                <article CLASS="encabezado__sistemas">
+                    <div>
+                        <h1 class="encabezado__titulo--sistemas">SISTEMAS<br/> DE LA AERONAVE I</h1>
+                    </div>
+                </article>                         
+                <article class="contenedor__bajofoto"><!--First subject. Element father with two columns & one row--> 
+                    <div >
+                        <div class="alinear__encabezado">
+                            <h1 >Lo que da vida a la Aeronave</h1> 
+                            <h3 class="contenido__materia">  "Sistemas de la Aeronave I" trata sobre las entrañas de la aeronave</h3>
+                        </div> 
+                    </div>                 
+                    <div class="contenedor__definicionmateria">
+                        <p class="definicion__materia">Para hacernos una mejor idea sobre de qué trata "Sistemas de la Aeronave I", vamos a hacer una comparación con el cuerpo humano. 
+                            "Plantas de poder I" sería el estudio del corazón. "Estructura de la Aeronave I" sería el estudio del cuerpo. "Sistemas de la Aeronave I" 
+                            sería el estudio de los sistemas del cuerpo humano, que le dan vida. Los diferentes sistemas de la aeronave permiten realizar un  muy amplio 
+                            abanico de operaciones tales como: apertura de puertas, accionamiento de tren de aterrizaje, deshieladores, presurización de cabina, mover 
+                            las superficies de control, suministrar combustible a los motores, etc. etc.    </p>
+                    </div>
+                    <div>
+                        <div class="partes__del--motor" >
+                            <p>Sist. de Combustible </p>
+                            <p>Sist. Hidráulico</p>
+                            <p>Sist. Neumático</p> 
+                        </div>
+                    </div>    
+                    <div>
+                        <h4>Para nuestro estudio consideraremos tres (3) los sistemas principales a estudiar.</h4>
+                    </div> 
+                </article> 
+            </section>                             
+            <!--PILOT SECTION-->
+            <section >
+                <article CLASS="encabezado__volar">
+                    <div>
+                        <h1 class="encabezado__titulo--piloto">Piloto de Avión</h1>
+                    </div>                   
+                </article>                        
+                <article class="contenedor__bajofoto"><!--First subject. Element father with two columns & one row--> 
+                    <div >
+                        <div class="alinear__encabezado">
+                            <h1 >¿Querés aprender a volar?</h1> 
+                            <h3 class="contenido__materia">  Hay una licencia de piloto adecuada para tu necesidad</h3>
+                        </div> 
+                    </div>                 
+                    <div class="contenedor__definicionmateria">
+                        <p class="definicion__materia">Los motivos para adentrarnos en el aprendizaje de pilotar una aeronave pueden ser muy variados; desde un simple uso privado, 
+                            hasta el ejercicio del pilotaje como actividad laboral. Tambien son variados los
+                            tipos de aeronaves que se pueden pilotar; tales como aviones, helicópteros, autogiros, etc. El volar una aeronave, como ejercicio
+                            laboral tambien tiene muchas opciones; tales como Instrucción, Fumigación, Militar, de Pasajeros, de Carga, General, etc. Lo que sí,  
+                            la aviación, NO es una carrera sino una licencia (como la de conducir camiones o taxis) y el ejercicio de ella es una profesión.</p>
+                    </div>
+                    <div>
+                        <div class="partes__del--motor" >
+                            <p> Licencia Privado</p>
+                            <p> Licencia Comercial</p>
+                            <p> Licencia Comercial 1ra</p> 
+                            <p> Licencia TLA</p>  
+                            <p> Licencia Instructor de Vuelo</p>  
+                        </div>
+                    </div>    
+                    <div>
+                        <h4>Según tu interés será el tipo de Licencia al que debas aspirar.</h4>
+                    </div>
+                </article>
+                <article>
+                    <div>
+                        <iframe class="volar__video"  src="https://www.youtube.com/embed/i_B4GUTYy8Q" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                    </div> 
+                </article>                                   
             </section>
         </main>
         <footer class="footer">                       
