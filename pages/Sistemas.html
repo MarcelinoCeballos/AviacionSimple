@@ -1,75 +1,145 @@
 <!DOCTYPE html>
 <html lang="es">
-    <head>
+    <head>git 
         <meta charset="UTF-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Inicio - Aviacion Simple</title>
-        <!--Aplicamos estilo de forma externa-->
-        <link rel="stylesheet" href="../CSS/estilos.css">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"><!--Optimización p/diferentes dispositivos-->
+        <title>Inicio - Aviacion Simple</title><!--Nombre en la pestaña de la web-->          
+        <link rel="stylesheet" href="../CSS/estilos.css"><!--CSS external setup-->
+        <script src="https://kit.fontawesome.com/e0d0b4a478.js" crossorigin="anonymous"></script>
+        <link rel="stylesheet" href=".././CSS/bootstrap.min.css">
+        <script src="./CSS/js/bootstrap.bundle.min.js"></script>
     </head>
-
-    <body>
+    <body class="body"><!--Main body with "Header//subjects//video//and Footer"-->        
         <header class="header">
-            <section>
-                <img class="header__image" src="../images/Logo.png">
-                <nav class="header__nav">
-                    <ul class="nav__menu">
-                        <li class="nav__items"><a class="nav__enlace" href="../index.html">Inicio</a></li>
-                        <li class="nav__items"><a class="nav__enlace" href="pages/Plantas.html">Plantas </a></li>
-                        <li class="nav__items"><a class="nav__enlace" href="pages/Estructura.html">Estructura </a></li>
-                        <li class="nav__items"><a class="nav__enlace" href="pages/Sistemas.html">Sistemas </a></li>
-                        <li class="nav__items"><a class="nav__enlace" href="pages/Contacto.html">Contacto</a></li>                                                        
-                    </ul>
-                </nav>    
-            </section>                                   
-        </header>
-        <main>           
-            <section class="sistemas1">
-                <article class="hidraulico"><h1 CLASS="hidraulico__titulo">SISTEMA HIDRÁULICO</h1>           
-                    <div class="hidraulico__box">
-                        <div><img class="hidraulico__image" src="../images/Hidráulico1.jpg" alt="Hidráulico" width="150" height="85"></div>                   
-                        <div class="hidraulico__boton"><button class="hidraulico__boton--tamano">Componentes</button></div>
-                        <br/>
-                        <div class="hidraulico__intro">Es una pieza móvil, de forma cilíndrica, hueca, </div>
-                        <div class="hidraulico__intro">cerrada por un lado, cuya tarea principal es la </div>
-                        <div class="hidraulico__intro">de transformar la energía calórica en movimiento.  </div> 
+            <a tittle="AviacionSimple href="index.html><img  class="imagen__logo trends__item"  src="../images/Logo.png" alt="AviacionSimple"></a>
+            <i class="icono__hamburguesa fas fa-bars"></i>
+            <nav class="nav">
+                <ul id= "menu" class="nav__list">
+                    <li class="nav__items"><a class="nav__enlace" href="../index.html">Inicio</a></li>
+                    <li class="nav__items"><a class="nav__enlace" href="pages/Plantas.html">Plantas </a></li>
+                    <li class="nav__items"><a class="nav__enlace" href="pages/Estructura.html">Estructura</a></li>
+                    <li class="nav__items"><a class="nav__enlace" href="pages/Sistemas.html">Sistemas</a></li>                                                     
+                    <li class="nav__items"><a class="nav__enlace" href="pages/Contacto.html">Contacto</a></li> 
+                    <a href="https://www.youtube.com/channel/UCc3c5Ldw0zKNUbhxEWrOBHg"><h3 class="boton__videos">VIDEOS</h3></a>                                                       
+                </ul>                     
+            </nav>                                      
+        </header> 
+        <main class="main">
+            <!-- SISTEMA HIDRÁULICO -->
+            <section >
+                <article CLASS="encabezado__plantas--hidraulico"><!--TITLE & PHOTO-->
+                    <div class>
+                        <h1 class="encabezado__titulo--culata">SISTEMA HIDRÁULICO</h1><!--title-->
+                    </div> 
+                </article>                                                                    
+                <article class="contenedor__bajofoto"> 
+                    <div >
+                        <div class="alinear__encabezado">
+                             <h1>El Sistema Hidráulico</h1> 
+                            <h3 >Sistema que utiliza un líquido como recurso para realizar trabajo</h3>
+                    </div> 
+                    </div>                 
+                    <div class="contenedor__definicionmateria">
+                        <p class="definicion__materia"></p> 
+                        
+                    </div>
+                    <div>
+                        <div class="partes__del--motor" >
+                            <p>Depósito</p>
+                            <p>Tubería</p>
+                            <p>Bomba</p>
+                            <p>LLave selectora</p>
+                            <p>Actuador</p>
+                            
+                        </div>
+                    </div>
+                    <div>
+                        <h4>Las partes básicas fundamentales de un Sist. Hidráulico son cinco (5). </h4>
                     </div>
                 </article> 
-                <article class="neumatico"><h1 CLASS="neumatico__titulo">SISTEMA NEUMÁTICO</h1>  
-                    <div class="neumatico__box">                       
-                        <div><img class="neumatico__image" src="../images/Neumático.jpg" alt="ala" width="150" height="85"></div>
-                        <div class="neumatico__boton"><button class="neumatico__boton--tamano">Componentes</button></div>               
-                        <br/>
-                        <div class="neumatico__intro">Es una pieza fija, de forma cilíndrica, hueca,</div>
-                        <div class="neumatico__intro">dentro de la cual acontecen los eventos del motor.</div>                     
+            </section>      
+            <!-- SISTEMA NEUMÁTICO -->
+            <section >
+                <article CLASS="encabezado__plantas--neumatico"><!--TITLE & PHOTO-->
+                    <div class>
+                        <h1 class="encabezado__titulo--culata">SISTEMA NEUMÁTICO</h1><!--title-->
+                    </div> 
+                </article>                                                                    
+                <article class="contenedor__bajofoto"> 
+                    <div >
+                        <div class="alinear__encabezado">
+                             <h1>El Sistema Neumático</h1> 
+                            <h3 >Sistema que utiliza el aire como recurso para realizar trabajos</h3>
+                    </div> 
+                    </div>                 
+                    <div class="contenedor__definicionmateria">
+                        <p class="definicion__materia">El Ala es la parte primordial de una máquina para ser considerada una aeronave. El Ala, es la parte de la aeronave destinada a proveer la fuerza de sustentación. 
+                            El Ala, también se utiliza para el almacenaje de combustible y en determinados casos se sujetan a ella motores y trenes de aterrizaje. El aire fluye alrededor del ala y, en este proceso, 
+                            se combinan tres leyes; Bernoulli, Newton y Coanda para darnos como resultado La Fuerza de Sustentación. </p> 
+                        
+                    </div>
+                    <div>
+                        <div class="partes__del--motor" >
+                            <p>Larguero</p>
+                            <p>Larguerillo</p>
+                            <p>Costilla</p>
+                            <p>Falsa costilla</p>
+                            <p>Recubrimiento</p>
+                        </div>
+                    </div>
+                    <div>
+                        <h4>Para nuestro estudio consideraremos cinco (5) las partes principales de un ala. </h4>
+                    </div>
+                </article> 
+            </section>      
+            <!-- EL EMPENAJE -->
+            <section >
+                <article CLASS="encabezado__plantas--empenaje"><!--TITLE & PHOTO-->
+                    <div class>
+                        <h1 class="encabezado__titulo--culata">EL EMPENAJE </h1><!--title-->
+                    </div> 
+                </article>                                                                    
+                <article class="contenedor__bajofoto"> 
+                    <div >
+                        <div class="alinear__encabezado">
+                             <h1>El Empenaje</h1> 
+                            <h3 >La parte trasera, o cola, del avión</h3>
+                    </div> 
+                    </div>                 
+                    <div class="contenedor__definicionmateria">
+                        <p class="definicion__materia">El Empenaje es la parte de la aeronave destinada a proveer estabilidad y, para ello, cuenta con dos superficies fijas, una vertical y otra horizontal, llamadas Estabilizador vertical y 
+                            Estabilizador horizontal. Además, el empenaje cuenta con dos superficies móviles que permiten el movimientos de cabeceo y guiñada, llamadas Timón de profundidad y Timón de dirección. Existen diferentes tipos de 
+                        configuración de empenaje pero todos cumplen las misma función. </p>                        
+                    </div>
+                    <div>
+                        <div class="partes__del--motor" >
+                            <p>Timón de dirección</p>
+                            <p>Timón de Profundidad</p>
+                            <p>Estabilizador Vertical </p>
+                            <p>Estabilizador horizontal</p>
+                        </div>
+                    </div>
+                    <div>
+                        <h4>Cuatro (4) son las partes que constituyen El Empenaje. </h4>
+                    </div>
+                    <div>
+                        <h4>¡¡Vamos a ver cómo funciona un Empenaje!!</h4>
                     </div>
                 </article>
-                <article class="combustible"><h1 CLASS="combustible__titulo">SISTEMA DE COMBUSTIBLE</h1>
-                    <div class="combustible__box">                  
-                        <div><img class="combustible__image" src="../images/Combustible.jpg" alt="empenaje" width="150" height="85"></div>
-                        <div class="combustible__boton"><button class="sistemas__boton--tamano">Componentes</button></div>
-                        <br/>
-                        <div class="combustible__intro">Es una pieza movíl, maziza, a modo de eje, con </div> 
-                        <div class="combustible__intro">brazos y muñequillas, que permiten su acciona_ </div>
-                        <div class="combustible__intro">miento, transformando movimiento lineal en giratorio</div>                                        
+                <article>
+                    <div >
+                        <iframe class="volar__video"  src="https://www.youtube.com/embed/i_B4GUTYy8Q" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
                     </div> 
-                </article>                   
-            </section>    
-            <section class="Volar">
-                <article class="volar__curso"><h1 class="volar__titulo">¡TRABAJO DE UN SISTEMA HIDRÁULICO!</h1>
-                    <iframe class="volar__video" width="600" height="300" src="https://www.youtube.com/embed/i_B4GUTYy8Q" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>"
-                </article>
-            </section>
-        </main>
-        <footer class="footer">            
-            <span> <h6 class="footer__derechos">Derechos Reservados</h6></span>         
-            <span> <a href="https://www.anac.gov.ar/anac/web/" target="_blank" ><img class="footer__anac" src="../images/ANAC.jpg" alt="ANAC" width="100" height="50"></a></span>
-            <span> <a href="https://fada.org.ar/web/" target="_blank"><img class="footer__fada" src="../images/Fada.jpg" alt=""></a></span>
-            <span> <a href="https://www.facebook.com/marcelinoceballos"><img class="footer__face" src="../images/Facebook.jpg" alt=""></a></span>
-            <span> <a href="https://www.youtube.com/channel/UCc3c5Ldw0zKNUbhxEWrOBHg"><img class="footer__youtube" src="../images/Youtube.jpg" alt=""></a></span>
-        </footer>              
+                </article>  
+            </section>            
+        </main>                           
+        <footer class="footer">                       
+            <h6 class="footer__derechos">Derechos Reservados</h6>         
+            <a href="https://www.anac.gov.ar/anac/web/" target="_blank" ><img class="footer__anac" src="../images/ANAC.jpg" alt="ANAC" width="100" height="50"></a>
+            <a href="https://fada.org.ar/web/" target="_blank"><img class="footer__fada" src="../images/Fada.jpg" alt=""></a>
+            <a href="https://www.facebook.com/marcelinoceballos"><img class="footer__face" src="../images/Facebook.jpg" alt=""></a>
+            <a href="https://www.youtube.com/channel/UCc3c5Ldw0zKNUbhxEWrOBHg"><img class="footer__youtube" src="../images/Youtube.jpg" alt=""></a>           
+    </footer>              
     </body>
 </html>
-                                                            
-        

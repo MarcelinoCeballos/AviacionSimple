@@ -1,171 +1,140 @@
 <!DOCTYPE html>
 <html lang="es">
-    <head>
+    <head>git 
         <meta charset="UTF-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Inicio - Aviacion Simple</title>
-        <!--CSS external setup-->
-        <link rel="stylesheet" href="../CSS/estilos.css">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"><!--Optimización p/diferentes dispositivos-->
+        <title>Inicio - Aviacion Simple</title><!--Nombre en la pestaña de la web-->          
+        <link rel="stylesheet" href="../CSS/estilos.css"><!--CSS external setup-->
+        <script src="https://kit.fontawesome.com/e0d0b4a478.js" crossorigin="anonymous"></script>
+        <link rel="stylesheet" href=".././CSS/bootstrap.min.css">
+        <script src="./CSS/js/bootstrap.bundle.min.js"></script>
     </head>
-
-    <body><!--main body with "Header//subjects//video//and Footer"-->        
+    <body class="body"><!--Main body with "Header//subjects//video//and Footer"-->        
         <header class="header">
-            <a tittle="AviacionSimple href="index.html><img  class="header__image" src="../images/Logo.png" alt="AviacionSimple"></a>
-            <i class="header__icono fas fa-bars"></i>
+            <a tittle="AviacionSimple href="index.html><img  class="imagen__logo trends__item"  src="../images/Logo.png" alt="AviacionSimple"></a>
+            <i class="icono__hamburguesa fas fa-bars"></i>
             <nav class="nav">
                 <ul id= "menu" class="nav__list">
                     <li class="nav__items"><a class="nav__enlace" href="../index.html">Inicio</a></li>
                     <li class="nav__items"><a class="nav__enlace" href="pages/Plantas.html">Plantas </a></li>
                     <li class="nav__items"><a class="nav__enlace" href="pages/Estructura.html">Estructura</a></li>
                     <li class="nav__items"><a class="nav__enlace" href="pages/Sistemas.html">Sistemas</a></li>                                                     
-                    <li class="nav__items"><a class="nav__enlace" href="pages/Contacto.html">Contacto</a></li>                                                        
-                </ul>
+                    <li class="nav__items"><a class="nav__enlace" href="pages/Contacto.html">Contacto</a></li> 
+                    <a href="https://www.youtube.com/channel/UCc3c5Ldw0zKNUbhxEWrOBHg"><h3 class="boton__videos">VIDEOS</h3></a>                                                       
+                </ul>                     
             </nav>                                      
-        </header>   
-        <main class="main"> <!--CULATA SECTION--><!--Photo&title-->             
-            <section CLASS="encabezado__plantas--culata">
-                <h1 class="encabezado__titulo--culata">LA CULATA</h1>  
-            </section>               
-            <section class="plantas"><!--First subject. Element father with two columns & one row-->                 
-                <div class="plantas__left"><!--Left side. Element father with a column & three row-->
+        </header> 
+        <main class="main">
+            <!-- EL FUSELAJE -->
+            <section >
+                <article CLASS="encabezado__plantas--fuselaje"><!--TITLE & PHOTO-->
+                    <div class>
+                        <h1 class="encabezado__titulo--culata">EL FUSELAJE</h1><!--title-->
+                    </div> 
+                </article>                                                                    
+                <article class="contenedor__bajofoto"> 
                     <div >
-                        <p class="plantas__intro">La Culata es una pieza fija del motor, dispuesta a modo de tapa sobre el cilindro; y alberga las válvulas y bujías. La culata va roscada al cilindro.</p>
+                        <div class="alinear__encabezado">
+                             <h1>El Fuselaje</h1> 
+                            <h3 > Es el cuerpo de la aeronave</h3>
+                    </div> 
+                    </div>                 
+                    <div class="contenedor__definicionmateria">
+                        <p class="definicion__materia">El Fuselaje es la parte principal de la aeronave y cuerpo del avión donde se unen las demás partes. 
+                            El Fuselaje está destinada a albergar tripulación, pasajeros, carga y, en algunos casos, combustible. La forma de construcción de un Fuselaje puede ser de diferentes tipos y diferentes materiales. </p> 
+                        
                     </div>
-                    <div class="left__hijo plantas__link">
-                        <a href="pages/Plantas.html">Partes de la culata </a>
+                    <div>
+                        <div class="partes__del--motor" >
+                            <p>Monocasco</p>
+                            <p>Semi-monocasco</p>
+                            <p>Reticulado tipo Warren</p>
+                            <p>Reticulado tipo Pratts</p>
+                            
+                        </div>
                     </div>
-                </div>
-                    <!--Right side. Element father with a column & seven row -->
-                <div class="plantas__boxRight">
-                    <div class="plantas__right">
-                        <div class="right__hijo plantas__culata"><p>Boca de admisión</p></div>
-                        <div class="right__hijo plantas__valvulas"><p>Boca de escape</p></div>
-                        <div class="right__hijo plantas__cilindro"><p>Orificio roscado de bujía</p></div>
-                        <div class="right__hijo plantas__pistón"><p>Aletas de refrigeración</p></div>
-                      
+                    <div>
+                        <h4>Para nuestro estudio consideraremos cuatro (4) los tipos de fuselajes. </h4>
                     </div>
-                </div>                       
-            </section>
-            <!--VALVE SECTION-->
-             <section CLASS="encabezado__plantas--valvula"><h1 class="encabezado__titulo--culata">LA VÁLVULA</h1></section> 
-             <section class="plantas">                             
-                <div class="plantas__left">
-                    <div ><p class="plantas__intro">Las válvulas son piezas móviles del motor, que funcionan a modo de puertas permitiendo la entrada de la mezcla y la salida de los gases producto de la combustión. </p></div>
-                    <div class="left__hijo plantas__link"><a href="pages/Plantas.html">Partes de la válvula</a></div>
-                </div>
-                    <!--Right side. Element father with a column & seven row -->
-                <div class="plantas__boxRight">
-                    <div class="sistemas__right">
-                        <div class="right__hijo plantas__culata"><p>Pié</p></div>
-                        <div class="right__hijo plantas__valvulas"><p>Vástago</p></div>
-                        <div class="right__hijo plantas__cilindro"><p>Asiento</p></div>
-                        <div class="right__hijo plantas__pistón"><p>Platillo</p></div>
-                        <div class="right__hijo plantas__biela"><p>Ranura</p></div>
+                </article> 
+            </section>      
+            <!-- EL ALA -->
+            <section >
+                <article CLASS="encabezado__plantas--ala"><!--TITLE & PHOTO-->
+                    <div class>
+                        <h1 class="encabezado__titulo--culata">EL ALA</h1><!--title-->
+                    </div> 
+                </article>                                                                    
+                <article class="contenedor__bajofoto"> 
+                    <div >
+                        <div class="alinear__encabezado">
+                             <h1>El Ala</h1> 
+                            <h3 > La parte fundamental de una aeronave</h3>
+                    </div> 
+                    </div>                 
+                    <div class="contenedor__definicionmateria">
+                        <p class="definicion__materia">El Ala es la parte primordial de una máquina para ser considerada una aeronave. El Ala, es la parte de la aeronave destinada a proveer la fuerza de sustentación. 
+                            El Ala, también se utiliza para el almacenaje de combustible y en determinados casos se sujetan a ella motores y trenes de aterrizaje. El aire fluye alrededor del ala y, en este proceso, 
+                            se combinan tres leyes; Bernoulli, Newton y Coanda para darnos como resultado La Fuerza de Sustentación. </p> 
+                        
                     </div>
-                </div> 
-            </section>
-            <!--CYLINDER SECTION-->
-            <section CLASS="encabezado__plantas--cilindro"><h1 class="encabezado__titulo--culata">EL CILINDRO</h1></section> 
-            <section class="plantas">                                           
-                <div class="plantas__left">
-                    <div ><p class="plantas__intro">El Cilindro es una pieza fija del motor de forma cilíndrica, hueca, abierta por ambos; y es el espacio donde se dan los eventos del motor y alberga dentro de si al pistón. </p></div>
-                    <div class="left__hijo plantas__link"><a href="pages/Plantas.html">Partes del Cilindro</a></div>
-                </div>
-                    <!--Right side. Element father with a column & seven row -->
-                <div class="plantas__boxRight">
-                    <div class="estructura__right">
-                        <div class="right__hijo plantas__culata"><p>Aletas de refrigeración</p></div>
-                        <div class="right__hijo plantas__valvulas"><p>Rosca del cilindro</p></div>
-                        <div class="right__hijo plantas__cilindro"><p>Brida de sujeción</p></div>
-                        <div class="right__hijo plantas__pistón"><p>Falda</p></div>
-                        <div class="right__hijo plantas__biela"><p>Cuerpo del cilindro</p></div>
+                    <div>
+                        <div class="partes__del--motor" >
+                            <p>Larguero</p>
+                            <p>Larguerillo</p>
+                            <p>Costilla</p>
+                            <p>Falsa costilla</p>
+                            <p>Recubrimiento</p>
+                        </div>
                     </div>
-                </div>                       
-            </section>
-            <!--PISTON SECTION-->
-            <section CLASS="encabezado__plantas--piston"><h1 class="encabezado__titulo--culata">EL PISTON</h1></section> 
-            <section class="plantas">
-                <div class="plantas__left">
-                    <div ><p class="plantas__intro">El Pistón es una pieza móvil del motor, de forma cilíndrica, hueca, cerrada por uno de los lados, encargada de absorver energía calórica y transformarla en energía cinética. </p></div>
-                    <div class="left__hijo plantas__link"><a href="pages/Plantas.html">Partes del Pistón</a></div>
-                </div>
-                    <!--Right side. Element father with a column & seven row -->
-                <div class="plantas__boxRight">
-                    <div class="sistemas__right">
-                        <div class="right__hijo plantas__culata"><p>Cabeza</p></div>
-                        <div class="right__hijo plantas__valvulas"><p>Ranura de segmentos</p></div>
-                        <div class="right__hijo plantas__cilindro"><p>Orificio del perno</p></div>
-                        <div class="right__hijo plantas__pistón"><p>Falda</p></div>
-                        <div class="right__hijo plantas__biela"><p>Aletas internas</p></div>
+                    <div>
+                        <h4>Para nuestro estudio consideraremos cinco (5) las partes principales de un ala. </h4>
                     </div>
-                </div> 
-            </section>
-            <!--BIELA SECTION-->
-            <section CLASS="encabezado__plantas--biela"><h1 class="encabezado__titulo--biela">LA BIELA</h1></section>  
-            <section class="plantas">
-                <!--Left side. Element father with a column & three row-->
-                <div class="plantas__left">                   
-                    <div ><p class="plantas__intro">La Biela es una pieza móvil del motor, que unida al pistón y al cigüeñal, tiene la función de transmitir movimiento rectilíneo del pistón a movimiento rotario en el conjunto biela-cigüeñal.   </p></div>
-                    <div class="left__hijo plantas__link"><a href="pages/Plantas.html">Partes de la Biela </a></div>
-                </div>
-                    <!--Right side. Element father with a column & seven row -->
-                <div class="plantas__boxRight">
-                    <div class="plantas__right">
-                        <div class="right__hijo plantas__culata"><p>Boca de admisión</p></div>
-                        <div class="right__hijo plantas__valvulas"><p>Boca de escape</p></div>
-                        <div class="right__hijo plantas__cilindro"><p>Orificio roscado de bujía</p></div>
-                        <div class="right__hijo plantas__pistón"><p>Aletas de refrigeración</p></div>
-                      
+                </article> 
+            </section>      
+            <!-- EL EMPENAJE -->
+            <section >
+                <article CLASS="encabezado__plantas--empenaje"><!--TITLE & PHOTO-->
+                    <div class>
+                        <h1 class="encabezado__titulo--culata">EL EMPENAJE </h1><!--title-->
+                    </div> 
+                </article>                                                                    
+                <article class="contenedor__bajofoto"> 
+                    <div >
+                        <div class="alinear__encabezado">
+                             <h1>El Empenaje</h1> 
+                            <h3 >La parte trasera, o cola, del avión</h3>
+                    </div> 
+                    </div>                 
+                    <div class="contenedor__definicionmateria">
+                        <p class="definicion__materia">El Empenaje es la parte de la aeronave destinada a proveer estabilidad y, para ello, cuenta con dos superficies fijas, una vertical y otra horizontal, llamadas Estabilizador vertical y 
+                            Estabilizador horizontal. Además, el empenaje cuenta con dos superficies móviles que permiten el movimientos de cabeceo y guiñada, llamadas Timón de profundidad y Timón de dirección. Existen diferentes tipos de 
+                        configuración de empenaje pero todos cumplen las misma función. </p>                        
                     </div>
-                </div>                       
-            </section>
-            <!--CRANKSHAFT SECTION-->
-            <section CLASS="encabezado__plantas--ciguenal"><h1 class="encabezado__titulo--culata">EL CIGÜEÑAL</h1></section>  
-            <section class="plantas">
-                <!---->
-                <div class="plantas__left">
-                    <div ><p class="plantas__intro">El Cigüeñal es una pieza móvil del motor, encargada de transformar movimiento rectilíneo proveniente del pistón a movimiento giratorio en el conjunto Biela-Cigüeñal.</p></div>
-                    <div class="left__hijo plantas__link"><a href="pages/Plantas.html">Partes del Cigüeñal</a></div>
-                </div>
-                    <!--Right side. Element father with a column & seven row -->
-                <div class="plantas__boxRight">
-                    <div class="estructura__right">
-                        <div class="right__hijo plantas__culata"><p>Eje</p></div>
-                        <div class="right__hijo plantas__valvulas"><p>Brazo</p></div>
-                        <div class="right__hijo plantas__cilindro"><p>Muñequilla</p></div>
-                        <div class="right__hijo plantas__pistón"><p>Bancada</p></div>
-                        <div class="right__hijo plantas__biela"><p>Plato de hélice</p></div>
+                    <div>
+                        <div class="partes__del--motor" >
+                            <p>Timón de dirección</p>
+                            <p>Timón de Profundidad</p>
+                            <p>Estabilizador Vertical </p>
+                            <p>Estabilizador horizontal</p>
+                        </div>
                     </div>
-                </div>                       
-            </section>
-            <!--CÁRTER SECTION-->
-            <section CLASS="encabezado__plantas--carter"><h1 class="encabezado__titulo--estructuraL" class="color1">EL CÁRTER</h1></section>  
-            <section class="plantas">            
-                <div class="plantas__left">                  
-                    <div ><p class="plantas__intro">El Cárter es una pieza fija del motor y cuerpo de este. Puede servir como depósito de aceite, "Cárter humedo", o no, "Cárter Seco". En él se sujetan gran variedad de dispositivos y sujeciones al avion.  </p></div>
-                    <div class="left__hijo plantas__link"><a href="pages/Plantas.html">Partes del Cárter</a></div>
-                </div>
-                    <!--Right side. Element father with a column & seven row -->
-                <div class="plantas__boxRight">
-                    <div class="estructura__right">
-                        <div class="right__hijo plantas__culata"><p>Boca de cilindros</p></div>
-                        <div class="right__hijo plantas__valvulas"><p>Bancada del motor</p></div>
-                        <div class="right__hijo plantas__cilindro"><p>Sujeción del carburador</p></div>
-                        <div class="right__hijo plantas__pistón"><p>Lado derecho e izquierdo</p></div>
-                        <div class="right__hijo plantas__biela"><p>Bancadas de cigüeñal</p></div>
+                    <div>
+                        <h4>Cuatro (4) son las partes que constituyen El Empenaje. </h4>
                     </div>
-                </div>                       
-            </section>   
-            <!-- FUNCIONAMIENTO MOTOR SECTION -->
-            <!-- <section CLASS="encabezado__plantas--funcionamiento"><h1 class="encabezado__titulo">¡CÓMO FUNCIONA UN MOTOR!</h1></section>                      -->
-            <!-- <section class="Volar"> -->
-                    <!-- <iframe class="volar__video" width="600" height="300" src="https://www.youtube.com/embed/i_B4GUTYy8Q" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe> -->
-                    <!-- <iframe class="volar__video" width="600" height="300" src="https://www.youtube.com/embed/DepN0JcQdyE" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe> -->
-                    <!-- https://youtu.be/DepN0JcQdyE https://www.youtube.com/embed/i_B4GUTYy8Q -->
-            <!-- </section> -->
+                    <div>
+                        <h4>¡¡Vamos a ver cómo funciona un Empenaje!!</h4>
+                    </div>
+                </article>
+                <article>
+                    <div >
+                        <iframe class="volar__video"  src="https://www.youtube.com/embed/i_B4GUTYy8Q" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                    </div> 
+                </article>  
+            </section>            
         </main>                           
-        <footer class="footer__section">                       
+        <footer class="footer">                       
             <h6 class="footer__derechos">Derechos Reservados</h6>         
             <a href="https://www.anac.gov.ar/anac/web/" target="_blank" ><img class="footer__anac" src="../images/ANAC.jpg" alt="ANAC" width="100" height="50"></a>
             <a href="https://fada.org.ar/web/" target="_blank"><img class="footer__fada" src="../images/Fada.jpg" alt=""></a>

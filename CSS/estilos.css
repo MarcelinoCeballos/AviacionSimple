@@ -8,9 +8,16 @@
 .body {
     position: absolute;
     min-height: 100vh;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;   
 }
-/* ENCABEZADO */
+.main { 
+    display:grid;
+    grid-template-columns:repeat(1);
+    grid-template-rows:500px;
+    /* MARGEN PARA EL HEADER FIJO */
+    margin-top: 75px;
+    color:black;
+}
 .header {
     /* Diseño */
     height: 100px;
@@ -27,20 +34,16 @@
     top: 0;
     z-index: 10;
 } 
-/* ENCABEZADO */
+/* HEADER */
 /* ISO */
-.imagen__logo {    
+.imagen__logo {  
     border-radius: 2mm;
-    margin-left: 10%;
+    margin-left: 10%;  
 }
-.trends__item {
-    width: 125px;
-    height: 100%;
+.imagen__logo:hover {
+    transform:rotate(-20deg);
 }
-.trends__item img {
-
-}
-/* ENCABEZADO */
+/* HEADER */
 /* ESPACIO DEL NAVEGADOR */
 .nav {
     display: flex;
@@ -48,10 +51,9 @@
     justify-content:left;
     align-items:center;
     width: 100%; 
-    width: 100%;
-     
+       
 }
-/* ENCABEZADO */
+/* HEADER */
 /* ATRIBUTOS DE LA LISTA DE NAVEGACIÓN */
 .nav__list {
     width: 750px;
@@ -64,7 +66,7 @@
     padding-top: 20px;
     margin-left: 3%;   
 } 
-/* ENCABEZADO */
+/* HEADER */
 /* ATRIBUTOS ITEMS DE NAVEGACION */
 .nav__enlace {
     color: blue; 
@@ -72,35 +74,14 @@
     background-color: aliceblue; 
     border-radius: 2px;  
 }
-/* ENCABEZADO */
-/* CONTENEDOR BOTON VIDEO */
-.video__box {
-    display: flex;
-    flex-direction: row;
-    justify-content:center;
-    align-items:center;
-    border: 1px solid aliceblue;
-    width: 130px;
-    height: 50px;
-    grid-template-columns: 1fr; 
-    background-color: rgb(22, 42, 226);
-    border-radius: 2mm;
-    margin-left: 15%;
-}
-/* ENCABEZADO */
+/* HEADER */
 /* BOTON VIDEO */
-.boton__videos {
-    display: flex;
-    flex-direction: row;
-    justify-content:flex-end;
-    align-items:flex-end;
-    color: black;   
+.nav__video {
+    height: 100%;
+    transition: height 2s;
 }
-/* ENCABEZADO */
-/* MARGEN PARA EL HEADER FIJO */
-.main {
-    display: grid;
-    margin-top: 100px;
+.nav__video:hover {
+    size: 200%;
 }
 /* INDEX.HTML */
 /* PLANTAS */
@@ -112,10 +93,54 @@
     background-size: cover;
     background-position: center;
     min-height: 500px;
+    width: 1365px;
     flex-direction: column;
     justify-content: top; 
-   
+      
 }
+/* INDEX.HTML */
+/* ESTRUCTURA */
+/* FOTO */
+.foto__estructura {
+    display: flex;
+    background-image: url(../images/Fuselaje1.jpg);  
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    min-height: 500px;
+    width: 1365px;
+    flex-direction: column;
+    justify-content: top;   
+}
+/* INDEX.HTML */
+/* SISTEMAS */
+/* FOTO */
+.foto__sistemas {
+    display: flex;
+    background-image: url(../images/Sistemas1.jpg);  
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    min-height: 500px;
+    width: 1365px;
+    flex-direction: column;
+    justify-content: top;   
+}
+/* INDEX.HTML */
+/* VOLAR */
+/* FOTO */
+.foto__volar {
+    display: flex;
+    background-image: url(../images/Cabina.jpg);  
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    min-height: 500px;
+    width: 1365px;
+    flex-direction: column;
+    justify-content: top;   
+}
+
 /* INDEX.HTML */
 /* PLANTAS */
 /* NOMBRE MATERIA */
@@ -125,9 +150,20 @@
     justify-content:left;  
     padding-top: 80px;
     padding-left: 50px;
+    color:black;
+}
+/* INDEX.HTML */
+/* PLANTAS */
+/* NOMBRE MATERIA */
+.nombre__materia--estructura {
+    display: flex;
+    flex-direction: row;
+    justify-content:left;  
+    padding-top: 50px;
+    padding-left: 50px;
     font-size:350%;
     font-family:Verdana, Geneva, Tahoma, sans-serif;
-    color:rgb(65, 69, 69)
+    color:black;
 }
 
 /* INDEX.HTML */
@@ -139,10 +175,9 @@
     justify-content:center;
     align-items:center;
     background-color: aliceblue;
-    min-height: 50vh;
-    width: 100%;
-    padding: 1rem;
-    grid-template-columns: 1fr 1fr;
+    min-height: 500px;
+    width: 1365px;
+    padding: 1rem;   
 }
 .alinear__encabezado {
     display:flex;
@@ -150,7 +185,6 @@
     justify-content: center;
     align-items: center;
 }
-
 .contenedor__definicionmateria {
     display: flex;
     flex-direction: column;
@@ -160,6 +194,7 @@
 }
 .definicion__materia {
     padding-top: 30px;
+    text-align: center;
 }
 .partes__del--motor {
     display: flex;
@@ -169,53 +204,9 @@
     gap: 30px
 }
 /* INDEX.HTML */
-/* ESTRUCTURA */
-/* FOTO */
-.encabezado__estructura {
-    background-image: url(../images/Fuselaje1.jpg);  
-    background-repeat: no-repeat;
-    background-size: cover;
-    min-height: 85vh;
-    width: 100%;   
-}
-/* INDEX.HTML */
-/* ESTRUCTURA */
-/* TITULO FOTO */
-/* Doy color a la parte oscura del título */
-.encabezado__titulo--estructuraL {
-    margin-left: 50px;
-    padding-left: 50px;
-    padding-top: 125px;
-    font-size:350%;
-    font-family:Verdana, Geneva, Tahoma, sans-serif;
-    color:rgb(218, 213, 213);
-}
-/* INDEX.HTML */
-/* ESTRUCTURA */
-/* TITULO FOTO */
-/* Posiciono y doy color a la parte blanca del título */
-.encabezado__titulo--estructuraR {
-    margin-left: 310px;
-    margin-top: -87px;
-    font-size:350%;
-    font-family:Verdana, Geneva, Tahoma, sans-serif;
-    color:azure
-}
-
-/* INDEX.HTML */
-/* SISTEMAS */
-/* FOTO  */
-.encabezado__sistemas {
-    background-image: url(../images/Sistemas1.jpg);  
-    background-repeat: no-repeat;
-    background-size: cover;
-    min-height: 85vh;
-    width: 100%;   
-}
-/* INDEX.HTML */
 /* SISTEMAS */
 /* TITULO FOTO */
-.encabezado__titulo--sistemas {
+.nombre__materia--sistemas {
     margin-left: 50px;
     padding-left: 50px;
     padding-top: 130px;
@@ -223,21 +214,10 @@
     font-family:Verdana, Geneva, Tahoma, sans-serif;
     color:azure
 }
-
-/* INDEX.HTML */
-/* PILOTO */
-/* FOTO*/
-.encabezado__volar {
-    background-image: url(../images/Cabina.jpg);  
-    background-repeat: no-repeat;
-    background-size: cover;
-    min-height: 85vh;
-    width: 100%;   
-}
 /* INDEX.HTML */
 /* PILOTO */
 /* TITULO FOTO */
-.encabezado__titulo--piloto {
+.nombre__materia--piloto {
     margin-left: 50px;
     padding-left: 50px;
     padding-top: 130px;
@@ -245,30 +225,100 @@
     font-family:Verdana, Geneva, Tahoma, sans-serif;
     color:azure
 }
-
+/* INDEX.HTML */
+/* PLANTAS */
+/* "CONTENEDOR" BAJO FOTO */
+.contenedor__volar {
+    display: flex;
+    flex-direction: column;
+    justify-content:center;
+    align-items:center;
+    background-color: blue;
+    min-height: 500px;
+    width: 1365px;
+    padding: 1rem;
+    grid-template-columns: 1fr 1fr;
+}
 /* INDEX.HTML */
 /* PILOTO */
 /* VIDEO*/
 .volar__video {
-    margin-left: 450px;
     width: 450px;
     height: 225px;
-    border-radius: 2mm;   
+    border-radius: 2mm;    
 }
-
-
-
-
-
+.titulo__video {
+    color:aliceblue;
+}
+.formulario {
+    width: 300px;
+    position:relative;
+    top: -250px;
+}
+.historia {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 1365px;
+    min-height: 500px;
+    width: 1365px;
+    padding: 1rem;
+}
+.seccion__historia {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.contenedro__seccion--historia {
+    text-align: center;  
+}
+.historia__texto {
+    text-align: center;
+    width: 600px;
+    position:relative;
+    padding-top:30px;
+    color:black
+}
+.titulo__seccion--historia {
+    display: inline-block;
+    position: relative;
+    font-family:"Dancing Script", cursive;
+    padding-top: 50px;
+    color: grey;  
+}
+.h1::after,h1::before{
+  content:'';
+  position: absolute;
+  width:120px;
+  height:2px;
+  background-color:grey;
+  top: 77px;
+  left: -140px;
+} 
+.h1::before,h1::after{
+    content:'';
+    position: absolute;
+    width:120px;
+    height:2px;
+    background-color:grey;
+    top: 77px;
+    right: -140px;
+} 
+.engine {
+    width: 30px;
+    top: 50px;
+}
 /* PLANTAS.HTML */
 /* CULATA */
 /* FOTO  */
-.encabezado__plantas--culata {
+.foto__culata {
     background-image: url(../images/LaCulata.jpg);  
     background-repeat: no-repeat;
     background-size: cover;
-    min-height: 85vh;
-    width: 100%;   
+    min-height: 500px;
+    width: 1365px; 
 }
 /* PLANTAS.HTML */
 /* CULATA */
@@ -281,29 +331,16 @@
     font-family:Verdana, Geneva, Tahoma, sans-serif;
     color:azure;
 }
-/* PLANTAS.HTML */ 
-/* CULATA */
-/* TEXTO DERECHA BAJO FOTO */
-.culata__right {
-    display: grid;
-    border: 1px solid rgb(0, 13, 128);
-    width: 50%;
-    height: 50%;
-    grid-template-columns: 1fr;
-    grid-template-rows: repeat(4, 1fr) ; 
-    background-color: hsl(0, 0%, 0%, 30%);
-    border-radius: 10mm;
-    margin-top: 63px;
-}
+
 /* PLANTAS.HTML */
 /* VÁLVULA */
 /* FOTO  */
-.encabezado__plantas--valvula {
+.foto__valvula {
     background-image: url(../images/Válvulas1.jpg);  
     background-repeat: no-repeat;
     background-size: cover;
-    min-height: 85vh;
-    width: 100%;   
+    min-height: 500px;
+    width: 1365px;
 }
 /* PLANTAS.HTML */
 /* VÁLVULAS */
@@ -319,12 +356,12 @@
 /* PLANTAS.HTML */
 /* CILINDRO */
 /* FOTO  */
-.encabezado__plantas--cilindro {
+.foto__cilindro {
     background-image: url(../images/Cilindro1.jpg);  
     background-repeat: no-repeat;
     background-size: cover;
-    min-height: 85vh;
-    width: 100%;   
+    min-height: 500px;
+    width: 1365px;
 }
 /* PLANTAS.HTML */
 /* CILINDRO */
@@ -337,15 +374,15 @@
     font-family:Verdana, Geneva, Tahoma, sans-serif;
     color:azure
 }
-/* PLANTAS.HTML */
-/* PISTÓN */
+/* ESTRUCTURA.HTML */
+/* FUSELAJE */
 /* FOTO */
-.encabezado__plantas--piston {
-    background-image: url(../images/Piston1.jpg);  
+.encabezado__plantas--fuselaje {
+    background-image: url(../images/Fuselaje1.jpg);  
     background-repeat: no-repeat;
     background-size: cover;
-    min-height: 85vh;
-    width: 100%; 
+    min-height: 500px;
+    width: 1365px;
 }
 /* PLANTAS.HTML */
 /* PISTON */
@@ -358,15 +395,15 @@
     font-family:Verdana, Geneva, Tahoma, sans-serif;
     color:azure
 }
-/* PLANTAS.HTML */
-/* BIELA */
+/* ESTRUCTURA.HTML */
+/* ALA */
 /* FOTO  */
-.encabezado__plantas--biela {
-    background-image: url(../images/Biela1.jpg);  
+.encabezado__plantas--ala {
+    background-image: url(../images/Ala.jpg);  
     background-repeat: no-repeat;
     background-size: cover;
-    min-height: 85vh;
-    width: 100%;   
+    min-height: 500px;
+    width: 1365px;
 }
 /* PLANTAS.HTML */
 /*  BIELA */
@@ -379,15 +416,15 @@
     font-family:Verdana, Geneva, Tahoma, sans-serif;
     color:rgb(47, 49, 49)
 }
-/* PLANTAS.HTML */
-/* CIGÜEÑAL */
+/* ESTRUCTURA.HTML */
+/* EMPENAJE */
 /* FOTO */
-.encabezado__plantas--ciguenal {
-    background-image: url(../images/Cigüeñal1.jpg);  
+.encabezado__plantas--empenaje {
+    background-image: url(../images/Empenaje.jpg);  
     background-repeat: no-repeat;
     background-size: cover;
-    min-height: 85vh;
-    width: 100%;   
+    min-height: 500px;
+    width: 1365px;  
 }
 /* PLANTAS.HTML */
 /* CIGÜEÑAL */
@@ -400,18 +437,36 @@
     font-family:Verdana, Geneva, Tahoma, sans-serif;
     color:azure
 }
-/* PLANTAS.HTML */
-/* CÁRTER */
-/* FOTO  */
-.encabezado__plantas--carter {
-    background-image: url(../images/Cárter1.jpg);  
+/* SISTEMAS.HTML */
+/* HIDRÁULICO */
+/* FOTO */
+.encabezado__plantas--hidraulico {
+    background-image: url(../images/Hidraulico.jpg);  
     background-repeat: no-repeat;
     background-size: cover;
-    min-height: 85vh;
-    width: 100%;   
+    min-height: 500px;
+    width: 1365px;
 }
-
-
+/* SISTEMAS.HTML */
+/* HIDRÁULICO */
+/* FOTO */
+.encabezado__plantas--neumatico {
+    background-image: url(../images/Neumático.jpg);  
+    background-repeat: no-repeat;
+    background-size: cover;
+    min-height: 500px;
+    width: 1365px;  
+}
+/* SISTEMAS.HTML */
+/* HIDRÁULICO */
+/* FOTO */
+.encabezado__plantas--combustible {
+    background-image: url(../images/Combustible.jpg);  
+    background-repeat: no-repeat;
+    background-size: cover;
+    min-height: 500px;
+    width: 1365px;     
+}
 /* FOOTER */
 /* FONDO y TAMAÑO */
 .footer {   
@@ -419,7 +474,7 @@
     flex-direction: row;
     justify-content:space-around;
     align-items:center;
-    background-color: rgb(4, 35, 49); 
+    background-color:aliceblue; 
     min-width: 100%;
     min-height: 25vh;     
 }
@@ -431,7 +486,7 @@
     flex-direction: row;
     justify-content:space-between;
     align-items:center;
-    color:aliceblue;
+    color:black;
     position: relative;   
 }
 /* FOOTER */
@@ -479,6 +534,11 @@
 /* ICONO HAMBURGUESA */
 /* OCULTAR */
 .icono__hamburguesa {
+    display: flex;
+    flex-direction: row;
+    justify-content:center;
+    align-items:center;
+    padding-right: 20px;
     color: red; 
     display: none;
 }
@@ -487,143 +547,179 @@
 /* MEDIA QUERYS */
 /* Desktop Inicial */
 @media screen and (max-width: 320px) {
-    /* PLANTAS */
-    /*AJUSTE TITULO  */
-    .encabezado__titulo--plantas { 
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    }
+    .nav {
+        display: none;
+    }   
+    .icono__hamburguesa {
+        display: inline;
+    }
+    .foto__plantas {
+        width: 800px;
+    }
+    .contenedor__bajofoto {
+        width: 800px;
+    }
+    .foto__estructura {
+        width: 800px;
+    }
+    .foto__sistemas {
+        width: 800px;
+    }
+    .foto__volar {
+        width: 800px;
+    }
+    .nombre__materia--plantas { 
+           
+    }
+    .nombre__materia--sistemas { 
         font-size: 200%;
         margin-top: -50px;
         margin-left: -20px;
-        color:black
-    }
-    /* PLANTAS */
-    /* AJUSTE ALTO FONDO GRIS */
-    .plantas {
-        height: 80vh;
-    }
-    /* PLANTAS */
-    /* AJUSTE TEXTO */
-    .plantas__left {
-      display: grid;
-      margin-left: 45px;
-      margin-top: 0px;
-    }
-    /* PLANTAS */
-    /* AJUSTE PARTES MOTOR */
-    .plantas__boxRight {
-        margin-top: 70px;
-        margin-left: 85px;
-    }
-    /* PLANTAS */
-    /* AJUSTE FONDO PARTES */
-    .plantas__right {
-        display: flex;
-        flex-direction: row;
-        justify-content: space-between;
-        gap: 1rem;
-        margin-top: 200px;
-        margin-left: -775px;
-        height: 30px;
-        width: 500px;
+        color:aliceblue;
     }  
-    /* ESTRUCTURA */
-    /* AJUSTE FONDO PARTES -ESTRUCTURA */
-    .estructura__right {
-        display: flex;
-        flex-direction: row;
-        justify-content: space-between;
-        gap: 1rem;
-        margin-top: 200px;
-        margin-left: -775px;
-        height: 30px;
-        width: 500px;
-        border: 1px solid rgb(0, 13, 128);
-    }  
-    /* SISTEMAS */
-    /*AJUSTE TITULO  */
-    .encabezado__titulo--sistemas { 
-        font-size: 200%;
-        margin-top: -50px;
-        margin-left: -20px;
-        color:black;
-    }
-    /* SISTEMAS */
-    /* AJUSTE FONDO PARTES -SISTEMAS */  
-    .sistemas__right {
-        display: flex;
-        flex-direction: row;
-        justify-content: space-between;
-        gap: 1rem;
-        margin-top: 200px;
-        margin-left: -775px;
-        height: 30px;
-        width: 500px;
-        border: 1px solid rgb(0, 13, 128);
-    }
-    /* PILOTO */
-    /*AJUSTE TITULO  */
-    .encabezado__titulo--piloto { 
+    .nombre__materia--piloto { 
         font-size: 200%;
         margin-top: -50px;
         margin-left: -20px;
         color:white;
     }
-    /* PILOTO */
-    /* AJUSTE FONDO PARTES -PILOTO */
-    .piloto__right {
-        display: flex;
-        flex-direction: row;
-        justify-content: space-between;
-        gap: 1rem;
-        margin-top: 240px;
-        margin-left: -720px;
-        height: 50px;
-        width: 500px;
-        border: 1px solid rgb(0, 13, 128);
+    .contenedor__volar {
+        display:flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 950px;
     }
-    /* PILOTO */
-     /* AJUSTE TAMAÑO VIDEO  */
     .volar__video {
-        display: flex;
-        margin-top:-70px;
-        margin-left: 50px;
-        width: 500px;
-        height: 300px;
+        margin-left: -150px;
+        width: 800px;
+        height: 500px;
     }
-    /* PLANTAS.html */
-    /* AJUSTE TITULO */
-    .encabezado__titulo--culata {
+    .nombre__materia--culata {
         display: flex;
         margin-top:-50px;
         margin-left: 0px;
         font-size: 50px;
-    }
-    /* FOOTER */
-    /* OCULTO BARRA */
-    .nav {
-        display: none;
-
-    }
+    }      
     .header {
-        display: flex;
-        flex-direction: row;
-        justify-content:space-between; 
-        align-items: center;
-        width: 100%;
+        width: 800px;   
     }
-    .header__icono {
-        display:inline-block ;
-        color: black;
-    }
-}
-@media screen and (max-width: 320px){
     .footer {
-        display: flex;
-        flex-direction: row;
-        justify-content:space-between; 
+        display:flex;
+        flex-direction: column;
+        justify-content: space-between;
         align-items: center;
-        color: pink;
+        width: 800px;
+        height: 500px;
+        margin-left: -100px;
     }
-}
+    .historia {
+        width: 800px;
+    }
+    .foto__culata {
+        width: 800px;
+    }
+    .foto__valvula {
+        width: 800px;
+    }
+    .foto__cilindro {
+        width: 800px;
+    }
+} 
+
+@media screen and (min-width: 1900px) {
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        }
+        .nav {
+            display: none;
+        }   
+        .icono__hamburguesa {
+            display: inline;
+        }
+        .foto__plantas {
+            width: 1900px
+        }
+        .contenedor__bajofoto {
+            width: 1900px
+        }
+        .foto__estructura {
+            width: 1900px
+        }
+        .foto__sistemas {
+            width: 1900px
+        }
+        .foto__volar {
+            width: 1900px
+        }
+        .nombre__materia--plantas { 
+            color: red;   
+        }
+        .nombre__materia--sistemas { 
+            font-size: 200%;
+            margin-top: -50px;
+            margin-left: -20px;
+            color:aliceblue;
+        }  
+        .nombre__materia--piloto { 
+            font-size: 200%;
+            margin-top: -50px;
+            margin-left: -20px;
+            color:white;
+        }
+        .contenedor__volar {
+            display:flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            width: 1900px
+        }
+        .volar__video {
+            margin-left: -415px;
+            width: 950px;
+            height: 500px;
+        }
+        .nombre__materia--culata {
+            display: flex;
+            margin-top:-50px;
+            margin-left: 0px;
+            font-size: 50px;
+        }      
+        .header {
+            width: 1900px   
+        }
+        .footer {
+            display:flex;
+            flex-direction: column;
+            justify-content: space-between;
+            align-items: center;
+            width: 1900px;
+            height: 500px;
+            margin-left: -200px;
+        }
+        .historia {
+            width: 1900px
+        }
+        .foto__culata {
+            width: 1900px
+        }
+        .foto__valvula {
+            width: 1900px
+        }
+        .foto__cilindro {
+            width: 1900px
+        }
+    
+
+
        
 
     
