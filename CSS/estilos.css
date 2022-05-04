@@ -38,7 +38,17 @@
 /* ISO */
 .imagen__logo {  
     border-radius: 2mm;
-    margin-left: 10%;  
+    margin-left: 10%; 
+    
+}
+.animacion {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-image: linear-gradient(green, yellow, navy);
+    width: 200px;
+    height: 100px;
+
 }
 .imagen__logo:hover {
     transform:rotate(-20deg);
