@@ -10,14 +10,6 @@
     min-height: 100vh;
     font-family: Verdana, Geneva, Tahoma, sans-serif;   
 }
-.main { 
-    display:grid;
-    grid-template-columns:repeat(1);
-    grid-template-rows:500px;
-    /* MARGEN PARA EL HEADER FIJO */
-    margin-top: 75px;
-    color:black;
-}
 .header {
     /* Diseño */
     height: 100px;
@@ -38,17 +30,15 @@
 /* ISO */
 .imagen__logo {  
     border-radius: 2mm;
-    margin-left: 10%; 
-    
+    margin-left: 10%;     
 }
 .animacion {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    background-image: linear-gradient(green, yellow, navy);
+    background-image: linear-gradient(navy, white);
     width: 200px;
     height: 100px;
-
 }
 .imagen__logo:hover {
     transform:rotate(-20deg);
@@ -60,8 +50,7 @@
     flex-direction: row;
     justify-content:left;
     align-items:center;
-    width: 100%; 
-       
+    width: 100%;       
 }
 /* HEADER */
 /* ATRIBUTOS DE LA LISTA DE NAVEGACIÓN */
@@ -102,11 +91,10 @@
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
-    min-height: 500px;
+    min-height: 600px;
     width: 1365px;
     flex-direction: column;
-    justify-content: top; 
-      
+    justify-content: top;      
 }
 /* INDEX.HTML */
 /* ESTRUCTURA */
@@ -150,7 +138,6 @@
     flex-direction: column;
     justify-content: top;   
 }
-
 /* INDEX.HTML */
 /* PLANTAS */
 /* NOMBRE MATERIA */
@@ -175,7 +162,6 @@
     font-family:Verdana, Geneva, Tahoma, sans-serif;
     color:black;
 }
-
 /* INDEX.HTML */
 /* PLANTAS */
 /* "CONTENEDOR" BAJO FOTO */
@@ -252,7 +238,7 @@
 /* INDEX.HTML */
 /* PILOTO */
 /* VIDEO*/
-.volar__video {
+.video__volar {
     width: 450px;
     height: 225px;
     border-radius: 2mm;    

@@ -1,0 +1,309 @@
+main {
+    .section {
+        .foto__plantas {
+            display: flex;
+            background-image: url(../images/DouglasDC3.jpg);  
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-position: center;
+            min-height: 600px;
+            width: 1365px;
+            flex-direction: column;
+            justify-content: top; 
+            .contenedor__titulo--foto {
+                .nombre__materia--plantas {
+                    display: flex;
+                    flex-direction: row;
+                    justify-content:left;  
+                    padding-top: 80px;
+                    padding-left: 50px;
+                    color:black;
+                }
+            }     
+        }
+    }
+    .section {
+        .contenedor__bajofoto {
+            display: flex;
+            flex-direction: column;
+            justify-content:center;
+            align-items:center;
+            background-color: aliceblue;
+            min-height: 500px;
+            width: 1365px;
+            padding: 1rem;  
+            .contenedor__titulo--bajofoto {
+                .alinear__encabezado {
+                    display:flex;
+                    flex-direction: column;
+                    justify-content: center;
+                    align-items: center;
+                    .titulo__bajofoto {}
+                    .comentario__titulo--bajofoto {}                   
+                }
+            }
+        }
+        .contenedor__definicionmateria {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            width: 100%;
+            .definicion__materia {
+                padding-top: 30px;
+                text-align: center;
+            }
+        }
+        .contenedor__partes--motor {
+            .partes__del--motor {
+                display: flex;
+                flex-direction: row;
+                justify-content: center;
+                align-items:center;
+                gap: 30px;
+                .partes__items {}
+            }
+        }
+        .aclaracion__partes--bajofoto {
+            .aclaracion {}
+        }
+    }
+    .section {
+        .foto__estructura {
+            display: flex;
+            background-image: url(../images/Fuselaje1.jpg);  
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-position: center;
+            min-height: 500px;
+            width: 1365px;
+            flex-direction: column;
+            justify-content: top; 
+            .contenedor__titulo--foto {
+                .nombre__materia--estructura {
+                    display: flex;
+                    flex-direction: row;
+                    justify-content:left;  
+                    padding-top: 50px;
+                    padding-left: 50px;
+                    font-size:350%;
+                    font-family:Verdana, Geneva, Tahoma, sans-serif;
+                    color:black;
+                }
+            }  
+        }
+    }
+    .section {
+        .contenedor__bajofoto {
+            display: flex;
+            flex-direction: column;
+            justify-content:center;
+            align-items:center;
+            background-color: aliceblue;
+            min-height: 500px;
+            width: 1365px;
+            padding: 1rem;
+            .contenedor__titulo--bajofoto {
+                .alinear__encabezado {
+                    display:flex;
+                    flex-direction: column;
+                    justify-content: center;
+                    align-items: center;
+                    .titulo__bajofoto {}
+                    .comentario__titulo--bajofoto {}                   
+                }
+            }
+        }
+        .contenedor__definicionmateria {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            width: 100%;
+            .definicion__materia {
+                padding-top: 30px;
+                text-align: center;
+            }
+        }
+        .contenedor__partes--motor {
+            .partes__del--motor {
+                display: flex;
+                flex-direction: row;
+                justify-content: center;
+                align-items:center;
+                gap: 30px;
+                .partes__items {}
+            }
+        }
+        .contenedor__partes--bajofoto {
+            .partes__items {}
+        }
+        .aclaracion__partes--bajofoto {
+            .aclaracion {}
+        }
+    }
+    .section {
+        .foto__sistemas {
+            display: flex;
+            background-image: url(../images/Sistemas1.jpg);  
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-position: center;
+            min-height: 500px;
+            width: 1365px;
+            flex-direction: column;
+            justify-content: top; 
+            .contendedor__titulo--foto {
+                .nombre__materia--sistemas {
+                    margin-left: 50px;
+                    padding-left: 50px;
+                    padding-top: 130px;
+                    font-size:350%;
+                    font-family:Verdana, Geneva, Tahoma, sans-serif;
+                    color:azure
+                }
+            }  
+        } 
+    }
+    .section {
+        .contenedor__bajofoto {
+            display: flex;
+            flex-direction: column;
+            justify-content:center;
+            align-items:center;
+            background-color: aliceblue;
+            min-height: 500px;
+            width: 1365px;
+            padding: 1rem; 
+            .contenedor__titulo--bajofoto {
+                .alinear__encabezado {
+                    display:flex;
+                    flex-direction: column;
+                    justify-content: center;
+                    align-items: center;
+                    .titulo__bajofoto {}
+                    .comentario__titulo--bajofoto {}                   
+                }
+            }
+        }
+        .contenedor__definicionmateria {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            width: 100%;
+            .definicion__materia {
+                padding-top: 30px;
+                text-align: center;
+            }
+        }
+        .contenedor__partes--motor {
+            .partes__del--motor {
+                display: flex;
+                flex-direction: row;
+                justify-content: center;
+                align-items:center;
+                gap: 30px;
+                .partes__items {}
+            }
+        }
+        .aclaracion__partes--bajofoto{
+            .aclaracion {}
+        }
+    }
+    .section {
+        .foto__volar {
+            display: flex;
+            background-image: url(../images/Cabina.jpg);  
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-position: center;
+            min-height: 500px;
+            width: 1365px;
+            flex-direction: column;
+            justify-content: top;
+            .contendedor__titulo--foto {
+                .nombre__materia--piloto {
+                    margin-left: 50px;
+                    padding-left: 50px;
+                    padding-top: 130px;
+                    font-size:350%;
+                    font-family:Verdana, Geneva, Tahoma, sans-serif;
+                    color:azure
+                }
+            }   
+        }
+    }
+    .section {
+        .contenedor__bajofoto {
+            display: flex;
+            flex-direction: column;
+            justify-content:center;
+            align-items:center;
+            background-color: aliceblue;
+            min-height: 500px;
+            width: 1365px;
+            padding: 1rem; 
+            .contenedor__titulo--bajofoto {
+                .alinear__encabezado {
+                    display:flex;
+                    flex-direction: column;
+                    justify-content: center;
+                    align-items: center;
+                    .titulo__bajofoto {}
+                    .comentario__titulo--bajofoto {}                   
+                }
+            }
+        }
+        .contenedor__definicionmateria {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            width: 100%;
+            .definicion__materia {
+                padding-top: 30px;
+                text-align: center;
+            }
+        }
+        .contenedor__partes--motor {
+            .partes__del--motor {
+                display: flex;
+                flex-direction: row;
+                justify-content: center;
+                align-items:center;
+                gap: 30px;
+                .partes__items {}
+            }
+        }
+        .aclaracion__partes--bajofoto {
+            .aclaracion {}
+        }
+    }
+    .section {
+        .contenedor__volar {
+            .contenedor__volar {
+                display: flex;
+                flex-direction: column;
+                justify-content:center;
+                align-items:center;
+                background-color: blue;
+                min-height: 500px;
+                width: 1365px;
+                padding: 1rem;
+                grid-template-columns: 1fr 1fr;
+                .contenedor__video--volar {
+                    .video__volar {
+                        width: 450px;
+                        height: 225px;
+                        border-radius: 2mm;    
+                    }
+                }
+            }
+        }
+    }
+}
+                
+            
+        
+    
