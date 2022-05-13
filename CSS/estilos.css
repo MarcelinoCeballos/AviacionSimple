@@ -145,8 +145,9 @@
     display: flex;
     flex-direction: row;
     justify-content:left;  
-    padding-top: 80px;
+    padding-top: 150px;
     padding-left: 50px;
+    font-size: 350%;
     color:black;
 }
 /* INDEX.HTML */
@@ -181,6 +182,12 @@
     justify-content: center;
     align-items: center;
 }
+.titulo__bajofoto {
+    font-size: xx-large;
+}
+.comentario__titulo--bajofoto {
+    color:rgb(47, 49, 49)
+}
 .contenedor__definicionmateria {
     display: flex;
     flex-direction: column;
@@ -191,6 +198,7 @@
 .definicion__materia {
     padding-top: 30px;
     text-align: center;
+    width: 700px;
 }
 .partes__del--motor {
     display: flex;
@@ -258,7 +266,6 @@
     align-items: center;
     width: 1365px;
     min-height: 500px;
-    width: 1365px;
     padding: 1rem;
 }
 .seccion__historia {
@@ -282,7 +289,8 @@
     position: relative;
     font-family:"Dancing Script", cursive;
     padding-top: 50px;
-    color: grey;  
+    color: grey;
+    font-size: xxx-large;  
 }
 .h1::after,h1::before{
   content:'';
@@ -290,7 +298,7 @@
   width:120px;
   height:2px;
   background-color:grey;
-  top: 77px;
+  top: 85px;
   left: -140px;
 } 
 .h1::before,h1::after{
@@ -299,12 +307,11 @@
     width:120px;
     height:2px;
     background-color:grey;
-    top: 77px;
+    top: 85px;
     right: -140px;
 } 
 .engine {
     width: 30px;
-    top: 50px;
 }
 /* PLANTAS.HTML */
 /* CULATA */
@@ -319,7 +326,7 @@
 /* PLANTAS.HTML */
 /* CULATA */
 /* TITULO  */
-.encabezado__titulo--culata {
+.titulo__culata {
     margin-left: 50px;
     padding-left: 90px;
     padding-top: 130px;
@@ -372,8 +379,8 @@
 }
 /* ESTRUCTURA.HTML */
 /* FUSELAJE */
-/* FOTO */
-.encabezado__plantas--fuselaje {
+/* FOTO */ 
+.foto__fuselaje {
     background-image: url(../images/Fuselaje1.jpg);  
     background-repeat: no-repeat;
     background-size: cover;
@@ -394,8 +401,8 @@
 /* ESTRUCTURA.HTML */
 /* ALA */
 /* FOTO  */
-.encabezado__plantas--ala {
-    background-image: url(../images/Ala.jpg);  
+.foto__tren {
+    background-image: url(../images/Tren\ de\ Aterrizaje.jpg);  
     background-repeat: no-repeat;
     background-size: cover;
     min-height: 500px;
@@ -415,7 +422,7 @@
 /* ESTRUCTURA.HTML */
 /* EMPENAJE */
 /* FOTO */
-.encabezado__plantas--empenaje {
+.foto__empenaje {
     background-image: url(../images/Empenaje.jpg);  
     background-repeat: no-repeat;
     background-size: cover;
@@ -542,7 +549,7 @@
 
 /* MEDIA QUERYS */
 /* Desktop Inicial */
-@media screen and (max-width: 320px) {
+@media screen and (max-width: 425px) {
 
 * {
     margin: 0;

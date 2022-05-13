@@ -1,32 +1,35 @@
 <!DOCTYPE html>
 <html lang="es">
-    <head>git 
+    <head> 
         <meta charset="UTF-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0"><!--Optimización p/diferentes dispositivos-->
         <title>Inicio - Aviacion Simple</title><!--Nombre en la pestaña de la web-->          
         <link rel="stylesheet" href="../CSS/estilos.css"><!--CSS external setup-->
         <script src="https://kit.fontawesome.com/e0d0b4a478.js" crossorigin="anonymous"></script>
-        <link rel="stylesheet" href=".././CSS/bootstrap.min.css">
-        <script src="./CSS/js/bootstrap.bundle.min.js"></script>
+        <link rel="stylesheet" href="../CSS/bootstrap.min.css">
+        <script src="./js/bootstrap.bundle.min.js"></script>
         <link href='https://fonts.googleapis.com/css?family=Dancing Script' rel='stylesheet'>
     </head>
-    <body class="body"><!--Main body with "Header//subjects//video//and Footer"-->        
+    <body class="body">       
         <header class="header">
-            <a tittle="AviacionSimple href="index.html><img  class="imagen__logo"  src="../images/Logo.png" alt="AviacionSimple" width="125"></a>
-            <i class="icono__hamburguesa fas fa-bars"></i>
+            <div class="animacion">
+                <a tittle="AviacionSimple href="index.html><img  class="imagen__logo"  src="../images/Logo.png" alt="AviacionSimple" width="125"></a>  
+            </div>                               
             <nav class="nav">
                 <ul id= "menu" class="nav__list">
                     <li class="nav__items"><a class="nav__enlace" href="../index.html">Inicio</a></li>
-                    <li class="nav__items"><a class="nav__enlace" href="./pages/Plantas.html">Plantas </a></li>
-                    <li class="nav__items"><a class="nav__enlace" href="./pages/Estructura.html">Estructura</a></li>
-                    <li class="nav__items"><a class="nav__enlace" href="./pages/Sistemas.html">Sistemas</a></li>                                                     
-                    <li class="nav__items"><a class="nav__enlace" href="./pages/Contacto.html">Contacto</a></li> 
-                    <li class="nav__items"><a class="nav__enlace" href="./https://www.youtube.com/channel/UCc3c5Ldw0zKNUbhxEWrOBHg"><VIDEOS</a></li>                                                       
+                    <li class="nav__items"><a class="nav__enlace" href="./Plantas.html">Plantas </a></li>
+                    <li class="nav__items"><a class="nav__enlace" href="./Estructura.html">Estructura</a></li>
+                    <li class="nav__items"><a class="nav__enlace" href="./Sistemas.html">Sistemas</a></li>                                                     
+                    <li class="nav__items"><a class="nav__enlace" href="./Contacto.html">Contacto</a></li> 
+                    <li class="nav__items "><a class="nav__enlace nav__video" href="https://www.youtube.com/channel/UCc3c5Ldw0zKNUbhxEWrOBHg"><u>Videos</u></a></li>                                                       
                 </ul>                     
-            </nav>                                      
-        </header> 
-        <main class="main"> 
+            </nav>
+            <i class="icono__hamburguesa fas fa-bars"></i>                                    
+        </header>       
+        <main class="main">
+         <!-- HISTORIA -->
             <section class="historia">
                 <article class="seccion__historia">
                     <div class="contenedor__seccion--historia">
@@ -36,131 +39,179 @@
                         <p class="historia__texto"> El motor, tal como lo conocemos hoy, fue desarrollado por el alemán Nikolaus Otto, quien en 1886 patentó el diseño de un motor de combustión interna a cuatro tiempos,
                             basado en los estudios del inventor francés Alphonse Beau de Rochas de 1862, que a su vez se basó en el modelo de combustión interna de Barsanti y Matteucci.</p>
                     </div>
+                    </br>
                     <div>
                         <img class="engine" src="../images/engine.png">
                     </div>
                 </article>
-            </section>
-        <!--LA CULATA-->    
-            <section >
-                <article CLASS="foto__culata"><!--TITLE & PHOTO-->
-                    <div class>
-                        <h1 class="encabezado__titulo--culata">LA CULATA</h1><!--title-->
+            </section>           
+            <section class="section">
+                <article class="foto__culata">
+                    <div class="contenedor__titulo--foto" >
+                        <h1 class="nombre__materia--plantas">LA CULATA</h1><!--title-->
                     </div> 
-                </article>                                                                    
-                <article class="contenedor__bajofoto"> 
-                    <div >
-                        <div class="alinear__encabezado">
-                             <h1>La Culata</h1> 
-                            <h3 > Pieza fija del motor</h3>
-                    </div> 
-                    </div>                 
-                    <div class="contenedor__definicionmateria">
-                        <p class="definicion__materia">La culata, es una pieza fija del motor, dispuesta a modo de tapa sobre el cilindro, (por ello se la conoce tambien como "tapa de cilindro").
-                         La culata va enroscada al cilindro y esta, alberga las válvulas y bujías. La culata es uno de los límites fundamentales de la cámara de combustión.   </p> 
-                        
-                    </div>
-                    <div>
-                        <div class="partes__del--motor" >
-                         <p>Boca de admisión</p>
-                            <p>Boca de escape</p>
-                            <p>Orificio roscado de bujía</p>
-                            <p>Aletas de refrigeración</p>
-                        </div>
-                    </div>
-                    <div>
-                        <h4>Cuatro (4) son las partes principales de la culata. </h4>
-                    </div>
-                </article> 
-            </section>      
-            <!-- LA VÁLVULA -->
-            <section >
-                <article CLASS="foto__valvula"><!--TITLE & PHOTO-->
-                    <div class>
-                        <h1 class="encabezado__titulo--culata">LA VÁLVULA</h1><!--title-->
-                    </div> 
-                </article>                                                                    
-                <article class="contenedor__bajofoto"> 
-                    <div >
-                        <div class="alinear__encabezado">
-                             <h1>Las Válvulas</h1> 
-                            <h3 > Piezas móviles del motor</h3>
-                    </div> 
-                    </div>                 
-                    <div class="contenedor__definicionmateria">
-                        <p class="definicion__materia">Las válvulas son piezas móviles del motor. Estas, van colocadas y sujetas a la culata. Las válvulas funcionan a modo de puertas, permitiendo la entrada y la salida 
-                            del cilindro. Hay dos tipos de válvulas; la Válvula de Admisión y la Válvula de Escape. La válvula de admisión permite el ingreso del aire y combustible al interior del cilindro. 
-                            La válvula de escape permite la salida de los gases, producto de la combustión, hacia el exterior. </p> 
-                        
-                    </div>
-                    <div>
-                        <div class="partes__del--motor" >
-                            <p>Pié</p>
-                            <p>Vástago</p>
-                            <p>Asiento</p>
-                            <p>Platillo</p>
-                            <p>Ranura</p>
-                        </div>
-                    </div>
-                    <div>
-                        <h4>Cinco (5) son las partes principales de una válvula. </h4>
-                    </div>
-                </article> 
-            </section>      
-            <!-- EL CILINDRO -->
-            <section >
-                <article CLASS="foto__cilindro"><!--TITLE & PHOTO-->
-                    <div class>
-                        <h1 class="encabezado__titulo--culata">EL CILINDRO</h1><!--title-->
-                    </div> 
-                </article>                                                                    
-                <article class="contenedor__bajofoto"> 
-                    <div >
-                        <div class="alinear__encabezado">
-                             <h1>El Cilindro</h1> 
-                            <h3 > Pieza fija del motor</h3>
-                    </div> 
-                    </div>                 
-                    <div class="contenedor__definicionmateria">
-                        <p class="definicion__materia">El Cilindro, propiamente dicho, es una pieza fija del motor de forma cilíndrica, hueca y abierta por ambos lados. En uno de sus extremos (el superior) va enroscada la Culata. 
-                            El otro extremo (inferior) se mantiene abierto y conecta con el carter. El Cilindro es el espacio donde se producen los eventos del motor y dentro de este trabajan El Pistón y La Biela. 
-                            El Cilindro y la Culata vienen unidos de fábrica y un mecánico nunca los manipulará por separado en las tareas de mantenimiento. Por ello, al estudiar las partes de un cilindro consideraremos algunas partes de la Culata propiamente dicha. </p>                        
-                    </div>
-                    <div>
-                        <div class="partes__del--motor" >
-                            <p>Culata</p>
-                            <p>Orificio Roscado de bujía</p>
-                            <p>Guía de válvulas</p>
-                            <p>Aletas de Refrigeración</p>
-                            <p>Cilindro</p>
-                            <p>Brida de Sujeción</p>
-                            <p>Falda</p>
-                        </div>
-                    </div>
-                    <div>
-                        <h4>Siete (7) son las partes principales de una válvula. </h4>
-                    </div>               
                 </article>
-            <!-- VOLAR -->
-            <section >
-                <article class="contenedor__volar">
-                    <div>
-                        <h4 CLASS="titulo__video">¡¡Vamos a ver cómo es un Cilindro!!</h4>
+            </section> 
+         <!-- CULATA -->          
+            <section class="section">                        
+                <article class="contenedor__bajofoto" >
+                    <div class="contenedor__titulo--bajofoto">
+                        <div class="alinear__encabezado">
+                            <h1 class="titulo__bajofoto">La Culata</h1> 
+                            <h3 class="comentario__titulo--bajofoto"> "Parte fija del motor"</h3>
+                        </div> 
+                    </div>                 
+                    <div class="contenedor__definicionmateria">
+                        <p class="definicion__materia lead">La culata, es una pieza fija del motor, dispuesta a modo de tapa sobre el cilindro, (por ello se la conoce tambien como "tapa de cilindro").
+                            La culata va enroscada al cilindro y esta, alberga las válvulas y bujías. La culata es uno de los límites fundamentales de la cámara de combustión.</p>
                     </div>
-                    <div>
-                        <iframe class="volar__video"  url="https://youtu.be/cIBWNu9fIro"></iframe>
+                    </br>
+                    <div class="contenedor__partes--motor">
+                        <div class="partes__del--motor" >
+                            <p class="partes__items">Boca admisión</p>
+                            <p class="partes__items">Boca escape</p>
+                            <p class="partes__items">Orificio bujía</p>
+                            <p class="partes__items">soporte balancín</p>
+                            <p class="partes__items">Aletas refrigeración</p>                           
+                        </div>
+                    </div>
+                    </br>
+                    <div class="aclaración__partes--bajofoto">
+                        <h4 class="aclaracion">Cinco (5) son las partes principales de una culata. </h4>
+                    </div>
+                </article> 
+            </section>                             
+        <!-- VALVULAS -->
+            <section class="section">
+                <article class="foto__valvula">
+                    <div class="contenedor__titulo--foto">
+                        <h1 class="nombre__materia--estructura display-3">LAS VÁLVULAS</h1>
+                    </div>
+                </article>
+            </section>
+            <section class="section">  
+                <article class="contenedor__bajofoto"> 
+                    <div class="contenedor__titulo--bajofoto">
+                        <div class="alinear__encabezado">
+                            <h1 class="titulo__bajofoto">Las válvulas</h1> 
+                            <h3 class="comentario__titulo--bajofoto"> "Piezas móviles del motor"</h3>
+                        </div> 
+                    </div>                 
+                    <div class="contenedor__definicionmateria">
+                        <p class="definicion__materia lead">Las válvulas son piezas móviles del motor. Estas, van colocadas y sujetas a la culata. Las válvulas funcionan a modo de puertas, permitiendo la entrada y la salida 
+                            del cilindro. Hay dos tipos de válvulas; la Válvula de Admisión y la Válvula de Escape. La válvula de admisión permite el ingreso del aire y combustible al interior del cilindro. 
+                            La válvula de escape permite la salida de los gases, producto de la combustión, hacia el exterior.</p>
+                    </div>
+                    </br>
+                    <div class="contenedor__partes--motor">
+                        <div class="partes__del--motor" >
+                            <p class="partes__items">Platillo</p>
+                            <p class="partes__items">Asiento</p>
+                            <p class="partes__items">Cuerpo</p>
+                            <p class="partes__items">Vástago</p>
+                            <p class="partes__items">Pié</p>
+                        </div>
+                    </div>
+                    </br>
+                    <div class="aclaración__partes--bajofoto">
+                        <h4 class="aclaracion"> Cinco (5) son las partes de una válvula. </h4>
+                    </div>
+                </article>
+            </section>                                
+        <!-- CILINDROS -->
+            <section class="section" ><!-- TITLE & PHOTO -->
+                <article CLASS="foto__cilindro">
+                    <div class="contenedor__titulo--foto">
+                        <h1 class="nombre__materia--sistemas">LOS CILINDROS</h1>
+                    </div>
+                </article> 
+            </section>  
+            <section class="section">
+                <article class="contenedor__bajofoto"><!--First subject. Element father with two columns & one row--> 
+                    <div class="contenedor__titulo--bajofoto">
+                        <div class="alinear__encabezado">
+                            <h1 class="titulo__bajofoto">El Cilindro</h1> 
+                            <h3 class="comentario__titulo--bajofoto">  "Pieza fija del motor"</h3>
+                        </div> 
+                    </div>                 
+                    <div class="contenedor__definicionmateria">
+                        <p class="definicion__materia lead">El Cilindro, propiamente dicho, es una pieza fija del motor de forma cilíndrica, hueca y abierta por ambos lados.
+                             En uno de sus extremos (el superior) va enroscada la Culata. El otro extremo (inferior) se mantiene abierto y conecta con el carter. 
+                            El Cilindro es el espacio donde se producen los eventos del motor y dentro de este trabajan El Pistón y La Biela. 
+                            El Cilindro y la Culata vienen unidos de fábrica y un mecánico nunca los manipulará por separado en las tareas de mantenimiento. 
+                            Por ello, al estudiar las partes de un cilindro consideraremos algunas partes de la Culata propiamente dicha.</p>
+                    </div>
+                    </br>
+                    <div class="contenedor__partes--motor">
+                        <div class="partes__del--motor" >
+                            <p class="partes__items">Falda </p>
+                            <p class="partes__items">Brida de sujeción</p>
+                            <p class="partes__items">Aletas de refrigeración</p> 
+                            <p class="partes__items">Cilindro propiamente dicho </p>
+                            <p class="partes__items">Culata</p>
+                            <p class="partes__items">Guía de válvulas </p> 
+                            <p class="partes__items">Orificio de bujía</p> 
+                        </div>
+                    </div> 
+                    </br>   
+                    <div class="aclaracion__partes--bajofoto">
+                        <h4 class="aclaracion">Siete (7) son las partes principales de un cilindro.</h4>
+                    </div> 
+                </article> 
+            </section>                             
+        <!-- MECANICO -->
+            <section class="section" ><!-- TITLE & PHOTO -->
+                <article CLASS="foto__volar">
+                    <div class="contenedor__titulo--foto">
+                        <h1 class="nombre__materia--piloto">Mecánico de Avión</h1>
+                    </div>                   
+                </article>
+            </section>    
+            <section class="section" > <!-- TEXT -->
+                <article class="contenedor__bajofoto"><!--First subject. Element father with two columns & one row--> 
+                    <div >
+                        <div class="alinear__encabezado">
+                            <h1 class="titulo__bajofoto">¿Querés aprender mecánica de aviones?</h1> 
+                            <h3 class="comentario__titulo--bajofoto">  "Te guiamos en el proceso a seguir"</h3>
+                        </div> 
+                    </div>                 
+                    <div class="contenedor__definicionmateria">
+                        <p class="definicion__materia lead">Lugar para la definición de mecánico de aviones</p>
+                    </div>
+                    </br>
+                    <div class="contenedor__partes--motor">
+                        <div class="partes__del--motor" >
+                            <p class="partes--items"> Cat. A</p>
+                            <p class="partes--items"> Cat. B</p>
+                            <p class="partes--items"> Cat. C</p> 
+                            <p class="partes--items"> Type Rated</p>   
+                        </div>
+                    </div>  
+                    </br>
+                    <div class="aclaracion__partes--bajofoto">
+                        <h4 class="aclaracion">¿A qué Licencia deseas aspirar?</h4>
+                    </div>
+                </article>
+            </section>  
+         <!-- VIDEO -->           
+            <section class="section">
+                <article class="contenedor__volar">
+                    <div class="contenedor__video--volar">
+                        <iframe class="video__volar"  src="https://www.youtube.com/embed/i_B4GUTYy8Q" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
                     </div> 
                 </article>              
-                </section>               
-        </main>                           
+            </section>                                   
+        </main>
         <footer class="footer">                       
-            <h6 class="footer__derechos">Derechos Reservados</h6>         
-            <a href="https://www.anac.gov.ar/anac/web/" target="_blank" ><img class="footer__anac" src="../images/ANAC.jpg" alt="ANAC" width="100" height="50"></a>
-            <a href="https://fada.org.ar/web/" target="_blank"><img class="footer__fada" src="../images/Fada.jpg" alt=""></a>
-            <a href="https://www.facebook.com/marcelinoceballos"><img class="footer__face" src="../images/Facebook.jpg" alt=""></a>
-            <a href="https://www.youtube.com/channel/UCc3c5Ldw0zKNUbhxEWrOBHg"><img class="footer__youtube" src="../images/Youtube.jpg" alt=""></a>           
-    </footer>              
+                <h6 class="footer__derechos">Derechos Reservados</h6>         
+                <a href="https://www.anac.gov.ar/anac/web/" target="_blank" ><img class="footer__anac" src="../images/ANAC.jpg" alt="ANAC" width="100" height="50"></a>
+                <a href="https://fada.org.ar/web/" target="_blank"><img class="footer__fada" src="../images/Fada.jpg" alt=""></a>
+                <a href="https://www.facebook.com/marcelinoceballos"><img class="footer__face" src="../images/Facebook.jpg" alt=""></a>
+                <a href="https://www.youtube.com/channel/UCc3c5Ldw0zKNUbhxEWrOBHg"><img class="footer__youtube" src="../images/Youtube.jpg" alt=""></a>           
+        </footer>             
     </body>
 </html>
+                                                            
+        
                                                             
         

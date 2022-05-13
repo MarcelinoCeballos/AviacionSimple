@@ -58,8 +58,9 @@ main .section .foto__plantas {
     display: flex;
     flex-direction: row;
     justify-content: left;
-    padding-top: 80px;
+    padding-top: 150px;
     padding-left: 50px;
+    font-size: 350%;
     color: black; }
 
 main .section .contenedor__bajofoto {
@@ -76,6 +77,10 @@ main .section .contenedor__bajofoto {
     flex-direction: column;
     justify-content: center;
     align-items: center; }
+    main .section .contenedor__bajofoto .contenedor__titulo--bajofoto .alinear__encabezado .titulo__bajofoto {
+      font-size: xx-large; }
+    main .section .contenedor__bajofoto .contenedor__titulo--bajofoto .alinear__encabezado .comentario__titulo--bajofoto {
+      color: #2f3131; }
 
 main .section .contenedor__definicionmateria {
   display: flex;
@@ -128,6 +133,10 @@ main .section .contenedor__bajofoto {
     flex-direction: column;
     justify-content: center;
     align-items: center; }
+    main .section .contenedor__bajofoto .contenedor__titulo--bajofoto .alinear__encabezado .titulo__bajofoto {
+      font-size: xx-large; }
+    main .section .contenedor__bajofoto .contenedor__titulo--bajofoto .alinear__encabezado .comentario__titulo--bajofoto {
+      color: #2f3131; }
 
 main .section .contenedor__definicionmateria {
   display: flex;
@@ -178,6 +187,10 @@ main .section .contenedor__bajofoto {
     flex-direction: column;
     justify-content: center;
     align-items: center; }
+    main .section .contenedor__bajofoto .contenedor__titulo--bajofoto .alinear__encabezado .titulo__bajofoto {
+      font-size: xx-large; }
+    main .section .contenedor__bajofoto .contenedor__titulo--bajofoto .alinear__encabezado .comentario__titulo--bajofoto {
+      color: #2f3131; }
 
 main .section .contenedor__definicionmateria {
   display: flex;
@@ -228,6 +241,10 @@ main .section .contenedor__bajofoto {
     flex-direction: column;
     justify-content: center;
     align-items: center; }
+    main .section .contenedor__bajofoto .contenedor__titulo--bajofoto .alinear__encabezado .titulo__bajofoto {
+      font-size: xx-large; }
+    main .section .contenedor__bajofoto .contenedor__titulo--bajofoto .alinear__encabezado .comentario__titulo--bajofoto {
+      color: #2f3131; }
 
 main .section .contenedor__definicionmateria {
   display: flex;
