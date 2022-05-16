@@ -6,56 +6,57 @@
 }
 /* FUENTE DE LA PAGINA */
 .body {
-    position: absolute;
-    min-height: 100vh;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;   
+    font-family: Verdana, Geneva, Tahoma, sans-serif;     
 }
 .header {
-    /* Diseño */
-    height: 100px;
-    width: 100%;
+    display: grid;
+    grid-template-columns: 145px 600px ;
+    grid-template-rows: 100px;
+    background-color:blueviolet;
+    min-width: 100%;
+    min-height: 100px;
     background-color: aliceblue; 
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.4);
-    /* Disposicón */
-    display: flex;
-    flex-direction: row;
-    justify-content:center;
-    align-items:center; 
+     
     /* Fijación */   
     position: fixed;
     top: 0;
     z-index: 10;
-} 
-/* HEADER */
-/* ISO */
-.imagen__logo {  
-    border-radius: 2mm;
-    margin-left: 10%;     
-}
+}  
 .animacion {
     display: flex;
     flex-direction: column;
     justify-content: center;
+    align-items: center;
     background-image: linear-gradient(navy, white);
-    width: 200px;
-    height: 100px;
+    min-width: 15%;
+    min-height: 100px;
+}
+/* HEADER */
+/* ISO */
+.imagen__logo { 
+    width: 125px;   
+    border-radius: 2mm;     
 }
 .imagen__logo:hover {
     transform:rotate(-20deg);
 }
-/* HEADER */
-/* ESPACIO DEL NAVEGADOR */
+.contenedor__nav {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    width: 600px;
+}
 .nav {
     display: flex;
     flex-direction: row;
-    justify-content:left;
-    align-items:center;
-    width: 100%;       
+    justify-content: center;
+    align-items: center;
 }
 /* HEADER */
 /* ATRIBUTOS DE LA LISTA DE NAVEGACIÓN */
 .nav__list {
-    width: 750px;
     display: flex;
     flex-direction: row;
     justify-content:left;
@@ -63,7 +64,7 @@
     list-style-type: none;
     gap: 2rem; 
     padding-top: 20px;
-    margin-left: 3%;   
+       
 } 
 /* HEADER */
 /* ATRIBUTOS ITEMS DE NAVEGACION */
@@ -73,70 +74,49 @@
     background-color: aliceblue; 
     border-radius: 2px;  
 }
-/* HEADER */
-/* BOTON VIDEO */
-.nav__video {
-    height: 100%;
-    transition: height 2s;
-}
-.nav__video:hover {
-    size: 200%;
-}
+
 /* INDEX.HTML */
 /* PLANTAS */
 /* FOTO */
 .foto__plantas {
-    display: flex;
-    background-image: url(../images/DouglasDC3.jpg);  
+    background-image: url(../images/DouglasDC31.png);  
     background-repeat: no-repeat;
     background-size: cover;
-    background-position: center;
-    min-height: 600px;
-    width: 1365px;
-    flex-direction: column;
-    justify-content: top;      
+    min-height: 600px; 
+    min-width: 100%;      
 }
 /* INDEX.HTML */
 /* ESTRUCTURA */
 /* FOTO */
 .foto__estructura {
-    display: flex;
     background-image: url(../images/Fuselaje1.jpg);  
     background-repeat: no-repeat;
     background-size: cover;
-    background-position: center;
     min-height: 500px;
-    width: 1365px;
-    flex-direction: column;
-    justify-content: top;   
+    min-width: 100%;
+      
 }
 /* INDEX.HTML */
 /* SISTEMAS */
 /* FOTO */
 .foto__sistemas {
-    display: flex;
     background-image: url(../images/Sistemas1.jpg);  
     background-repeat: no-repeat;
     background-size: cover;
-    background-position: center;
     min-height: 500px;
-    width: 1365px;
-    flex-direction: column;
-    justify-content: top;   
+    min-width: 100%;
+      
 }
 /* INDEX.HTML */
 /* VOLAR */
 /* FOTO */
 .foto__volar {
-    display: flex;
     background-image: url(../images/Cabina.jpg);  
     background-repeat: no-repeat;
     background-size: cover;
-    background-position: center;
     min-height: 500px;
-    width: 1365px;
-    flex-direction: column;
-    justify-content: top;   
+    min-width: 100%;
+    
 }
 /* INDEX.HTML */
 /* PLANTAS */
@@ -173,7 +153,7 @@
     align-items:center;
     background-color: aliceblue;
     min-height: 500px;
-    width: 1365px;
+    min-width: 100%;
     padding: 1rem;   
 }
 .alinear__encabezado {
@@ -193,12 +173,12 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    width: 100%;
+    min-width: 100%;
 }
 .definicion__materia {
     padding-top: 30px;
     text-align: center;
-    width: 700px;
+    width: 60%;
 }
 .partes__del--motor {
     display: flex;
@@ -239,7 +219,7 @@
     align-items:center;
     background-color: blue;
     min-height: 500px;
-    width: 1365px;
+    min-width: 100%;
     padding: 1rem;
     grid-template-columns: 1fr 1fr;
 }
@@ -254,17 +234,12 @@
 .titulo__video {
     color:aliceblue;
 }
-.formulario {
-    width: 300px;
-    position:relative;
-    top: -250px;
-}
 .historia {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    width: 1365px;
+    min-width: 100%;
     min-height: 500px;
     padding: 1rem;
 }
@@ -274,15 +249,11 @@
     justify-content: center;
     align-items: center;
 }
-.contenedro__seccion--historia {
-    text-align: center;  
-}
 .historia__texto {
+    padding-top:30px;
     text-align: center;
     width: 600px;
-    position:relative;
-    padding-top:30px;
-    color:black
+    color:black;
 }
 .titulo__seccion--historia {
     display: inline-block;
@@ -292,24 +263,6 @@
     color: grey;
     font-size: xxx-large;  
 }
-.h1::after,h1::before{
-  content:'';
-  position: absolute;
-  width:120px;
-  height:2px;
-  background-color:grey;
-  top: 85px;
-  left: -140px;
-} 
-.h1::before,h1::after{
-    content:'';
-    position: absolute;
-    width:120px;
-    height:2px;
-    background-color:grey;
-    top: 85px;
-    right: -140px;
-} 
 .engine {
     width: 30px;
 }
@@ -321,7 +274,7 @@
     background-repeat: no-repeat;
     background-size: cover;
     min-height: 500px;
-    width: 1365px; 
+    min-width: 100%; 
 }
 /* PLANTAS.HTML */
 /* CULATA */
@@ -343,19 +296,9 @@
     background-repeat: no-repeat;
     background-size: cover;
     min-height: 500px;
-    width: 1365px;
+    min-width: 100%;
 }
-/* PLANTAS.HTML */
-/* VÁLVULAS */
-/* TITULO  */
-.encabezado__titulo--valvula {
-    margin-left: 50px;
-    padding-left: 90px;
-    padding-top: 130px;
-    font-size:350%;
-    font-family:Verdana, Geneva, Tahoma, sans-serif;
-    color:azure
-}
+
 /* PLANTAS.HTML */
 /* CILINDRO */
 /* FOTO  */
@@ -364,19 +307,9 @@
     background-repeat: no-repeat;
     background-size: cover;
     min-height: 500px;
-    width: 1365px;
+    min-width: 100%;
 }
-/* PLANTAS.HTML */
-/* CILINDRO */
-/* TITULO  */
-.encabezado__titulo--cilindro {
-    margin-left: 50px;
-    padding-left: 90px;
-    padding-top: 130px;
-    font-size:350%;
-    font-family:Verdana, Geneva, Tahoma, sans-serif;
-    color:azure
-}
+
 /* ESTRUCTURA.HTML */
 /* FUSELAJE */
 /* FOTO */ 
@@ -385,19 +318,9 @@
     background-repeat: no-repeat;
     background-size: cover;
     min-height: 500px;
-    width: 1365px;
+    min-width: 100%;
 }
-/* PLANTAS.HTML */
-/* PISTON */
-/* TITULO  */
-.encabezado__titulo--piston {
-    margin-left: 50px;
-    padding-left: 90px;
-    padding-top: 130px;
-    font-size:350%;
-    font-family:Verdana, Geneva, Tahoma, sans-serif;
-    color:azure
-}
+
 /* ESTRUCTURA.HTML */
 /* ALA */
 /* FOTO  */
@@ -406,19 +329,9 @@
     background-repeat: no-repeat;
     background-size: cover;
     min-height: 500px;
-    width: 1365px;
+    min-width: 100%;
 }
-/* PLANTAS.HTML */
-/*  BIELA */
-/* TITULO */
-.encabezado__titulo--biela {
-    margin-left: 50px;
-    padding-left: 90px;
-    padding-top: 130px;
-    font-size:350%;
-    font-family:Verdana, Geneva, Tahoma, sans-serif;
-    color:rgb(47, 49, 49)
-}
+
 /* ESTRUCTURA.HTML */
 /* EMPENAJE */
 /* FOTO */
@@ -427,79 +340,65 @@
     background-repeat: no-repeat;
     background-size: cover;
     min-height: 500px;
-    width: 1365px;  
+    min-width: 100%;  
 }
-/* PLANTAS.HTML */
-/* CIGÜEÑAL */
-/* TITULO  */
-.encabezado__titulo--ciguenal {
-    margin-left: 50px;
-    padding-left: 90px;
-    padding-top: 130px;
-    font-size:350%;
-    font-family:Verdana, Geneva, Tahoma, sans-serif;
-    color:azure
-}
+
 /* SISTEMAS.HTML */
 /* HIDRÁULICO */
 /* FOTO */
-.encabezado__plantas--hidraulico {
+.efoto__hidraulico {
     background-image: url(../images/Hidraulico.jpg);  
     background-repeat: no-repeat;
     background-size: cover;
     min-height: 500px;
-    width: 1365px;
+    min-width: 100%;
 }
 /* SISTEMAS.HTML */
 /* HIDRÁULICO */
 /* FOTO */
-.encabezado__plantas--neumatico {
+.foto__neumatico {
     background-image: url(../images/Neumático.jpg);  
     background-repeat: no-repeat;
     background-size: cover;
     min-height: 500px;
-    width: 1365px;  
+    min-width: 100%; 
 }
 /* SISTEMAS.HTML */
 /* HIDRÁULICO */
 /* FOTO */
-.encabezado__plantas--combustible {
+.foto__combustible {
     background-image: url(../images/Combustible.jpg);  
     background-repeat: no-repeat;
     background-size: cover;
     min-height: 500px;
-    width: 1365px;     
+    min-width: 100%;    
 }
 /* FOOTER */
-/* FONDO y TAMAÑO */
-.footer {   
-    display: flex;
-    flex-direction: row;
-    justify-content:space-around;
-    align-items:center;
-    background-color:aliceblue; 
-    min-width: 100%;
-    min-height: 25vh;     
+/* MAPA */
+.mapa {
+    display: grid;
+    grid-template-columns: 260px 260px 260px 260px 260px;
+    grid-template-rows: 300px 300px;
+    background-color:blueviolet;
+    width: 100%;
 }
-/* FOOTER */
-/* CONTENEDOR */
-/* Derechos Reservados */
-.footer__derechos {
+.mapa__area {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.links {
     display: flex;
     flex-direction: row;
-    justify-content:space-between;
-    align-items:center;
-    color:black;
-    position: relative;   
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
 }
 /* FOOTER */
 /* CONTENEDOR */
 /* ANAC */
 .footer__anac {
-    display: flex;
-    flex-direction: row;
-    justify-content:space-between;
-    align-items:center;
     width: 100px;
     height: 50px;  
 }
@@ -507,77 +406,64 @@
 /* CONTENEDOR */
 /* FADA */
 .footer__fada {
-    display: flex;
-    flex-direction: row;
-    justify-content:space-between;
-    align-items:center;
     width: 175px;  
 }
 /* FOOTER */
 /* CONTENEDOR */
 /* FACE */
 .footer__face {
-    display: flex;
-    flex-direction: row;
-    justify-content:space-between;
-    align-items:center;
-    width: 60px;
-    top: -30px;      
+    width: 60px;       
 }
 /* FOOTER */
 /* CONTENEDOR */
 /* YOUTUBE */
 .footer__youtube {
-    display: flex;
-    flex-direction: row;
-    justify-content:space-between;
-    align-items:center;
     width: 60px;    
 }
 /* ICONO HAMBURGUESA */
 /* OCULTAR */
 .icono__hamburguesa {
     display: none;
-    flex-direction: row;
-    justify-content:center;
-    align-items:center;
-    padding-right: 20px;
-    color: red; 
-    display: none;
 }
 
-
-/* MEDIA QUERYS */
-/* Desktop Inicial */
 @media screen and (max-width: 425px) {
 
-* {
+    * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
     }
     .nav {
         display: none;
-    }   
+    }
+    .nav__list {
+        display: none;
+    } 
+    .contenedor__nav {
+        display: none;
+    }  
     .icono__hamburguesa {     
         display: inline-block;
         color: red;
-        padding-left: 30px;
+    }
+    .header {
+        min-width: 1200px;
     }
     .foto__plantas {
-        width: 800px;
+        size: 50%;
+        min-width: 1200px;
     }
     .contenedor__bajofoto {
-        width: 800px;
+        width: 1200px;
     }
     .foto__estructura {
-        width: 800px;
+        width: 1200px;
     }
     .foto__sistemas {
-        width: 800px;
+        width: 1200px;
     }
     .foto__volar {
-        width: 800px;
+        width: 1200px;
     }
     .nombre__materia--sistemas { 
         font-size: 200%;
@@ -596,7 +482,7 @@
         flex-direction: column;
         justify-content: center;
         align-items: center;
-        width: 950px;
+        width: 1200px;
     }
     .volar__video {
         margin-left: -150px;
@@ -609,114 +495,31 @@
         margin-left: 0px;
         font-size: 50px;
     }      
-    .header {
-        width: 800px;   
-    }
+    
     .footer {
         display:flex;
         flex-direction: column;
         justify-content: space-between;
         align-items: center;
-        width: 800px;
+        width: 100%;
         height: 500px;
         margin-left: -100px;
     }
     .historia {
-        width: 800px;
+        width: 1200px;
     }
     .foto__culata {
-        width: 800px;
+        width: 1200px;
     }
     .foto__valvula {
-        width: 800px;
+        width: 1200px;
     }
     .foto__cilindro {
-        width: 800px;
+        width: 1200px;
     }
 } 
 
-@media screen and (min-width: 1900px) {
-    * {
-        margin: 0;
-        padding: 0;
-        box-sizing: border-box;
-        } 
-        .icono__hamburguesa {
-            display: none;
-        }
-        .foto__plantas {
-            width: 1900px
-        }
-        .contenedor__bajofoto {
-            width: 1900px
-        }
-        .foto__estructura {
-            width: 1900px
-        }
-        .foto__sistemas {
-            width: 1900px
-        }
-        .foto__volar {
-            width: 1900px
-        }
-        .nombre__materia--plantas { 
-            color: red;   
-        }
-        .nombre__materia--sistemas { 
-            font-size: 200%;
-            margin-top: -50px;
-            margin-left: -20px;
-            color:aliceblue;
-        }  
-        .nombre__materia--piloto { 
-            font-size: 200%;
-            margin-top: -50px;
-            margin-left: -20px;
-            color:white;
-        }
-        .contenedor__volar {
-            display:flex;
-            flex-direction: column;
-            justify-content: center;
-            align-items: center;
-            width: 1900px
-        }
-        .volar__video {
-            margin-left: -415px;
-            width: 950px;
-            height: 500px;
-        }
-        .nombre__materia--culata {
-            display: flex;
-            margin-top:-50px;
-            margin-left: 0px;
-            font-size: 50px;
-        }      
-        .header {
-            width: 1900px   
-        }
-        .footer {
-            display:flex;
-            flex-direction: column;
-            justify-content: space-between;
-            align-items: center;
-            width: 1900px;
-            height: 500px;
-            margin-left: -200px;
-        }
-        .historia {
-            width: 1900px
-        }
-        .foto__culata {
-            width: 1900px
-        }
-        .foto__valvula {
-            width: 1900px
-        }
-        .foto__cilindro {
-            width: 1900px
-        }
-    
+
 
 
        

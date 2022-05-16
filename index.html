@@ -4,30 +4,35 @@
         <meta charset="UTF-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0"><!--Optimización p/diferentes dispositivos-->
-        <title>Inicio - Aviacion Simple</title><!--Nombre en la pestaña de la web-->          
-        <link rel="stylesheet" href="CSS/estilos.css"><!--CSS external setup-->
-        <script src="https://kit.fontawesome.com/e0d0b4a478.js" crossorigin="anonymous"></script>
+        <meta name="keywords" content="motor, estructura, sistemas, plantas, avion"> <!-- SEO / FORMA OBSOLETA de Keywords -->
+        <meta name="description" concept="Contenido de materias aeronáuticas de educación secundaria de técnicos aeronáuticos"> <!-- SEO / FORMA CORRECTA de Keywords -->
+        <title>Inicio - Aviacion Simple</title> <!-- SEO / FORMA CORRECTA de Keywords -->         
+        <link rel="stylesheet" href="./CSS/estilos.css"><!--CSS external setup-->       
         <link rel="stylesheet" href="./CSS/bootstrap.min.css">
         <script src="./js/bootstrap.bundle.min.js"></script>
+        <script src="https://kit.fontawesome.com/e0d0b4a478.js" crossorigin="anonymous"></script>
     </head>
-    <body class="body"><!--Main body with "Header//subjects//video//and Footer"-->        
+    <body class="body">        
         <header class="header">
             <div class="animacion">
-                <a tittle="AviacionSimple href="index.html><img  class="imagen__logo"  src="images/Logo.png" alt="AviacionSimple" width="125"></a>  
-            </div>                               
-            <nav class="nav">
-                <ul id= "menu" class="nav__list">
-                    <li class="nav__items"><a class="nav__enlace" href="index.html">Inicio</a></li>
-                    <li class="nav__items"><a class="nav__enlace" href="pages/Plantas.html">Plantas </a></li>
-                    <li class="nav__items"><a class="nav__enlace" href="pages/Estructura.html">Estructura</a></li>
-                    <li class="nav__items"><a class="nav__enlace" href="pages/Sistemas.html">Sistemas</a></li>                                                     
-                    <li class="nav__items"><a class="nav__enlace" href="pages/Contacto.html">Contacto</a></li> 
-                    <li class="nav__items "><a class="nav__enlace nav__video" href="https://www.youtube.com/channel/UCc3c5Ldw0zKNUbhxEWrOBHg"><u>Videos</u></a></li>                                                       
-                </ul>                     
-            </nav>
+                <a tittle="AviacionSimple href="index.html><img  class="imagen__logo"  src="images/Logo.png" alt="AviacionSimple"></a>  
+            </div> 
+            <div class="contenedor__nav">                            
+                <nav class="nav">
+                    <ul id= "menu" class="nav__list">
+                        <li class="nav__items"><a class="nav__enlace" href="index.html">Inicio</a></li>
+                        <li class="nav__items"><a class="nav__enlace" href="pages/Plantas.html">Plantas </a></li>
+                        <li class="nav__items"><a class="nav__enlace" href="pages/Estructura.html">Estructura</a></li>
+                        <li class="nav__items"><a class="nav__enlace" href="pages/Sistemas.html">Sistemas</a></li>                                                     
+                        <li class="nav__items"><a class="nav__enlace" href="pages/Contacto.html">Contacto</a></li> 
+                        <li class="nav__items "><a class="nav__enlace nav__video" href="https://www.youtube.com/channel/UCc3c5Ldw0zKNUbhxEWrOBHg"><u>Videos</u></a></li>                                                       
+                    </ul>                     
+                </nav>
+            </div>  
             <i class="icono__hamburguesa fas fa-bars"></i>                                    
         </header>       
-        <main class="main">           
+        <main class="main"> 
+        <!-- POWER SECTION -->              
             <section class="section">
                 <article class="foto__plantas">
                     <div class="contenedor__titulo--foto" >
@@ -180,8 +185,9 @@
                         <h4 class="aclaracion">¿A qué Licencia deseas aspirar?</h4>
                     </div>
                 </article>
-            </section>             
-            <section class="section"> <!-- VIDEO SECTION -->
+            </section> 
+        <!-- VIDEO SECTION -->                
+            <section class="section"> 
                 <article class="contenedor__volar">
                     <div class="contenedor__video--volar">
                         <iframe class="video__volar"  src="https://www.youtube.com/embed/i_B4GUTYy8Q" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
@@ -189,12 +195,66 @@
                 </article>              
             </section>                                   
         </main>
-        <footer class="footer">                       
-                <h6 class="footer__derechos">Derechos Reservados</h6>         
-                <a href="https://www.anac.gov.ar/anac/web/" target="_blank" ><img class="footer__anac" src="images/ANAC.jpg" alt="ANAC" width="100" height="50"></a>
-                <a href="https://fada.org.ar/web/" target="_blank"><img class="footer__fada" src="images/Fada.jpg" alt=""></a>
-                <a href="https://www.facebook.com/marcelinoceballos"><img class="footer__face" src="images/Facebook.jpg" alt=""></a>
-                <a href="https://www.youtube.com/channel/UCc3c5Ldw0zKNUbhxEWrOBHg"><img class="footer__youtube" src="images/Youtube.jpg" alt=""></a>           
+    <!--FOOTER -->
+        <footer class="footer">
+            <section class="mapa"> 
+                <div class="mapa__area">
+                    <h3>AviacionSimple</h3> 
+                    <ul>
+                        <li><a href="./pages/Plantas.html">Plantas I</a></li>
+                        <li><a href="./pages/Estructura.html">Estructura I</a></li>
+                        <li><a href="./pages/Sistemas.html">Sistemas I</a></li>
+                        <li><a href="./pages/Contacto.html">Contacto</a></li>
+                    </ul>
+                </div> 
+                <div class="mapa__area">    
+                    <h3>Plantas I</h3> 
+                    <ul>
+                        <li>Culata</li>
+                        <li>Válvula</li>
+                        <li>Cilindro</li>
+                    </ul> 
+                </div>
+                <div class="mapa__area">    
+                    <h3>Estructura I</h3> 
+                    <ul>
+                        <li>Fuselaje</li>
+                        <li>Empenaje</li>
+                        <li>Tren Aterrizaje</li>
+                    </ul>   
+                </div> 
+                <div class="mapa__area">
+                    <h3>Sistemas I</h3> 
+                    <ul>
+                        <li>Hidráulico</li>
+                        <li>Neumático</li>
+                        <li>Combustible</li>
+                    </ul>           
+                </div> 
+                <div class="mapa__area">
+                    <h3>Contacto</h3> 
+                    <ul>
+                        <li>Comentarios</li>
+                        <li>Preguntas</li>
+                        <li>Más Info</li>
+                    </ul>           
+                </div>                 
+                <div class="mapa__area">
+                    <h6 class="footer__derechos">Derechos Reservados</h6> 
+                </div>  
+                <div class="mapa__area">     
+                    <a href="https://www.anac.gov.ar/anac/web/" target="_blank" ><img class="footer__anac" src="images/ANAC.jpg" alt="ANAC" width="100" height="50"></a>
+                </div>
+                <div class="mapa__area">
+                    <a href="https://fada.org.ar/web/" target="_blank"><img class="footer__fada" src="images/Fada.jpg" alt=""></a>
+                </div>
+                <div class="mapa__area">
+                     <a href="https://www.facebook.com/marcelinoceballos"><img class="footer__face" src="images/Facebook.jpg" alt=""></a>
+                </div>
+                <div class="mapa__area">
+                    <a href="https://www.youtube.com/channel/UCc3c5Ldw0zKNUbhxEWrOBHg"><img class="footer__youtube" src="images/Youtube.jpg" alt=""></a> 
+                </div> 
+            </section>              
         </footer>             
     </body>
 </html>
