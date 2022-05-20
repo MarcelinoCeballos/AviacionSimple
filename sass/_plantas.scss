@@ -1,0 +1,33 @@
+.main {
+    .historia {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        min-width: 100%;
+        min-height: 500px;
+        padding: 1rem;
+        .historia__seccion {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            .historia__seccion--box {
+                .historia__seccion--titulo {
+                    display: inline-block;
+                    position: relative;
+                    font-family:"Dancing Script", cursive;
+                    padding-top: 50px;
+                    color: grey;
+                    font-size: xxx-large;  
+                }
+                .historia__seccion--texto {
+                    padding-top:30px;
+                    text-align: center;
+                    width: 600px;
+                    color:black;
+                }
+            }
+        }
+    }
+}
