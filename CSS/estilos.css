@@ -6,16 +6,18 @@
 }
 /* FUENTE DE LA PAGINA */
 .body {
-    font-family: Verdana, Geneva, Tahoma, sans-serif;     
+    font-family: Verdana, Geneva, Tahoma, sans-serif;   
+    width: 100%;  
 }
+/* HEADER */
 .header {
     display: flex;
     flex-direction: row;
     justify-content: left;
     align-items: center;
     background-color: aliceblue;
-    min-width: 100%;
-    min-height: 80px;
+    max-width: 100%;
+    height: 80px;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.4);   
 }  
 .logo {
@@ -24,13 +26,12 @@
     justify-content: center;
     align-items: center;
     background-image: linear-gradient(navy, white);
-    min-width: 15%;
-    min-height: 80px;
+    width: 200px;
+    height: 80px;
 }
-/* HEADER */
-/* ISO */
 .logo__imagen { 
-    width: 150px;   
+    width: 145px;
+    height: 60px;   
     border-radius: 2mm;     
 }
 .logo__imagen:hover {
@@ -50,7 +51,6 @@
     align-items: center;
     padding-bottom: 20px;
 }
-/* HEADER */
 /* ATRIBUTOS DE LA LISTA DE NAVEGACIÓN */
 .nav__list {
     display: flex;
@@ -61,7 +61,6 @@
     gap: 2rem; 
     padding-top: 20px;      
 } 
-/* HEADER */
 /* ATRIBUTOS ITEMS DE NAVEGACION */
 .nav__enlace {
     color: blue; 
@@ -71,18 +70,24 @@
 }
 /* ICONO HAMBURGUESA */
 /* OCULTAR */
-.icono__hamburguesa {
+.icono {
     display: none;
 }
+
 /* INDEX */
 /* PLANTAS */
 /* Sección foto */
+.foto {
+    width: 100%;
+    height: 600px;
+}
 .foto__plantas {
     background-image: url(../images/DouglasDC31.png);  
     background-repeat: no-repeat;
     background-size: cover;
+    min-width: 100%; 
     min-height: 600px; 
-    min-width: 100%;      
+    object-fit: contain;     
 }
 .foto__titulo--plantas {
     display: flex;
@@ -93,8 +98,7 @@
     padding-left: 100px;
     color:black;
 }
-/* TODAS LAS SECCIONES */
-/* Sección texto */
+/* Sección texto */ /* TODAS LAS SECCIONES */
 .texto__contenedor {
     display: flex;
     flex-direction: column;
@@ -112,7 +116,7 @@
     align-items: center;
 }
 .texto__bajofoto--materia {
-    font-size: xx-large;
+    font-size: 300%;
 }
 .texto__bajofoto--comentario {
     color:rgb(47, 49, 49)
@@ -143,8 +147,8 @@
     background-image: url(../images/Fuselaje1.jpg);  
     background-repeat: no-repeat;
     background-size: cover;
-    min-height: 500px;
-    min-width: 100%;     
+    min-width: 100%; 
+    min-height: 600px;       
 }
 .foto__titulo--estructura {
     display: flex;
@@ -171,7 +175,7 @@
     background-image: url(../images/Sistemas1.jpg);  
     background-repeat: no-repeat;
     background-size: cover;
-    min-height: 500px;
+    min-height: 600px;
     min-width: 100%;     
 }
 .foto__titulo--sistemas {
@@ -199,7 +203,7 @@
     background-image: url(../images/Cabina.jpg);  
     background-repeat: no-repeat;
     background-size: cover;
-    min-height: 500px;
+    min-height: 600px;
     min-width: 100%;   
 }
 .foto__titulo--piloto {
@@ -220,35 +224,39 @@
     align-items:center;
     gap: 30px
 }
+/* INDEX */
+/* PILOTO */
 /* Sección Video */
-.video__volar {
+.video__volar--contenedor {
     display: flex;
     flex-direction: column;
     justify-content:center;
     align-items:center;
     background-color: blue;
-    min-height: 500px;
+    min-height: 300px;
     min-width: 100%;
     padding: 1rem;
     grid-template-columns: 1fr 1fr;
 }
 .video__Video {
-    width: 450px;
-    height: 225px;
+    width: 600px;
+    height: 300px;
     border-radius: 2mm;    
 }
 .titulo__video {
     color:aliceblue;
 }
-/* INDEX */
 /* FOOTER */
 /* MAPA */
 .mapa {
-    display: grid;
-    grid-template-columns: 260px 260px 260px 260px 260px;
-    grid-template-rows: 300px 300px;
-    background-color:blueviolet;
-    min-width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    max-width: 100%;
+    background-color:aliceblue;
+    padding: 50px 70px 50px 70px;
 }
 .mapa__index {
     display: flex;
@@ -256,35 +264,19 @@
     justify-content: center;
     align-items: center;
 }
-.mapa__index {
+.mapa__index--opciones {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    list-style: none; 
+    gap: 10px;
+    margin-top: 10px;  
 }
-.mapa__plantas {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-}
-.mapa__estructura {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-}
-.mapa__sistemas {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-}
-.mapa__contacto {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+.mapa__index--paginas {
+    font-style: none;
+    color: black;
+    
 }
 .link {
     display: flex;
@@ -307,7 +299,7 @@
     width: 60px;    
 }
 
-/* PLANTAS.HTML */
+/* PLANTAS.HTML *//* ESTRUCTURA.HTML *//* SISTEMAS.HTML */
 /* HISTORIA */
 .historia {
     display: flex;
@@ -370,7 +362,6 @@
     align-items:center;
     gap: 30px
 }
-
 /* PLANTAS.HTML */
 /* LA VALVULA */
 /* seccion foto*/
@@ -449,110 +440,50 @@
     align-items:center;
     gap: 30px
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-.mecanico__foto--plantas {
-    background-image: url(../images/Mecánico.jpg);  
-    background-repeat: no-repeat;
-    background-size: cover;
-    min-height: 500px;
-    min-width: 100%;   
-}
-.mecanico__foto--estructura {
-    background-image: url(../images/AirframeMechanic.jpg);  
-    background-repeat: no-repeat;
-    background-size: cover;
-    min-height: 500px;
-    min-width: 100%;   
-}
-
-
-
-/* INDEX.HTML */
-/* PLANTAS */
-/* NOMBRE MATERIA */
-
-.nombre__materia--hidraulico {
+/* PLANTAS.HTML */
+/* MECANICO */
+/* Sección Video */
+.video__volar {
     display: flex;
-    flex-direction: row;
-    justify-content:left;  
-    padding-top: 150px;
-    padding-left: 50px;
-    font-size: 350%;
+    flex-direction: column;
+    justify-content:center;
+    align-items:center;
+    background-color: blue;
+    min-height: 500px;
+    min-width: 100%;
+    padding: 1rem;
+    grid-template-columns: 1fr 1fr;
+}
+.video__Video {
+    width: 450px;
+    height: 225px;
+    border-radius: 2mm;    
+}
+.titulo__video {
     color:aliceblue;
 }
-/* INDEX.HTML */
-/* PLANTAS */
-/* "CONTENEDOR" BAJO FOTO */
-
-
-
-
-
-
-/* INDEX.HTML */
-/* SISTEMAS */
-/* TITULO FOTO */
-.nombre__materia--sistemas {
-    margin-left: 50px;
-    padding-left: 50px;
-    padding-top: 130px;
-    font-size:350%;
-    font-family:Verdana, Geneva, Tahoma, sans-serif;
-    color:azure
-}
-/* INDEX.HTML */
-/* PILOTO */
-/* TITULO FOTO */
-.nombre__materia--piloto {
-    margin-left: 50px;
-    padding-left: 50px;
-    padding-top: 130px;
-    font-size:350%;
-    font-family:Verdana, Geneva, Tahoma, sans-serif;
-    color:azure
-}
-
-
-
-/* PLANTAS.HTML */
-/* VÁLVULA */
-/* FOTO  */
-
-/* PLANTAS.HTML */
-/* CILINDRO */
-/* FOTO  */
 
 /* ESTRUCTURA.HTML */
 /* FUSELAJE */
-/* FOTO */ 
+/* seccion foto*/
 .foto__fuselaje {
     background-image: url(../images/Fuselaje1.jpg);  
     background-repeat: no-repeat;
     background-size: cover;
-    min-height: 500px;
+    min-height: 600px;
     min-width: 100%;
 }
-/* ESTRUCTURA.HTML */
-/* ALA */
-/* FOTO  */
-.foto__tren {
-    background-image: url(../images/Tren\ de\ Aterrizaje.jpg);  
-    background-repeat: no-repeat;
-    background-size: cover;
-    min-height: 500px;
-    min-width: 100%;
+.foto__titulo--fuselaje {
+    display: flex;
+    flex-direction: row;
+    justify-content:left;  
+    font-size: 350%;
+    padding-top: 100px;
+    padding-left: 100px;
+    color:black;
+}
+.texto__bajofoto--parte {
+    font-size: 300%;
 }
 /* ESTRUCTURA.HTML */
 /* EMPENAJE */
@@ -561,12 +492,59 @@
     background-image: url(../images/Empenaje.jpg);  
     background-repeat: no-repeat;
     background-size: cover;
-    min-height: 500px;
+    min-height: 600px;
     min-width: 100%;  
+}
+/* ESTRUCTURA.HTML */
+/* EMPENAJE */
+/* seccion foto*/
+.foto__titulo--empenaje {
+    display: flex;
+    flex-direction: row;
+    justify-content:left;  
+    font-size: 350%;
+    padding-top: 100px;
+    padding-left: 100px;
+    color:black;
+}
+/* ESTRUCTURA.HTML */
+/* TREN ATERRIZAJE */
+/* seccion foto*/
+.foto__tren {
+    background-image: url(../images/Tren\ de\ Aterrizaje.jpg);  
+    background-repeat: no-repeat;
+    background-size: cover;
+    min-height: 600px;
+    min-width: 100%;
+}
+.foto__titulo--tren {
+    display: flex;
+    flex-direction: row;
+    justify-content:left;  
+    font-size: 350%;
+    padding-top: 100px;
+    padding-left: 100px;
+    color:black;
+}
+.foto__mecanico--airframe {
+    background-image: url(../images/AirframeMechanic.jpg);  
+    background-repeat: no-repeat;
+    background-size: cover;
+    min-height: 600px;
+    min-width: 100%;   
+}
+.foto__titulo--neumatico {
+    display: flex;
+    flex-direction: row;
+    justify-content:left;  
+    font-size: 350%;
+    padding-top: 100px;
+    padding-left: 100px;
+    color:black;
 }
 /* SISTEMAS.HTML */
 /* HIDRÁULICO */
-/* FOTO */
+/* sección foto*/
 .foto__hidraulico {
     background-image: url(../images/SistHidráulico.jpg);  
     background-repeat: no-repeat;
@@ -576,17 +554,7 @@
 }
 /* SISTEMAS.HTML */
 /* HIDRÁULICO */
-/* FOTO */
-.foto__neumatico {
-    background-image: url(../images/Neumático.jpg);  
-    background-repeat: no-repeat;
-    background-size: cover;
-    min-height: 500px;
-    min-width: 100%; 
-}
-/* SISTEMAS.HTML */
-/* HIDRÁULICO */
-/* FOTO */
+/* sección foto */
 .foto__combustible {
     background-image: url(../images/Combustible.jpg);  
     background-repeat: no-repeat;
@@ -594,6 +562,43 @@
     min-height: 600px;
     min-width: 100%;    
 }
+/* SISTEMAS.HTML */
+/* NEUMATICO */
+/* sección foto */
+.foto__neumatico {
+    background-image: url(../images/Neumático.jpg);  
+    background-repeat: no-repeat;
+    background-size: cover;
+    min-height: 600px;
+    min-width: 100%; 
+}
+.foto__mecanico--sistemas {
+    background-image: url(../images/SistemsMechanic.jpg);  
+    background-repeat: no-repeat;
+    background-size: cover;
+    min-height: 600px;
+    min-width: 100%; 
+
+}
+/* CONTACTO.HTML */
+/* FORMULARIO */
+.formulario {
+    background-image: url(../images/formulario.png);
+    background-repeat: no-repeat;
+    height: 600px;
+    margin-top: -100px;
+    
+}
+.formulario__box {
+    display: flex;
+    flex-direction: column;
+    justify-content:center;
+    margin-top: 100px;
+    width: 700px;
+    padding-left: 400px;
+
+}
+
 
 
 @media screen and (max-width: 425px) {
@@ -612,20 +617,85 @@
     .contenedor__nav {
         display: none;
     }  
-    .icono__hamburguesa {     
-        display: inline-block;
-        color: red;
-        align-items: right;
+    .icono { 
+        display: inline;   
+        color: navy;
+        padding-right: 40px;  
+    }
+    .icono__hamburguesa {
+        font-size: 2rem;
     }
     .header {
-        min-width: 1200px;
+        max-width: 100%;
+        height: 100px;
+        justify-content: space-between;
+    }
+    .logo {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        background-image: linear-gradient(navy, white);
+        width: 200px;
+        height: 100px;
     }
     .foto__plantas {
-        size: 50%;
-        min-width: 1200px;
+        width: 100%;
+        height: 600px;
+        object-fit: cover;
+        background-position: right ;
+    }
+    .foto__titulo--plantas {
+        font-size: 24px;
+        padding-left: 0px;
+        padding-top: 100px;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        padding: center;    
+    }
+    .foto__titulo--estructura {
+        padding-top: 100px;
+    }
+    .foto__titulo--sistemas {
+        padding-top: 100px;
+    }
+    .foto__titulo--piloto {
+        padding-top: 100px;
+    }
+    .texto__bajofoto--titulo {
+       font-size:49%;  
+       padding-top: 30px;
+    }
+    .texto__bajofoto--comentario {
+        font-size: 190%;
+        padding-top: 10px;
+    }
+    .texto__definicion--materia {
+        text-align:justify;
+        min-width: 100%;
+    }
+    .texto__aclaracion {
+        font-size: 90%;
+    }
+    .foto__estructura {
+        width: 100%;
+        height: 600px;
+        object-fit: cover;
+        background-position: right ;
+    }
+    .foto__titulo--estructura {
+        font-size: 150%;
+    }
+    .foto__titulo--sistemas {
+        font-size: 150%;
+    }
+    .foto__titulo--piloto {
+        font-size: 150%;
     }
     .contenedor__bajofoto {
-        width: 1200px;
+        width: 100%;
     }
     .contenedor__titulo--foto {
         display: flex;
@@ -634,65 +704,77 @@
         text-align: center;
     }
     .foto__estructura {
-        width: 1200px;
+        width: 100%;
     }
     .foto__sistemas {
-        width: 1200px;
+        width: 100%;
     }
     .foto__volar {
-        width: 1200px;
+        width: 100%;
     }
-    .nombre__materia--sistemas { 
-        font-size: 200%;
-        margin-top: -50px;
-        margin-left: -20px;
-        color:aliceblue;
-    }  
-    .nombre__materia--piloto { 
-        font-size: 200%;
-        margin-top: -50px;
-        margin-left: -20px;
-        color:white;
+    .footer {
+        width: 100%;
     }
-    .contenedor__volar {
-        display:flex;
+    .mapa {
+        display: flex;
         flex-direction: column;
         justify-content: center;
         align-items: center;
-        width: 1200px;
+        width: 100%;
+        padding: 120px 70px 120px 70px; 
+        gap: 30px;
     }
-    .volar__video {
-        margin-left: -150px;
-        width: 800px;
-        height: 500px;
+    .mapa__index {
+        width: 100%;
     }
-    .nombre__materia--culata {
+    .texto__partes--motor {
         display: flex;
-        margin-top:-50px;
-        margin-left: 0px;
-        font-size: 50px;
-    }      
-    
-    .footer {
-        display:flex;
         flex-direction: column;
-        justify-content: space-between;
+        justify-content: center;
         align-items: center;
         width: 100%;
-        height: 500px;
-        margin-left: -100px;
     }
+    .texto__partes--avion {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+    }
+    .texto__partes--sistemas {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+    }
+    .texto__partes--piloto {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+    }
+    .video__Video {
+        width: 100%;
+    }
+
+
+
+
+
+
     .historia {
-        width: 1200px;
+        width: 100%;
     }
     .foto__culata {
-        width: 1200px;
+        width: 100%;
     }
     .foto__valvula {
-        width: 1200px;
+        width: 100%;
     }
     .foto__cilindro {
-        width: 1200px;
+        width: 100%;
     }
 } 
 

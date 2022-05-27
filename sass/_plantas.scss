@@ -12,21 +12,359 @@
             flex-direction: column;
             justify-content: center;
             align-items: center;
-            .historia__seccion--box {
-                .historia__seccion--titulo {
+            .historia__seccion--titulo {
+                .historia__seccion--motor {
                     display: inline-block;
                     position: relative;
                     font-family:"Dancing Script", cursive;
                     padding-top: 50px;
                     color: grey;
-                    font-size: xxx-large;  
+                    font-size: xxx-large; 
+                    .historia__seccion--texto {
+                    } 
                 }
-                .historia__seccion--texto {
+                .historia__seccion--definicion {
                     padding-top:30px;
                     text-align: center;
                     width: 600px;
                     color:black;
+                    .historia__seccion--texto {                      
+                    }
                 }
+                .historia__seccion--icono {
+                    .historia__seccion--engine {
+                        width: 30px;
+                    }
+                }
+            }
+        }
+    }
+    .main {
+        .foto {
+            width: 100%;
+            height: 600px;
+            .foto__culata {
+                background-image: url(../images/Culata1.jpg);  
+                background-repeat: no-repeat;
+                background-size: cover;
+                min-height: 600px; 
+                min-width: 100%;      
+                .foto__titulo {
+                    .foto__titulo--culata { 
+                        display: flex;
+                        flex-direction: row;
+                        justify-content:left;  
+                        font-size: 350%;
+                        padding-top: 100px;
+                        padding-left: 100px;
+                        color:black;                  
+                    }
+                }     
+            }
+        }
+        .texto {
+            .texto__contenedor {
+                display: flex;
+                flex-direction: column;
+                justify-content:center;
+                align-items:center;
+                background-color: aliceblue;
+                min-height: 500px;
+                min-width: 100%;
+                padding: 1rem;  
+                .texto__bajofoto {
+                    .texto__bajofoto--titulo {
+                        display:flex;
+                        flex-direction: column;
+                        justify-content: center;
+                        align-items: center;
+                        .texto__bajofoto--materia {
+                            font-size: 300%;
+                        }
+                        .texto__bajofoto--comentario {
+                            color:rgb(47, 49, 49)
+                        }                   
+                    }
+                }
+                .texto__definicion {
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: center;
+                    align-items: center;
+                    width: 100%;
+                    .texto__definicion--materia {
+                        padding-top: 30px;
+                        text-align: center;
+                        width: 60%;
+                    }
+                }
+                .texto__partes {
+                    .texto__partes--culata {
+                        display: flex;
+                        flex-direction: row;
+                        justify-content: center;
+                        align-items:center;
+                        gap: 30px;
+                        .texto__partes--items {
+                    }
+                }
+                .texto__aclaracion {
+                    .texto__aclaracion--numero {
+                    }
+                }
+            }
+        }      
+        .foto {
+            width: 100%;
+            height: 600px;
+            .foto__valvula {
+                background-image: url(../images/Válvulas1.jpg);  
+                background-repeat: no-repeat;
+                background-size: cover;
+                min-width: 100%; 
+                min-height: 600px;   
+                .foto__titulo {
+                    display: flex;
+                    flex-direction: row;
+                    justify-content:left;  
+                    padding-top: 150px;
+                    padding-left: 50px;
+                    font-size: 350%;
+                    color:black;
+                    .foto__titulo--valvula {
+                        display: flex;
+                        flex-direction: row;
+                        justify-content:left;  
+                        font-size: 350%;
+                        padding-top: 100px;
+                        padding-left: 100px;
+                        font-family:Verdana, Geneva, Tahoma, sans-serif;
+                        color:black;                  
+                    }
+                }     
+            }
+        }
+        .texto {
+            .texto__contenedor {
+                display: flex;
+                flex-direction: column;
+                justify-content:center;
+                align-items:center;
+                background-color: aliceblue;
+                min-height: 500px;
+                min-width: 100%;
+                padding: 1rem;   
+                .texto__bajofoto {
+                    .texto__bajofoto--titulo {
+                        display:flex;
+                        flex-direction: column;
+                        justify-content: center;
+                        align-items: center;
+                        .texto__bajofoto--materia {
+                            font-size: 300%;
+                        }
+                        .texto__bajofoto--comentario {
+                            color:rgb(47, 49, 49)
+                        }                   
+                    }
+                }
+                .texto__definicion {
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: center;
+                    align-items: center;
+                    width: 100%;
+                    .texto__definicion--materia {
+                        padding-top: 30px;
+                        text-align: center;
+                        width: 60%;
+                    }
+                }
+                .texto__partes {
+                    .texto__partes--valvula {
+                        display: flex;
+                        flex-direction: row;
+                        justify-content: center;
+                        align-items:center;
+                        gap: 30px;
+                        .texto__partes--items {
+                    }
+                }
+                .texto__aclaracion {
+                    .texto__aclaracion--numero {
+                    }
+                }
+            }
+        }      
+        .foto {
+            width: 100%;
+            height: 600px;
+            .foto__cilindro {
+                background-image: url(../images/Cilindro2.jpg);  
+                background-repeat: no-repeat;
+                background-size: cover;
+                min-height: 600px;
+                min-width: 100%; 
+                .foto__titulo {
+                    .foto__titulo--cilindro {
+                        display: flex;
+                        flex-direction: row;
+                        justify-content:left;  
+                        font-size: 350%;
+                        padding-top: 100px;
+                        padding-left: 100px;
+                        font-family:Verdana, Geneva, Tahoma, sans-serif;
+                        color:aliceblue;
+                    }
+                }  
+            } 
+        }
+        .texto {
+            .texto__contenedor {
+                display: flex;
+                flex-direction: column;
+                justify-content:center;
+                align-items:center;
+                background-color: aliceblue;
+                min-height: 500px;
+                min-width: 100%;
+                padding: 1rem;  
+                .texto__bajofoto {
+                    .texto__bajofoto--titulo {
+                        display:flex;
+                        flex-direction: column;
+                        justify-content: center;
+                        align-items: center;
+                        .texto__bajofoto--materia {
+                            font-size: 300%;
+                        }
+                        .texto__bajofoto--comentario {
+                            color:rgb(47, 49, 49)
+                        }                   
+                    }
+                }
+                .texto__definicion {
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: center;
+                    align-items: center;
+                    width: 100%;
+                    .texto__definicion--materia {
+                        padding-top: 30px;
+                        text-align: center;
+                        width: 60%;
+                    }
+                }
+                .texto__partes {
+                    .texto__partes--mecanico {
+                        display: flex;
+                        flex-direction: row;
+                        justify-content: center;
+                        align-items:center;
+                        gap: 30px;
+                        .texto__partes--items {
+                    }
+                }
+                .texto__aclaracion {
+                    .texto__aclaracion--numero {
+                    }
+                }
+            }
+        }      
+        .foto {
+            width: 100%;
+            height: 600px;
+            .foto__mecanico--powerplant {
+                background-image: url(../images/PowerplantMechanic.jpg);  
+                background-repeat: no-repeat;
+                background-size: cover;
+                min-height: 600px;
+                min-width: 100%; 
+                .foto__titulo {
+                    .foto__titulo--mecanico {
+                        display: flex;
+                        flex-direction: row;
+                        justify-content:left;  
+                        font-size: 350%;
+                        padding-top: 100px;
+                        padding-left: 100px;
+                        font-family:Verdana, Geneva, Tahoma, sans-serif;
+                        color:aliceblue;
+                    }
+                }  
+            } 
+        }
+        .texto {
+            .texto__contenedor {
+                display: flex;
+                flex-direction: column;
+                justify-content:center;
+                align-items:center;
+                background-color: aliceblue;
+                min-height: 500px;
+                min-width: 100%;
+                padding: 1rem;   
+                .texto__bajofoto {
+                    .texto__bajofoto--titulo {
+                        display:flex;
+                        flex-direction: column;
+                        justify-content: center;
+                        align-items: center;
+                        .texto__bajofoto--materia {
+                            font-size: 300%;
+                        }
+                        .texto__bajofoto--comentario {
+                            color:rgb(47, 49, 49)
+                        }                   
+                    }
+                }
+                .texto__definicion {
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: center;
+                    align-items: center;
+                    width: 100%;
+                    .texto__definicion--materia {
+                        padding-top: 30px;
+                        text-align: center;
+                        width: 60%;
+                    }
+                }
+                .texto__partes {
+                    .texto__partes--mecanico {
+                        display: flex;
+                        flex-direction: row;
+                        justify-content: center;
+                        align-items:center;
+                        gap: 30px;
+                        .texto__partes--items {
+                    }
+                }
+                .texto__aclaracion {
+                    .texto__aclaracion--numero {
+                    }
+                }
+            }
+        }      
+        .video {
+            .video__volar {         
+                .video__volar--contenedor {
+                    display: flex;
+                    flex-direction: column;
+                    justify-content:center;
+                    align-items:center;
+                    background-color: blue;
+                    min-height: 500px;
+                    min-width: 100%;
+                    padding: 1rem;
+                    grid-template-columns: 1fr 1fr;
+                    .video__Video {
+                        width: 600px;
+                        height: 300px;
+                        border-radius: 2mm;
+                    }    
+                }
+    
             }
         }
     }

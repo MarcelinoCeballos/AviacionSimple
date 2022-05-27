@@ -1,0 +1,123 @@
+.footer {
+    .mapa {
+        display: grid;
+        grid-template-columns: 260px 260px 260px 260px 260px;
+        grid-template-rows: 300px 300px;
+        background-color:blueviolet;
+        min-width: 100%;
+        .mapa__index {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            .mapa__index--opciones {
+                .mapa__index--paginas {
+
+                }
+            }
+        }
+        .mapa__plantas {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            .mapa__plantas--nombre {
+                .mapa__plantas--opciones {
+                    .mapa__plantas--partes {
+
+                    }
+                }
+            }
+        }
+        .mapa__estructura {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            .mapa__estructura--nombre {
+                .mapa__estructura--opciones {
+                    .mapa__estructura--partes {
+
+                    }
+                }
+            }
+        }
+        .mapa__sistemas {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            .mapa__sistemas--nombre {
+                .mapa__sistemas--opciones {
+                    .mapa__sistemas--partes {
+
+                    }
+                }
+            }
+        }
+        .mapa__contacto {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            .mapa__contacto--nombre {
+                .mapa__contacto--opciones {
+                    .mapa__contacto--partes {
+
+                    }
+                }
+            }
+        }
+        .link {
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            align-items: center;
+            gap: 2rem;
+           .link__derechos {
+
+           } 
+        }
+        .link {
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            align-items: center;
+            gap: 2rem;
+            .link__anac {
+                width: 100px;
+                height: 50px; 
+            } 
+        }
+        .link {
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            align-items: center;
+            gap: 2rem;
+            .link__fada {
+                width: 175px; 
+            } 
+        }
+        .link {
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            align-items: center;
+            gap: 2rem;
+            .link__face {
+                width: 60px;
+            } 
+        }
+        .link {
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            align-items: center;
+            gap: 2rem;
+            .link__you {
+                width: 60px;
+            } 
+        }
+    }
+}

@@ -34,93 +34,108 @@
                 <i class="icono__hamburguesa fas fa-bars" ></i> 
             </div>                                  
         </header>            
-        <main>           
-            <div class="formulario">      
-                <h1>Formulario de contacto</h1>
-                  <h3>Queremos escucharte</h3>                  
-                    <form action="submeter-formulario.php" method="post">                                    
-                        <p>
-                            <label for="nombre" class="colocar_nombre">Nombre
-                              <span class="obligatorio">*</span>
-                            </label>
-                              <input type="text" name="introducir_nombre" id="nombre" required="obligatorio" placeholder="Escribe tu nombre">
-                        </p>
-                        <p>
-                            <label for="mensaje" class="colocar_mensaje">Mensaje
-                              <span class="obligatorio">*</span>
-                            </label>                     
-                            <textarea name="introducir_mensaje" class="texto_mensaje" id="mensaje" required="obligatorio" placeholder="Deja aquí tu comentario..."></textarea> 
-                        </p>                    
-                        
-                        <button type="submit" name="enviar_formulario" id="enviar"><p>Enviar</p></button>
-          
-                        <p class="aviso">
-                            <span class="obligatorio"> * </span>los campos son obligatorios.
-                        </p>                                
+        <main>
+            <section class="formulario">
+                <article class="formulario__box">                            
+                    <h1 class="formulario__encabezado">Formulario de contacto</h1>
+                    <h3 class="formulario__invitacon">Queremos escucharte</h3>  
+                 
+                    <form class="form" action="submeter-formulario.php" method="post">
+                        <div class="form__nombre">                                    
+                            <p class="form__nombre--renglon">               
+                                <label class="form_nombre--texto" for="nombre" >Nombre
+                                    <span class="form__nombre--obligatorio">*</span>
+                                </label>
+                                <input type="text" name="introducir_nombre" id="nombre" required="obligatorio" placeholder="Escribe tu nombre">
+                            </p>
+                    
+                        <div class="form__email">
+                            <p class="form__email--renglon">
+                                <label class="form__email--texto" for="nombre" >email
+                                    <span class="form__email--obligatorio">*</span>
+                                </label>
+                                    <input type="text" name="introducir_nombre" id="nombre" required="obligatorio" placeholder="Escribe tu nombre">
+                            </p>
+                        </div>
+                        <div class="form__mensaje">
+                            <p class="form__mensaje--renglon">
+                                <label class="form__mensaje--texto" for="mensaje" class="colocar_mensaje">Mensaje
+                                    <span class="form__mensaje--obligatorio">*</span>
+                                </label>                     
+                                <textarea name="introducir_mensaje" class="texto_mensaje" id="mensaje" required="obligatorio" placeholder="Deja aquí tu comentario..."></textarea> 
+                            </p>
+                        </div>
+                        <div class="form__enviar">
+                            <p class="form__enviar--renglon">                                          
+                                <button class="form__enviar--boton" type="submit" name="enviar_formulario" id="enviar"><p class="form__enviar--texto">Enviar</p></button> 
+                            </p>
+                        </div>        
+                        <p class="form__aviso"><span class="obligatorio"> * </span>Los campos son obligatorios.</p>                               
                     </form>
-                </div>
-            </main>
-            <!--FOOTER -->
-        <footer class="footer">
+                </article>           
+        </section>
+        </main>
+         <!--FOOTER -->
+         <footer class="footer">
             <section class="mapa"> 
-                <div class="mapa__area">
-                    <h3>AviacionSimple</h3> 
+                <div class="mapa__index">
+                    <h3 class="mapa__index--nombre">AviacionSimple</h3> 
                     <ul>
-                        <li>Plantas I</li>
-                        <li>Estructura I</li>
-                        <li>Sistemas I</li>
-                        <li>Contacto</li>
+                        <li><a class="mapa__index--paginas" href="../pages/Plantas.html">Plantas I</a></li>
+                        <li><a class="mapa__index--paginas" href="../pages/Estructura.html">Estructura I</a></li>
+                        <li><a class="mapa__index--paginas" href="../pages/Sistemas.html">Sistemas I</a></li>
+                        <li><a class="mapa__index--paginas" href="../pages/Contacto.html">Contacto</a></li>
                     </ul>
                 </div> 
-                <div class="mapa__area">    
-                    <h3>Plantas I</h3> 
+                <div class="mapa__plantas">    
+                    <h3 class="mapa__plantas--nombre">Plantas I</h3> 
                     <ul>
-                        <li>Culata</li>
-                        <li>Válvula</li>
-                        <li>Cilindro</li>
+                        <li class="mapa__plantas--partes">Culata</li>
+                        <li class="mapa__plantas--partes">Válvula</li>
+                        <li class="mapa__plantas--partes">Cilindro</li>
                     </ul> 
                 </div>
-                <div class="mapa__area">    
-                    <h3>Estructura I</h3> 
+                <div class="mapa__estructura">    
+                    <h3 class="mapa__estructura--nombre">Estructura I</h3> 
                     <ul>
-                        <li>Fuselaje</li>
-                        <li>Empenaje</li>
-                        <li>Tren Aterrizaje</li>
+                        <li class="mapa__estructura--partes">Fuselaje</li>
+                        <li class="mapa__estructura--partes">Empenaje</li>
+                        <li class="mapa__estructura--partes">Tren Aterrizaje</li>
                     </ul>   
                 </div> 
-                <div class="mapa__area">
-                    <h3>Sistemas I</h3> 
+                <div class="mapa__sistemas">
+                    <h3 class="mapa__sistemas--nombre">Sistemas I</h3> 
                     <ul>
-                        <li>Hidráulico</li>
-                        <li>Neumático</li>
-                        <li>Combustible</li>
+                        <li class="mapa__sistemas--partes">Hidráulico</li>
+                        <li class="mapa__sistemas--partes">Neumático</li>
+                        <li class="mapa__sistemas--partes">Combustible</li>
                     </ul>           
                 </div> 
-                <div class="mapa__area">
-                    <h3>Contacto</h3> 
+                <div class="mapa__contacto">
+                    <h3 class="mapa__contacto--nombre">Contacto</h3> 
                     <ul>
-                        <li>Comentarios</li>
-                        <li>Preguntas</li>
-                        <li>Más Info</li>
+                        <li class="mapa__contacto--partes">Comentarios</li>
+                        <li class="mapa__contacto--partes">Preguntas</li>
+                        <li class="mapa__contacto--partes">Más Info</li>
                     </ul>           
-                </div>                 
-                <div class="mapa__area">
+                </div>             
+                <div class="link">
                     <h6 class="footer__derechos">Derechos Reservados</h6> 
                 </div>  
-                <div class="mapa__area">     
-                    <a href="https://www.anac.gov.ar/anac/web/" target="_blank" ><img class="footer__anac" src="../images/ANAC.jpg" alt="ANAC" width="100" height="50"></a>
+                <div class="link">     
+                    <a href="https://www.anac.gov.ar/anac/web/" target="_blank" ><img class="link__anac" src="../images/ANAC.jpg" alt="ANAC" width="100" height="50"></a>
                 </div>
-                <div class="mapa__area">
-                    <a href="https://fada.org.ar/web/" target="_blank"><img class="footer__fada" src="../images/Fada.jpg" alt=""></a>
+                <div class="link">
+                    <a href="https://fada.org.ar/web/" target="_blank"><img class="link__fada" src="../images/Fada.jpg" alt="aeroclubes"></a>
                 </div>
-                <div class="mapa__area">
-                     <a href="https://www.facebook.com/marcelinoceballos"><img class="footer__face" src="../images/Facebook.jpg" alt=""></a>
+                <div class="link">
+                     <a href="https://www.facebook.com/marcelinoceballos"><img class="link__face" src="../images/Facebook.jpg" alt="face"></a>
                 </div>
-                <div class="mapa__area">
-                    <a href="https://www.youtube.com/channel/UCc3c5Ldw0zKNUbhxEWrOBHg"><img class="footer__youtube" src="../images/Youtube.jpg" alt=""></a> 
+                <div class="link">
+                    <a href="https://www.youtube.com/channel/UCc3c5Ldw0zKNUbhxEWrOBHg"><img class="link__you" src="../images/Youtube.jpg" alt="youtube"></a> 
                 </div> 
             </section>              
-        </footer>                            
+        </footer>                                        
         </body>
     </html>         
                       

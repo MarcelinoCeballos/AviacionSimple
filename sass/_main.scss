@@ -1,5 +1,7 @@
 .main {
     .foto {
+        width: 100%;
+        height: 600px;
         .foto__plantas {
             background-image: url(../images/DouglasDC31.png);  
             background-repeat: no-repeat;
@@ -7,14 +9,14 @@
             min-height: 600px; 
             min-width: 100%;      
             .foto__titulo {
-                display: flex;
-                flex-direction: row;
-                justify-content:left;  
-                padding-top: 150px;
-                padding-left: 50px;
-                font-size: 350%;
-                color:black;
-                .foto__titulo--plantas {                   
+                .foto__titulo--plantas { 
+                    display: flex;
+                    flex-direction: row;
+                    justify-content:left;  
+                    font-size: 350%;
+                    padding-top: 100px;
+                    padding-left: 100px;
+                    color:black;                  
                 }
             }     
         }
@@ -36,7 +38,7 @@
                     justify-content: center;
                     align-items: center;
                     .texto__bajofoto--materia {
-                        font-size: xx-large;
+                        font-size: 300%;
                     }
                     .texto__bajofoto--comentario {
                         color:rgb(47, 49, 49)
@@ -52,6 +54,7 @@
                 .texto__definicion--materia {
                     padding-top: 30px;
                     text-align: center;
+                    width: 60%;
                 }
             }
             .texto__partes {
@@ -71,12 +74,14 @@
         }
     }      
     .foto {
+        width: 100%;
+        height: 600px;
         .foto__estructura {
             background-image: url(../images/Fuselaje1.jpg);  
             background-repeat: no-repeat;
             background-size: cover;
-            min-height: 500px;
-            min-width: 100%;   
+            min-width: 100%; 
+            min-height: 600px;   
             .foto__titulo {
                 display: flex;
                 flex-direction: row;
@@ -89,11 +94,11 @@
                     display: flex;
                     flex-direction: row;
                     justify-content:left;  
-                    padding-top: 50px;
-                    padding-left: 50px;
-                    font-size:100%;
+                    font-size: 350%;
+                    padding-top: 100px;
+                    padding-left: 100px;
                     font-family:Verdana, Geneva, Tahoma, sans-serif;
-                    color:black;                   
+                    color:black;                  
                 }
             }     
         }
@@ -107,7 +112,7 @@
             background-color: aliceblue;
             min-height: 500px;
             min-width: 100%;
-            padding: 1rem;  
+            padding: 1rem;   
             .texto__bajofoto {
                 .texto__bajofoto--titulo {
                     display:flex;
@@ -115,7 +120,7 @@
                     justify-content: center;
                     align-items: center;
                     .texto__bajofoto--materia {
-                        font-size: xx-large;
+                        font-size: 300%;
                     }
                     .texto__bajofoto--comentario {
                         color:rgb(47, 49, 49)
@@ -131,10 +136,11 @@
                 .texto__definicion--materia {
                     padding-top: 30px;
                     text-align: center;
+                    width: 60%;
                 }
             }
             .texto__partes {
-                .texto__partes--fuselaje {
+                .texto__partes--avion {
                     display: flex;
                     flex-direction: row;
                     justify-content: center;
@@ -150,27 +156,22 @@
         }
     }      
     .foto {
+        width: 100%;
+        height: 600px;
         .foto__sistemas {
             background-image: url(../images/Sistemas1.jpg);  
             background-repeat: no-repeat;
             background-size: cover;
-            min-height: 500px;
-            min-width: 100%;
+            min-height: 600px;
+            min-width: 100%; 
             .foto__titulo {
-                display: flex;
-                flex-direction: row;
-                justify-content:left;  
-                padding-top: 150px;
-                padding-left: 50px;
-                font-size: 350%;
-                color:black;
                 .foto__titulo--sistemas {
                     display: flex;
                     flex-direction: row;
                     justify-content:left;  
-                    padding-top: 50px;
-                    padding-left: 50px;
-                    font-size:100%;
+                    font-size: 350%;
+                    padding-top: 100px;
+                    padding-left: 100px;
                     font-family:Verdana, Geneva, Tahoma, sans-serif;
                     color:aliceblue;
                 }
@@ -194,7 +195,7 @@
                     justify-content: center;
                     align-items: center;
                     .texto__bajofoto--materia {
-                        font-size: xx-large;
+                        font-size: 300%;
                     }
                     .texto__bajofoto--comentario {
                         color:rgb(47, 49, 49)
@@ -210,6 +211,7 @@
                 .texto__definicion--materia {
                     padding-top: 30px;
                     text-align: center;
+                    width: 60%;
                 }
             }
             .texto__partes {
@@ -229,27 +231,22 @@
         }
     }      
     .foto {
+        width: 100%;
+        height: 600px;
         .foto__piloto {
             background-image: url(../images/Cabina.jpg);  
             background-repeat: no-repeat;
             background-size: cover;
-            min-height: 500px;
+            min-height: 600px;
             min-width: 100%; 
             .foto__titulo {
-                display: flex;
-                flex-direction: row;
-                justify-content:left;  
-                padding-top: 150px;
-                padding-left: 50px;
-                font-size: 350%;
-                color:black;
                 .foto__titulo--piloto {
                     display: flex;
                     flex-direction: row;
                     justify-content:left;  
-                    padding-top: 50px;
-                    padding-left: 50px;
-                    font-size:100%;
+                    font-size: 350%;
+                    padding-top: 100px;
+                    padding-left: 100px;
                     font-family:Verdana, Geneva, Tahoma, sans-serif;
                     color:aliceblue;
                 }
@@ -265,7 +262,7 @@
             background-color: aliceblue;
             min-height: 500px;
             min-width: 100%;
-            padding: 1rem;  
+            padding: 1rem;   
             .texto__bajofoto {
                 .texto__bajofoto--titulo {
                     display:flex;
@@ -273,7 +270,7 @@
                     justify-content: center;
                     align-items: center;
                     .texto__bajofoto--materia {
-                        font-size: xx-large;
+                        font-size: 300%;
                     }
                     .texto__bajofoto--comentario {
                         color:rgb(47, 49, 49)
@@ -289,6 +286,7 @@
                 .texto__definicion--materia {
                     padding-top: 30px;
                     text-align: center;
+                    width: 60%;
                 }
             }
             .texto__partes {
@@ -308,20 +306,20 @@
         }
     }      
     .video {
-        .video__volar--contenedor {
-            display: flex;
-            flex-direction: column;
-            justify-content:center;
-            align-items:center;
-            background-color: blue;
-            min-height: 500px;
-            min-width: 100%;
-            padding: 1rem;
-            grid-template-columns: 1fr 1fr;
-            .video__volar {
+        .video__volar {         
+            .video__volar--contenedor {
+                display: flex;
+                flex-direction: column;
+                justify-content:center;
+                align-items:center;
+                background-color: blue;
+                min-height: 500px;
+                min-width: 100%;
+                padding: 1rem;
+                grid-template-columns: 1fr 1fr;
                 .video__Video {
-                    width: 450px;
-                    height: 225px;
+                    width: 600px;
+                    height: 300px;
                     border-radius: 2mm;
                 }    
             }
