@@ -17,25 +17,14 @@
     align-items: center;
     background-color: aliceblue;
     max-width: 100%;
-    height: 80px;
+    height: 90px;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.4);   
-}  
-.logo {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    background-image: linear-gradient(navy, white);
-    width: 200px;
-    height: 80px;
-}
+} 
 .logo__imagen { 
-    width: 145px;
-    height: 60px;   
-    border-radius: 2mm;     
-}
-.logo__imagen:hover {
-    transform:rotate(-20deg);
+    width: 35%;
+    height: 80px;   
+    border-radius: 2mm;
+    padding-left: 5px;     
 }
 .nav {
     display: flex;
@@ -43,6 +32,7 @@
     justify-content: center;
     align-items: center;
     width: 600px;
+    margin-right: 350px;
 }
 .nav__bar {
     display: flex;
@@ -519,7 +509,7 @@
     background-repeat: no-repeat;
     background-size: cover;
     min-height: 600px;
-    min-width: 100%;   
+    min-width: 100%;
 }
 .foto__mecanico--estructuratitulo {
     display: flex;
@@ -551,7 +541,7 @@
     justify-content: left;
     padding-top: 100px;
     padding-left: 50px;
-    font-size:24px;
+    font-size: 350%;
     font-family:Verdana, Geneva, Tahoma, sans-serif;
     color:aliceblue;
 }
@@ -569,9 +559,9 @@
     display: flex;
     flex-direction: row;
     justify-content: left;
-    padding-top: 230px;
+    padding-top: 150px;
     padding-left: 50px;
-    font-size:24px;
+    font-size: 350%;
     font-family:Verdana, Geneva, Tahoma, sans-serif;
     color:aliceblue;
 }
@@ -663,28 +653,33 @@
     .icono { 
         display: inline;   
         color: navy;
-        padding-right: 40px; 
+        padding-right: 0px; 
     }
     .icono__hamburguesa {
         font-size: 2rem;
+        padding-right: 20px;
     }
     .header {
         max-width: 100%;
-        height: 100px;
-        justify-content: space-between;
+        height: 80px;
+        justify-content:flex-end;
     }
-    .logo {
+    .logo__imagen {
         display: flex;
-        flex-direction: column;
-        justify-content: center;
+        flex-direction: row;
+        justify-content: left;
         align-items: center;
-        background-image: linear-gradient(navy, white);
-        width: 200px;
-        height: 100px;
+        background-color: blueviolet;
+        width: 380px;
+        margin-right: 40px;
+       
+      
+
+
     }
     /* INDEX.HTML */
     .foto__plantas {
-        width: 100%;
+        max-width: 50%;
         height: 600px;
         object-fit: cover;
         background-position: right ;
