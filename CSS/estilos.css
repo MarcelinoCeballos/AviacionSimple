@@ -73,7 +73,6 @@
 .icono {
     display: none;
 }
-
 /* INDEX */
 /* PLANTAS */
 /* Sección foto */
@@ -89,7 +88,7 @@
     min-height: 600px; 
     object-fit: contain;     
 }
-.foto__titulo--plantas {
+.foto__plantas--titulo {
     display: flex;
     flex-direction: row;
     justify-content:left;  
@@ -133,7 +132,7 @@
     text-align: center;
     width: 60%;
 }
-.texto__partes--motor {
+.texto__partes--lista {
     display: flex;
     flex-direction: row;
     justify-content: center;
@@ -150,7 +149,7 @@
     min-width: 100%; 
     min-height: 600px;       
 }
-.foto__titulo--estructura {
+.foto__estructura--titulo {
     display: flex;
     flex-direction: row;
     justify-content:left;  
@@ -178,7 +177,7 @@
     min-height: 600px;
     min-width: 100%;     
 }
-.foto__titulo--sistemas {
+.foto__sistemas--titulo {
     display: flex;
     flex-direction: row;
     justify-content:left;  
@@ -206,7 +205,7 @@
     min-height: 600px;
     min-width: 100%;   
 }
-.foto__titulo--piloto {
+.foto__piloto--titulo {
     display: flex;
     flex-direction: row;
     justify-content:left;  
@@ -227,7 +226,7 @@
 /* INDEX */
 /* PILOTO */
 /* Sección Video */
-.video__volar--contenedor {
+.video__volar {
     display: flex;
     flex-direction: column;
     justify-content:center;
@@ -238,13 +237,10 @@
     padding: 1rem;
     grid-template-columns: 1fr 1fr;
 }
-.video__Video {
+.video__volar--video {
     width: 600px;
     height: 300px;
     border-radius: 2mm;    
-}
-.titulo__video {
-    color:aliceblue;
 }
 /* FOOTER */
 /* MAPA */
@@ -306,17 +302,15 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    min-width: 100%;
-    min-height: 500px;
+    width: 100%;
+    min-height: 600px;
     padding: 1rem;
-}
-.historia__seccion {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
 }
-.historia__seccion--titulo {
+.historia__titulo {
     display: inline-block;
     position: relative;
     font-family:"Dancing Script", cursive;
@@ -324,14 +318,15 @@
     color: grey;
     font-size: xxx-large;  
 }
-.historia__seccion--texto {
+.historia__texto {
     padding-top:30px;
     text-align: center;
     width: 600px;
     color:black;
 }
-.historia__seccion--engine {
+.historia__engine {
     width: 30px;
+    padding-top: 50px;
 }
 /* PLANTAS.HTML */
 /* LA CULATA */
@@ -343,13 +338,11 @@
     min-height: 600px;
     min-width: 100%; 
 }
-.foto__titulo--culata {
-    margin-left: 50px;
+.foto__culata--titulo {
     font-size: 350%;
-    padding-top: 100px;
-    padding-left: 100px;
     font-family:Verdana, Geneva, Tahoma, sans-serif;
     color:black;
+    padding-top: 30px;
 }
 /* seccion texto */
 .texto__bajofoto--parte {
@@ -372,11 +365,10 @@
     min-height: 600px;
     min-width: 100%;
 }
-.foto__titulo--valvula {
-    margin-left: 50px;
+.foto__valvula--titulo {
     font-size: 350%;
     padding-top: 100px;
-    padding-left: 100px;
+    padding-left: 400px;
     font-family:Verdana, Geneva, Tahoma, sans-serif;
     color:black;
 }
@@ -398,7 +390,7 @@
     min-height: 600px;
     min-width: 100%;
 }
-.foto__titulo--cilindro {
+.foto__cilindro--titulo {
     margin-left: 50px;
     font-size: 350%;
     padding-top: 100px;
@@ -417,14 +409,14 @@
 /* PLANTAS.HTML */
 /* EL MECANICO */
 /* seccion foto*/
-.foto__mecanico--powerplant {
+.foto__mecanico--plantas {
     background-image: url(../images/PowerplantMechanic.jpg);  
     background-repeat: no-repeat;
     background-size: cover;
     min-height: 600px;
     min-width: 100%;   
 }
-.foto__titulo--mecanico {
+.foto__mecanico--plantastitulo {
     margin-left: 50px;
     padding-left: 150px;
     padding-top: 130px;
@@ -454,32 +446,28 @@
     padding: 1rem;
     grid-template-columns: 1fr 1fr;
 }
-.video__Video {
+.video__volar--video {
     width: 450px;
     height: 225px;
     border-radius: 2mm;    
 }
-.titulo__video {
-    color:aliceblue;
-}
-
 /* ESTRUCTURA.HTML */
 /* FUSELAJE */
 /* seccion foto*/
-.foto__fuselaje {
-    background-image: url(../images/Fuselaje1.jpg);  
+.foto__ala {
+    background-image: url(../images/Alas.jpg);  
     background-repeat: no-repeat;
     background-size: cover;
     min-height: 600px;
     min-width: 100%;
 }
-.foto__titulo--fuselaje {
+.foto__ala--titulo {
     display: flex;
     flex-direction: row;
     justify-content:left;  
     font-size: 350%;
-    padding-top: 100px;
-    padding-left: 100px;
+    padding-top: 150px;
+    padding-left: 200px;
     color:black;
 }
 .texto__bajofoto--parte {
@@ -489,7 +477,7 @@
 /* EMPENAJE */
 /* FOTO */
 .foto__empenaje {
-    background-image: url(../images/Empenaje.jpg);  
+    background-image: url(../images/Empenaje1.jpg);  
     background-repeat: no-repeat;
     background-size: cover;
     min-height: 600px;
@@ -498,13 +486,13 @@
 /* ESTRUCTURA.HTML */
 /* EMPENAJE */
 /* seccion foto*/
-.foto__titulo--empenaje {
+.foto__empenaje--titulo {
     display: flex;
     flex-direction: row;
     justify-content:left;  
     font-size: 350%;
     padding-top: 100px;
-    padding-left: 100px;
+    padding-left: 700px;
     color:black;
 }
 /* ESTRUCTURA.HTML */
@@ -517,40 +505,55 @@
     min-height: 600px;
     min-width: 100%;
 }
-.foto__titulo--tren {
+.foto__tren--titulo {
     display: flex;
     flex-direction: row;
     justify-content:left;  
     font-size: 350%;
-    padding-top: 100px;
-    padding-left: 100px;
+    padding-top: 85px;
+    padding-left: 600px;
     color:black;
 }
-.foto__mecanico--airframe {
+.foto__mecanico--estructura {
     background-image: url(../images/AirframeMechanic.jpg);  
     background-repeat: no-repeat;
     background-size: cover;
     min-height: 600px;
     min-width: 100%;   
 }
-.foto__titulo--neumatico {
+.foto__mecanico--estructuratitulo {
     display: flex;
     flex-direction: row;
-    justify-content:left;  
-    font-size: 350%;
-    padding-top: 100px;
+    justify-content: left;
+    padding-top: 400px;
     padding-left: 100px;
+    font-size:350%;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
     color:black;
 }
+
 /* SISTEMAS.HTML */
 /* HIDRÁULICO */
 /* sección foto*/
+.historia__titulo {
+    font-size: 30px;
+}
 .foto__hidraulico {
     background-image: url(../images/SistHidráulico.jpg);  
     background-repeat: no-repeat;
     background-size: cover;
     min-height: 600px;
     min-width: 100%;
+}
+.foto__hidraulico--titulo {
+    display: flex;
+    flex-direction: row;
+    justify-content: left;
+    padding-top: 100px;
+    padding-left: 50px;
+    font-size:24px;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    color:aliceblue;
 }
 /* SISTEMAS.HTML */
 /* HIDRÁULICO */
@@ -562,6 +565,16 @@
     min-height: 600px;
     min-width: 100%;    
 }
+.foto__combustible--titulo {
+    display: flex;
+    flex-direction: row;
+    justify-content: left;
+    padding-top: 230px;
+    padding-left: 50px;
+    font-size:24px;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    color:aliceblue;
+}
 /* SISTEMAS.HTML */
 /* NEUMATICO */
 /* sección foto */
@@ -571,6 +584,36 @@
     background-size: cover;
     min-height: 600px;
     min-width: 100%; 
+}
+.foto__neumatico--titulo {
+    display: flex;
+    flex-direction: row;
+    justify-content: left;
+    padding-top: 400px;
+    padding-left: 100px;
+    font-size:350%;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    color:aliceblue;
+}
+/* SISTEMAS.HTML */
+/* MECANICO */
+/* sección foto */
+.foto__mecanico--sistemas {
+    background-image: url(../images/Neumático.jpg);  
+    background-repeat: no-repeat;
+    background-size: cover;
+    min-height: 600px;
+    min-width: 100%; 
+}
+.foto__mecanico--sistemastitulo {
+    display: flex;
+    flex-direction: row;
+    justify-content: left;
+    padding-top: 100px;
+    padding-left: 500px;
+    font-size:350%;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    color:aliceblue;
 }
 .foto__mecanico--sistemas {
     background-image: url(../images/SistemsMechanic.jpg);  
@@ -620,7 +663,7 @@
     .icono { 
         display: inline;   
         color: navy;
-        padding-right: 40px;  
+        padding-right: 40px; 
     }
     .icono__hamburguesa {
         font-size: 2rem;
@@ -639,38 +682,35 @@
         width: 200px;
         height: 100px;
     }
+    /* INDEX.HTML */
     .foto__plantas {
         width: 100%;
         height: 600px;
         object-fit: cover;
         background-position: right ;
     }
-    .foto__titulo--plantas {
-        font-size: 24px;
-        padding-left: 0px;
-        padding-top: 100px;
+    .foto__plantas--titulo {
+        font-size: 20px;
+        padding-left: 120px;
+        padding-top: 450px;
         display: flex;
         flex-direction: row;
         justify-content: center;
         align-items: center;
-        padding: center;    
-    }
-    .foto__titulo--estructura {
-        padding-top: 100px;
-    }
-    .foto__titulo--sistemas {
-        padding-top: 100px;
-    }
-    .foto__titulo--piloto {
-        padding-top: 100px;
+        padding: center;
+        color:aliceblue;    
     }
     .texto__bajofoto--titulo {
-       font-size:49%;  
-       padding-top: 30px;
+        font-size:49%;  
+        padding-top: 120px;
     }
     .texto__bajofoto--comentario {
         font-size: 190%;
         padding-top: 10px;
+    }
+    .texto__aclaracion--numero {
+        padding-top: 50px;
+        padding-bottom: 120px;
     }
     .texto__definicion--materia {
         text-align:justify;
@@ -685,33 +725,173 @@
         object-fit: cover;
         background-position: right ;
     }
-    .foto__titulo--estructura {
-        font-size: 150%;
-    }
-    .foto__titulo--sistemas {
-        font-size: 150%;
-    }
-    .foto__titulo--piloto {
-        font-size: 150%;
-    }
-    .contenedor__bajofoto {
-        width: 100%;
-    }
-    .contenedor__titulo--foto {
+    .foto__estructura--titulo {
+        font-size: 24px;
+        padding-left: 150px;
+        padding-top: 100px;
         display: flex;
-        flex-direction: column;
+        flex-direction: row;
+        justify-content: center;
         align-items: center;
-        text-align: center;
-    }
-    .foto__estructura {
-        width: 100%;
+        padding: center; 
+        padding-top: 100px;
+        color:aliceblue;
     }
     .foto__sistemas {
         width: 100%;
+        height: 600px;
+        object-fit: cover;
+        background-position: right ;
     }
-    .foto__volar {
+    .foto__sistemas--titulo {
+        font-size: 24px;
+        padding-left: 100px;
+        padding-top: 100px;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        padding: center; 
+        padding-top: 100px;
+    }
+    .foto__piloto {
         width: 100%;
+        height: 600px;
+        object-fit: cover;
+        background-position: right;
     }
+    .foto__piloto--titulo {
+        font-size: 24px;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        padding-top: 120px;
+        padding-left: 150px;
+    }
+    /* PLANTAS.HTML */ 
+    .foto__culata {
+        width: 100%;
+        height: 600px;
+        object-fit: cover;
+        background-position: left;
+    }
+    .foto__culata--titulo {
+        font-size: 24px;
+        padding-left: 40px;
+    }
+    .foto__valvula {
+        width: 100%;
+        height: 600px;
+        object-fit: cover;
+        background-position: left;
+    }
+    .foto__valvula--titulo {
+        font-size: 24px;
+        padding-left: 30px; 
+        padding-top: 300px; 
+    }
+    .foto__cilindro {
+        width: 100%;
+        height: 600px;
+        object-fit: cover;
+        background-position: left;
+    }
+    .foto__cilindro--titulo {
+        font-size: 24px;  
+    }
+    .foto__mecanico--plantas {
+        width: 100%;
+        height: 600px;
+        object-fit: cover;
+        background-position: right;
+    }
+    .foto__mecanico--plantastitulo {
+        font-size: 24px;
+    }
+    /* ESTRUCTURA.HTML */ 
+    .foto__ala {
+        width: 100%;
+        height: 600px;
+        object-fit: cover;
+        background-position: left;
+    }
+    .foto__ala--titulo {
+        font-size: 24px;
+        padding-left: 100px;
+    }
+    .foto__empenaje {
+        width: 100%;
+        height: 600px;
+        object-fit: cover;
+        background-position: left;
+    }
+    .foto__empenaje--titulo {
+        font-size: 24px;
+        padding-left: 50px;
+        padding-top: 300px;
+    }
+    .foto__tren {
+        width: 100%;
+        height: 600px;
+        object-fit: cover;
+        background-position: left;
+    }
+    .foto__tren--titulo {
+        font-size: 24px;
+        padding-left: 20px;
+        padding-top: 300px;
+        color:aliceblue;
+    }
+    .foto__mecanico--estructura {
+        width: 100%;
+        height: 600px;
+        object-fit: cover;
+        background-position: left;
+    }
+    .foto__mecanico--estructuratitulo {
+        font-size: 24px;
+        padding-left: 20px;
+        padding-top: 180px;
+        color:aliceblue;
+    }
+    /* SITEMAS.HTML */
+    .foto__combustible {
+        width: 100%;
+        height: 600px;
+        object-fit: cover;
+        background-position: center;
+    }
+    .foto__combustible--titulo {
+        font-size: 24px;
+        padding-left: 30px;
+        padding-top: 50px;
+        color:black;
+    }
+    .foto__neumatico {
+        width: 100%;
+        height: 600px;
+        object-fit: cover;
+        background-position: right;
+    }
+    .foto__neumatico--titulo {
+        font-size: 24px;
+        padding-left: 30px;
+        padding-top: 450px;
+        color:black;
+    }  
+    .foto__mecanico--sistemas {
+        width: 100%;
+        height: 600px;
+        object-fit: cover;
+        background-position: center;
+    }
+    .foto__mecanico--sistemastitulo {
+        font-size: 24px;
+        padding-left: 30px;
+        padding-top: 80px;
+        color:aliceblue;
+    } 
     .footer {
         width: 100%;
     }
@@ -727,53 +907,17 @@
     .mapa__index {
         width: 100%;
     }
-    .texto__partes--motor {
+    .texto__partes--lista {
         display: flex;
         flex-direction: column;
         justify-content: center;
         align-items: center;
         width: 100%;
     }
-    .texto__partes--avion {
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
+    .video__volar--video {
         width: 100%;
     }
-    .texto__partes--sistemas {
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        width: 100%;
-    }
-    .texto__partes--piloto {
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        width: 100%;
-    }
-    .video__Video {
-        width: 100%;
-    }
-
-
-
-
-
-
-    .historia {
-        width: 100%;
-    }
-    .foto__culata {
-        width: 100%;
-    }
-    .foto__valvula {
-        width: 100%;
-    }
-    .foto__cilindro {
+    .historia__texto {
         width: 100%;
     }
 } 
