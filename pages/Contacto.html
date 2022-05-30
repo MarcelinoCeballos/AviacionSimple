@@ -9,15 +9,14 @@
         <title>Inicio - Aviacion Simple</title> <!-- SEO / FORMA CORRECTA de Keywords -->         
         <link rel="stylesheet" href="../CSS/estilos.css"><!--CSS external setup-->       
         <link rel="stylesheet" href="../CSS/bootstrap.min.css">
+        <link rel="shortcut icon" href="../assets/Favicon (3).png" type="image/x-icon">
         <link href='https://fonts.googleapis.com/css?family=Dancing Script' rel='stylesheet'>
         <script src="../js/bootstrap.bundle.min.js"></script>
-        <script src="../https://kit.fontawesome.com/e0d0b4a478.js" crossorigin="anonymous"></script>
+        <script src="https://kit.fontawesome.com/e0d0b4a478.js" crossorigin="anonymous"></script>
     </head>  
     <body class="body">       
         <header class="header">
-            <div class="logo">
-                <a tittle="AviacionSimple href="index.html><img  class="logo__imagen"  src="../images/LogoNuevo1.png" alt="AviacionSimple"></a>  
-            </div> 
+            <a class="logo__imagen" tittle="AviacionSimple" href=index.html><img src="../images/Logobanner.png" alt="IsoWeb" width:"250px" height="82px"></a> 
             <div class="nav">                            
                 <nav class="nav__bar">
                     <ul id= "menu" class="nav__list">
@@ -36,106 +35,75 @@
         </header>            
         <main>
             <section class="formulario">
-                <article class="formulario__box">                            
-                    <h1 class="formulario__encabezado">Formulario de contacto</h1>
-                    <h3 class="formulario__invitacon">Queremos escucharte</h3>  
-                 
-                    <form class="form" action="submeter-formulario.php" method="post">
-                        <div class="form__nombre">                                    
-                            <p class="form__nombre--renglon">               
-                                <label class="form_nombre--texto" for="nombre" >Nombre
-                                    <span class="form__nombre--obligatorio">*</span>
-                                </label>
-                                <input type="text" name="introducir_nombre" id="nombre" required="obligatorio" placeholder="Escribe tu nombre">
-                            </p>
-                    
-                        <div class="form__email">
-                            <p class="form__email--renglon">
-                                <label class="form__email--texto" for="nombre" >email
-                                    <span class="form__email--obligatorio">*</span>
-                                </label>
+                <article class="formulario__foto">
+                    <div class="formulario__box">                                            
+                        <h1 class="formulario__foto--bienvenida">¡Cómo podemos ayudarte!</h1>                                     
+                        <form class="form" action="submeter-formulario.php" method="post">
+                            <div class="form__nombre">                                    
+                                <p class="form__nombre--renglon">               
+                                    <label class="form_nombre--texto" for="nombre" >Nombre
+                                        <span class="form__nombre--obligatorio">*</span>
+                                    </label>
                                     <input type="text" name="introducir_nombre" id="nombre" required="obligatorio" placeholder="Escribe tu nombre">
-                            </p>
-                        </div>
-                        <div class="form__mensaje">
-                            <p class="form__mensaje--renglon">
-                                <label class="form__mensaje--texto" for="mensaje" class="colocar_mensaje">Mensaje
-                                    <span class="form__mensaje--obligatorio">*</span>
-                                </label>                     
-                                <textarea name="introducir_mensaje" class="texto_mensaje" id="mensaje" required="obligatorio" placeholder="Deja aquí tu comentario..."></textarea> 
-                            </p>
-                        </div>
-                        <div class="form__enviar">
-                            <p class="form__enviar--renglon">                                          
-                                <button class="form__enviar--boton" type="submit" name="enviar_formulario" id="enviar"><p class="form__enviar--texto">Enviar</p></button> 
-                            </p>
-                        </div>        
-                        <p class="form__aviso"><span class="obligatorio"> * </span>Los campos son obligatorios.</p>                               
-                    </form>
-                </article>           
-        </section>
+                                </p>
+                            </div>
+                            <div class="form__email">
+                                <p class="form__email--renglon">
+                                    <label class="form__email--texto" for="nombre" >email
+                                        <span class="form__email--obligatorio">*</span>
+                                    </label>
+                                        <input type="text" name="introducir_nombre" id="nombre" required="obligatorio" placeholder="Escribe tu nombre">
+                                </p>
+                            </div>
+                            <div class="form__mensaje">
+                                <p class="form__mensaje--renglon">
+                                    <label class="form__mensaje--texto" for="mensaje" class="colocar_mensaje">Mensaje
+                                        <span class="form__mensaje--obligatorio">*</span>
+                                    </label>                     
+                                    <textarea name="introducir_mensaje" class="texto_mensaje" id="mensaje" required="obligatorio" placeholder="Deja aquí tu comentario..." ></textarea> 
+                                </p>
+                            </div>
+                            <div class="form__enviar">
+                                <p class="form__enviar--renglon">                                          
+                                    <button class="form__enviar--boton" type="submit" name="enviar_formulario" id="enviar"><p class="form__enviar--texto">Enviar</p></button> 
+                                </p>
+                            </div>        
+                            <p class="form__aviso"><span class="obligatorio"> * </span>Los campos son obligatorios.</p>                               
+                        </form> 
+                    </div>
+                </article>         
+            </section>
         </main>
          <!--FOOTER -->
          <footer class="footer">
             <section class="mapa"> 
                 <div class="mapa__index">
                     <h3 class="mapa__index--nombre">AviacionSimple</h3> 
-                    <ul>
-                        <li><a class="mapa__index--paginas" href="../pages/Plantas.html">Plantas I</a></li>
-                        <li><a class="mapa__index--paginas" href="../pages/Estructura.html">Estructura I</a></li>
-                        <li><a class="mapa__index--paginas" href="../pages/Sistemas.html">Sistemas I</a></li>
-                        <li><a class="mapa__index--paginas" href="../pages/Contacto.html">Contacto</a></li>
+                    <ul class="mapa__index--opciones">
+                        <li><a class="mapa__index--paginas" href="./Plantas.html">Plantas I</a></li>
+                        <li><a class="mapa__index--paginas" href="./Estructura.html">Estructura I</a></li>
+                        <li><a class="mapa__index--paginas" href="./Sistemas.html">Sistemas I</a></li>
+                        <li><a class="mapa__index--paginas" href="./Contacto.html">Contacto</a></li>
                     </ul>
                 </div> 
-                <div class="mapa__plantas">    
-                    <h3 class="mapa__plantas--nombre">Plantas I</h3> 
-                    <ul>
-                        <li class="mapa__plantas--partes">Culata</li>
-                        <li class="mapa__plantas--partes">Válvula</li>
-                        <li class="mapa__plantas--partes">Cilindro</li>
-                    </ul> 
-                </div>
-                <div class="mapa__estructura">    
-                    <h3 class="mapa__estructura--nombre">Estructura I</h3> 
-                    <ul>
-                        <li class="mapa__estructura--partes">Fuselaje</li>
-                        <li class="mapa__estructura--partes">Empenaje</li>
-                        <li class="mapa__estructura--partes">Tren Aterrizaje</li>
-                    </ul>   
-                </div> 
-                <div class="mapa__sistemas">
-                    <h3 class="mapa__sistemas--nombre">Sistemas I</h3> 
-                    <ul>
-                        <li class="mapa__sistemas--partes">Hidráulico</li>
-                        <li class="mapa__sistemas--partes">Neumático</li>
-                        <li class="mapa__sistemas--partes">Combustible</li>
-                    </ul>           
-                </div> 
-                <div class="mapa__contacto">
-                    <h3 class="mapa__contacto--nombre">Contacto</h3> 
-                    <ul>
-                        <li class="mapa__contacto--partes">Comentarios</li>
-                        <li class="mapa__contacto--partes">Preguntas</li>
-                        <li class="mapa__contacto--partes">Más Info</li>
-                    </ul>           
-                </div>             
-                <div class="link">
-                    <h6 class="footer__derechos">Derechos Reservados</h6> 
-                </div>  
+                <br>           
                 <div class="link">     
-                    <a href="https://www.anac.gov.ar/anac/web/" target="_blank" ><img class="link__anac" src="../images/ANAC.jpg" alt="ANAC" width="100" height="50"></a>
+                    <a href="https://www.anac.gov.ar/anac/web/" target="_blank" ><img class="link__anac" src="../images/ANAC.jpg" alt="ANAC" width="100px" height="50px"></a>
                 </div>
                 <div class="link">
                     <a href="https://fada.org.ar/web/" target="_blank"><img class="link__fada" src="../images/Fada.jpg" alt="aeroclubes"></a>
                 </div>
                 <div class="link">
-                     <a href="https://www.facebook.com/marcelinoceballos"><img class="link__face" src="../images/Facebook.jpg" alt="face"></a>
+                    <a href="https://www.facebook.com/marcelinoceballos"><img class="link__face" src="../images/Facebook.jpg" alt="face"></a>
                 </div>
                 <div class="link">
-                    <a href="https://www.youtube.com/channel/UCc3c5Ldw0zKNUbhxEWrOBHg"><img class="link__you" src="../images/Youtube.jpg" alt="youtube"></a> 
+                    <a href="https://www.youtube.com/channel/UCc3c5Ldw0zKNUbhxEWrOBHg"><img class="link__you" src="../images/Youtube.jpg" alt="youtube" width="100px" height="100px"></a> 
                 </div> 
+                <div class="link">
+                    <h6 class="link__derechos">Derechos Reservados</h6>  
+                </div>  
             </section>              
-        </footer>                                        
+        </footer>              
         </body>
     </html>         
                       

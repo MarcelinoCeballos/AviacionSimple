@@ -7,7 +7,8 @@
 /* FUENTE DE LA PAGINA */
 .body {
     font-family: Verdana, Geneva, Tahoma, sans-serif;   
-    width: 100%;  
+    width: 100%; 
+    cursor: url(../images/Cursor.png) 
 }
 /* HEADER */
 .header {
@@ -25,6 +26,9 @@
     height: 80px;   
     border-radius: 2mm;
     padding-left: 5px;     
+}
+.logo__imagen:hover {
+    
 }
 .nav {
     display: flex;
@@ -83,8 +87,8 @@
     flex-direction: row;
     justify-content:left;  
     font-size: 350%;
-    padding-top: 100px;
-    padding-left: 100px;
+    padding-top: 88px;
+    padding-left: 90px;
     color:black;
 }
 /* Sección texto */ /* TODAS LAS SECCIONES */
@@ -200,8 +204,8 @@
     flex-direction: row;
     justify-content:left;  
     font-size: 350%;
-    padding-top: 100px;
-    padding-left: 100px;
+    padding-top: 230px;
+    padding-left: 120px;
     font-family:Verdana, Geneva, Tahoma, sans-serif;
     color:aliceblue;
 }
@@ -333,6 +337,7 @@
     font-family:Verdana, Geneva, Tahoma, sans-serif;
     color:black;
     padding-top: 30px;
+    padding-left: 25px;
 }
 /* seccion texto */
 .texto__bajofoto--parte {
@@ -563,7 +568,7 @@
     padding-left: 50px;
     font-size: 350%;
     font-family:Verdana, Geneva, Tahoma, sans-serif;
-    color:aliceblue;
+    color:black;
 }
 /* SISTEMAS.HTML */
 /* NEUMATICO */
@@ -583,7 +588,7 @@
     padding-left: 100px;
     font-size:350%;
     font-family:Verdana, Geneva, Tahoma, sans-serif;
-    color:aliceblue;
+    color:black;
 }
 /* SISTEMAS.HTML */
 /* MECANICO */
@@ -603,7 +608,7 @@
     padding-left: 500px;
     font-size:350%;
     font-family:Verdana, Geneva, Tahoma, sans-serif;
-    color:aliceblue;
+    color:black;
 }
 .foto__mecanico--sistemas {
     background-image: url(../images/SistemsMechanic.jpg);  
@@ -616,24 +621,34 @@
 /* CONTACTO.HTML */
 /* FORMULARIO */
 .formulario {
+    padding-top: 20px;
+}
+.formulario__foto {
     background-image: url(../images/formulario.png);
     background-repeat: no-repeat;
     height: 600px;
-    margin-top: -100px;
     
 }
 .formulario__box {
     display: flex;
     flex-direction: column;
-    justify-content:center;
-    margin-top: 100px;
-    width: 700px;
-    padding-left: 400px;
-
+    justify-content: flex-end;
+    align-items: center;
+    padding-left: 600px;
+    padding-top: 100px;
+   
 }
-
-
-
+.formulario__foto--bienvenida {
+    font-size: xx-large;
+}
+.form {
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items:flex-end;  
+    padding-top: 50px;
+    gap: 1rem
+}
 @media screen and (max-width: 425px) {
 
     * {
@@ -736,18 +751,14 @@
         width: 100%;
         height: 600px;
         object-fit: cover;
-        background-position: right ;
+        background-position: left;
     }
     .foto__sistemas--titulo {
-        font-size: 24px;
-        padding-left: 100px;
-        padding-top: 100px;
         display: flex;
         flex-direction: row;
-        justify-content: center;
-        align-items: center;
-        padding: center; 
-        padding-top: 100px;
+        justify-content: left;
+        font-size: 24px;
+        padding-left: 50px;
     }
     .foto__piloto {
         width: 100%;
@@ -851,6 +862,12 @@
         color:aliceblue;
     }
     /* SITEMAS.HTML */
+    .foto__hidraulico--titulo {
+        font-size: 24px;
+        padding-left: 30px;
+        padding-top: 50px;
+        color:aliceblue;
+    }
     .foto__combustible {
         width: 100%;
         height: 600px;
