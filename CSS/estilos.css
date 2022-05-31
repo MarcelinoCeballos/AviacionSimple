@@ -21,16 +21,16 @@
     height: 90px;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.4);   
 } 
-.logo__imagen { 
+.header__logo { 
     width: 35%;
     height: 80px;   
     border-radius: 2mm;
     padding-left: 5px;     
 }
-.logo__imagen:hover {
-    
+.menu__nav--list {
+
 }
-.nav {
+.header__nav {
     display: flex;
     flex-direction: row;
     justify-content: center;
@@ -38,15 +38,14 @@
     width: 600px;
     margin-right: 350px;
 }
-.nav__bar {
+.header__nav--bar {
     display: flex;
     flex-direction: row;
     justify-content: center;
     align-items: center;
-    padding-bottom: 20px;
 }
 /* ATRIBUTOS DE LA LISTA DE NAVEGACIÓN */
-.nav__list {
+.header__nav--list {
     display: flex;
     flex-direction: row;
     justify-content:left;
@@ -56,7 +55,7 @@
     padding-top: 20px;      
 } 
 /* ATRIBUTOS ITEMS DE NAVEGACION */
-.nav__enlace {
+.header__nav--enlace {
     color: blue; 
     text-decoration: none;
     background-color: aliceblue; 
@@ -100,7 +99,8 @@
     background-color: aliceblue;
     min-height: 500px;
     min-width: 100%;
-    padding: 1rem;   
+    padding-top: 100px;
+    padding-bottom: 100px;   
 }
 .texto__bajofoto--titulo {
     display:flex;
@@ -308,9 +308,7 @@
     display: inline-block;
     position: relative;
     font-family:"Dancing Script", cursive;
-    padding-top: 50px;
     color: grey;
-    font-size: xxx-large;  
 }
 .historia__texto {
     padding-top:30px;
@@ -635,8 +633,7 @@
     justify-content: flex-end;
     align-items: center;
     padding-left: 600px;
-    padding-top: 100px;
-   
+    padding-top: 100px;  
 }
 .formulario__foto--bienvenida {
     font-size: xx-large;
@@ -656,13 +653,24 @@
     padding: 0;
     box-sizing: border-box;
     }
-    .nav {
+    .header {
+        max-width: 100%;
+        height: 80px;
+        justify-content:flex-end;
+    }
+    .header__logo {
+        display: flex;
+        flex-direction: row;
+        justify-content: left;
+        align-items: center;
+        background-color: blueviolet;
+        width: 380px;
+        margin-right: 40px;
+    }
+    .header__nav {
         display: none;
     }
-    .nav__list {
-        display: none;
-    } 
-    .contenedor__nav {
+    .header__nav--list {
         display: none;
     }  
     .icono { 
@@ -674,24 +682,8 @@
         font-size: 2rem;
         padding-right: 20px;
     }
-    .header {
-        max-width: 100%;
-        height: 80px;
-        justify-content:flex-end;
-    }
-    .logo__imagen {
-        display: flex;
-        flex-direction: row;
-        justify-content: left;
-        align-items: center;
-        background-color: blueviolet;
-        width: 380px;
-        margin-right: 40px;
-       
-      
-
-
-    }
+    
+    
     /* INDEX.HTML */
     .foto__plantas {
         max-width: 50%;
@@ -700,7 +692,7 @@
         background-position: right ;
     }
     .foto__plantas--titulo {
-        font-size: 20px;
+        font-size: 24px;
         padding-left: 120px;
         padding-top: 450px;
         display: flex;
@@ -709,6 +701,9 @@
         align-items: center;
         padding: center;
         color:aliceblue;    
+    }
+    .texto__contenedor {
+        padding: 0px 20px 0px 20px;
     }
     .texto__bajofoto--titulo {
         font-size:49%;  
@@ -814,6 +809,7 @@
     }
     .foto__mecanico--plantastitulo {
         font-size: 24px;
+        padding-right: 10px;
     }
     /* ESTRUCTURA.HTML */ 
     .foto__ala {
@@ -834,7 +830,7 @@
     }
     .foto__empenaje--titulo {
         font-size: 24px;
-        padding-left: 50px;
+        padding-left: 20px;
         padding-top: 300px;
     }
     .foto__tren {
@@ -875,7 +871,7 @@
         background-position: center;
     }
     .foto__combustible--titulo {
-        font-size: 24px;
+        font-size:x-large;
         padding-left: 30px;
         padding-top: 50px;
         color:black;
@@ -931,6 +927,21 @@
     }
     .historia__texto {
         width: 100%;
+    }
+    .formulario__box {       
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-end;
+        align-items: center;
+        padding-left: 0px;
+        padding-top: 0px;         
+    }
+    .formulario__foto--bienvenida {
+        font-size: 30px;
+        padding-top: 10px;
+    }
+    form {
+        margin-top: 200px;
     }
 } 
 

@@ -16,59 +16,52 @@
     </head>  
     <body class="body">       
         <header class="header">
-            <a class="logo__imagen" tittle="AviacionSimple" href=index.html><img src="../images/Logobanner.png" alt="IsoWeb" width:"250px" height="82px"></a> 
-            <div class="nav">                            
-                <nav class="nav__bar">
-                    <ul id= "menu" class="nav__list">
-                        <li class="nav__items"><a class="nav__enlace" href="../index.html">Inicio</a></li>
-                        <li class="nav__items"><a class="nav__enlace" href="./Plantas.html">Plantas </a></li>
-                        <li class="nav__items"><a class="nav__enlace" href="./Estructura.html">Estructura</a></li>
-                        <li class="nav__items"><a class="nav__enlace" href="./Sistemas.html">Sistemas</a></li>                                                     
-                        <li class="nav__items"><a class="nav__enlace" href="./Contacto.html">Contacto</a></li> 
-                        <li class="nav__items "><a class="nav__enlace nav__video" href="https://www.youtube.com/channel/UCc3c5Ldw0zKNUbhxEWrOBHg"><u>Videos</u></a></li>                                                       
+            <a class="header__logo" tittle="AviacionSimple" href=index.html><img class="logo__animacion" src="../images/Logobanner.png" alt="IsoWeb" width:"250px" height="82px"></a>   
+            <div class="header__nav">                            
+                <nav class="header__nav--bar">
+                    <ul class="header__nav--list" id= "menu" >
+                        <li class="header__nav--items"><a class="header__nav--enlace" href="../index.html">Inicio</a></li>
+                        <li class="header__nav--items"><a class="header__nav--enlace" href="./Plantas.html">Plantas </a></li>
+                        <li class="header__nav--items"><a class="header__nav--enlace" href="./Estructura.html">Estructura</a></li>
+                        <li class="header__nav--items"><a class="header__nav--enlace" href="./Sistemas.html">Sistemas</a></li>                                                     
+                        <li class="header__nav--items"><a class="header__nav--enlace" href="./Contacto.html">Contacto</a></li> 
+                        <li class="header__nav--items "><a class="header__nav--enlace nav__video" href="https://www.youtube.com/channel/UCc3c5Ldw0zKNUbhxEWrOBHg"><u>Videos</u></a></li>                                                       
                     </ul>                     
                 </nav>
             </div>
             <div class="icono">  
                 <i class="icono__hamburguesa fas fa-bars" ></i> 
             </div>                                  
-        </header>            
+        </header>              
         <main>
             <section class="formulario">
                 <article class="formulario__foto">
                     <div class="formulario__box">                                            
                         <h1 class="formulario__foto--bienvenida">¡Cómo podemos ayudarte!</h1>                                     
                         <form class="form" action="submeter-formulario.php" method="post">
-                            <div class="form__nombre">                                    
-                                <p class="form__nombre--renglon">               
-                                    <label class="form_nombre--texto" for="nombre" >Nombre
-                                        <span class="form__nombre--obligatorio">*</span>
-                                    </label>
-                                    <input type="text" name="introducir_nombre" id="nombre" required="obligatorio" placeholder="Escribe tu nombre">
-                                </p>
+                            
+                            <div class="form-floating mb-3">
+                                <input type="email" class="form-control" id="floatingInput" placeholder="name@example.com">
+                                <label for="floatingInput">Correo Electrónico</label>
                             </div>
-                            <div class="form__email">
-                                <p class="form__email--renglon">
-                                    <label class="form__email--texto" for="nombre" >email
-                                        <span class="form__email--obligatorio">*</span>
-                                    </label>
-                                        <input type="text" name="introducir_nombre" id="nombre" required="obligatorio" placeholder="Escribe tu nombre">
-                                </p>
+                            <div class="form-floating">
+                                <select class="form-select" id="floatingSelect" aria-label="Floating label select example">
+                                    <option selected>Indicá materia</option>
+                                    <option value="1">Plantas</option>
+                                    <option value="2">Estructura</option>
+                                    <option value="3">Sistemas</option>
+                                    <option value="4">Mecánico</option>
+                                    <option value="5">Técnico</option>
+                                    <option value="6">Piloto</option>
+                                    <option value="7">Otro</option>
+                                </select>
+                                <label for="floatingSelect"></label>
                             </div>
-                            <div class="form__mensaje">
-                                <p class="form__mensaje--renglon">
-                                    <label class="form__mensaje--texto" for="mensaje" class="colocar_mensaje">Mensaje
-                                        <span class="form__mensaje--obligatorio">*</span>
-                                    </label>                     
-                                    <textarea name="introducir_mensaje" class="texto_mensaje" id="mensaje" required="obligatorio" placeholder="Deja aquí tu comentario..." ></textarea> 
-                                </p>
+                            <div class="form-floating">
+                                <textarea class="form-control" placeholder="Leave a comment here" id="floatingTextarea"></textarea>
+                                <label for="floatingTextarea">Escribinos tu pregunta</label>
                             </div>
-                            <div class="form__enviar">
-                                <p class="form__enviar--renglon">                                          
-                                    <button class="form__enviar--boton" type="submit" name="enviar_formulario" id="enviar"><p class="form__enviar--texto">Enviar</p></button> 
-                                </p>
-                            </div>        
-                            <p class="form__aviso"><span class="obligatorio"> * </span>Los campos son obligatorios.</p>                               
+                            <button type="submit" class="btn btn-primary">Enviar</button>                             
                         </form> 
                     </div>
                 </article>         
@@ -78,8 +71,9 @@
          <footer class="footer">
             <section class="mapa"> 
                 <div class="mapa__index">
-                    <h3 class="mapa__index--nombre">AviacionSimple</h3> 
+                    <h3 class="mapa__index--nombre">Contacto</h3> 
                     <ul class="mapa__index--opciones">
+                        <li><a class="mapa__index--paginas" href="../index.html">Inicio</a></li> 
                         <li><a class="mapa__index--paginas" href="./Plantas.html">Plantas I</a></li>
                         <li><a class="mapa__index--paginas" href="./Estructura.html">Estructura I</a></li>
                         <li><a class="mapa__index--paginas" href="./Sistemas.html">Sistemas I</a></li>
