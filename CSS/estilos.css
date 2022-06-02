@@ -81,14 +81,14 @@
     min-height: 600px; 
     object-fit: contain;     
 }
-.foto__plantas--titulo {
+.foto__plantas--titulobox {
     display: flex;
     flex-direction: row;
     justify-content:left;  
     font-size: 350%;
     padding-top: 88px;
     padding-left: 90px;
-    color:black;
+    color:black;   
 }
 /* Sección texto */ /* TODAS LAS SECCIONES */
 .texto__contenedor {
@@ -143,15 +143,21 @@
     min-width: 100%; 
     min-height: 600px;       
 }
-.foto__estructura--titulo {
+.foto__estructura--titulobox {
     display: flex;
     flex-direction: row;
     justify-content:left;  
     font-size: 350%;
-    padding-top: 100px;
+    padding-top: 500px;
     padding-left: 100px;
     font-family:Verdana, Geneva, Tahoma, sans-serif;
     color:black;
+}
+.foto__estructura--titulo {
+    background-color: aliceblue;
+    border-radius: 2mm;
+    border-color: navy;
+    border-width: 2mm;
 }
 /* Sección texto */
 .texto__partes--avion {
@@ -498,28 +504,32 @@
     min-height: 600px;
     min-width: 100%;
 }
+.foto__tren--titulobox {   
+    padding-top: 85px;
+    padding-left: 600px;  
+}
 .foto__tren--titulo {
     display: flex;
     flex-direction: row;
-    justify-content:left;  
-    font-size: 350%;
-    padding-top: 85px;
-    padding-left: 600px;
+    justify-content: center;
+    width: 450px;
+    background-color: aliceblue;
+    border-radius: 2mm;
     color:black;
 }
-.foto__mecanico--estructura {
+.foto__mecanico--estructurabox {
     background-image: url(../images/AirframeMechanic.jpg);  
     background-repeat: no-repeat;
     background-size: cover;
     min-height: 600px;
     min-width: 100%;
+    padding-top: 400px;
+    padding-left: 100px;
 }
 .foto__mecanico--estructuratitulo {
     display: flex;
     flex-direction: row;
     justify-content: left;
-    padding-top: 400px;
-    padding-left: 100px;
     font-size:350%;
     font-family:Verdana, Geneva, Tahoma, sans-serif;
     color:black;
@@ -592,29 +602,28 @@
 /* MECANICO */
 /* sección foto */
 .foto__mecanico--sistemas {
-    background-image: url(../images/Neumático.jpg);  
-    background-repeat: no-repeat;
-    background-size: cover;
-    min-height: 600px;
-    min-width: 100%; 
-}
-.foto__mecanico--sistemastitulo {
-    display: flex;
-    flex-direction: row;
-    justify-content: left;
-    padding-top: 100px;
-    padding-left: 500px;
-    font-size:350%;
-    font-family:Verdana, Geneva, Tahoma, sans-serif;
-    color:black;
-}
-.foto__mecanico--sistemas {
     background-image: url(../images/SistemsMechanic.jpg);  
     background-repeat: no-repeat;
     background-size: cover;
     min-height: 600px;
     min-width: 100%; 
-
+}
+.foto__mecanico--sistemastitulobox {
+    display: flex;
+    flex-direction: row;
+    justify-content: left;
+    padding-top: 100px;
+    padding-left: 100px;
+    font-size:350%;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    color:black;
+}
+.foto__mecanico--sistemastitulo {
+    display: flex;
+    justify-content: center;
+    background-color: aliceblue;
+    border-radius: 2mm;
+    width: 450px;
 }
 /* CONTACTO.HTML */
 /* FORMULARIO */
@@ -691,16 +700,12 @@
         object-fit: cover;
         background-position: right ;
     }
+    .foto__plantas--titulobox {
+        padding-top: 500px;
+    }
     .foto__plantas--titulo {
-        font-size: 24px;
-        padding-left: 120px;
-        padding-top: 450px;
-        display: flex;
-        flex-direction: row;
-        justify-content: center;
-        align-items: center;
-        padding: center;
-        color:aliceblue;    
+        background-color: aliceblue;
+        border-radius: 2mm;
     }
     .texto__contenedor {
         padding: 0px 20px 0px 20px;
@@ -730,17 +735,13 @@
         object-fit: cover;
         background-position: right ;
     }
+    .foto__estructura--titulobox {
+        padding-left: 200px;
+        padding-top: 50px;
+          
+    }
     .foto__estructura--titulo {
-        font-size: 24px;
-        padding-left: 150px;
-        padding-top: 100px;
-        display: flex;
-        flex-direction: row;
-        justify-content: center;
-        align-items: center;
-        padding: center; 
-        padding-top: 100px;
-        color:aliceblue;
+        font-size:24px;
     }
     .foto__sistemas {
         width: 100%;
@@ -839,23 +840,34 @@
         object-fit: cover;
         background-position: left;
     }
+    .foto__tren--titulobox {
+        padding-top: 500px;
+        padding-left:20px;
+    }
     .foto__tren--titulo {
-        font-size: 24px;
-        padding-left: 20px;
-        padding-top: 300px;
-        color:aliceblue;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        width: 330px;
+        background-color: aliceblue;
+        border-radius: 2mm;
+        color:black;
+    
+
     }
-    .foto__mecanico--estructura {
-        width: 100%;
-        height: 600px;
-        object-fit: cover;
-        background-position: left;
-    }
-    .foto__mecanico--estructuratitulo {
-        font-size: 24px;
+    .foto__mecanico--estructurabox {
         padding-left: 20px;
         padding-top: 180px;
+    }
+    .foto__mecanico--estructuratitulo {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        width: 280px;
+        font-size: 24px;     
         color:aliceblue;
+        background-color: black;
+        border-radius: 2mm;
     }
     /* SITEMAS.HTML */
     .foto__hidraulico--titulo {
@@ -893,12 +905,16 @@
         height: 600px;
         object-fit: cover;
         background-position: center;
+      
+    }
+    .foto__mecanico--sistemastitulobox {
+        padding-left: 30px;
+        padding-top: 100px;
     }
     .foto__mecanico--sistemastitulo {
         font-size: 24px;
-        padding-left: 30px;
-        padding-top: 80px;
-        color:aliceblue;
+        background-color: aliceblue;
+        width: 300px;
     } 
     .footer {
         width: 100%;
