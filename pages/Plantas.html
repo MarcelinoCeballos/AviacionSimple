@@ -16,7 +16,7 @@
     </head>  
     <body class="body">       
         <header class="header">
-            <a class="header__logo" tittle="AviacionSimple" href=index.html><img class="logo__animacion" src="../images/Logobanner.png" alt="IsoWeb" width:"250px" height="82px"></a>   
+            <a class="header__logo" name="arriba" tittle="AviacionSimple" href=index.html><img class="logo__animacion" src="../images/Logobanner.png" alt="IsoWeb" width:"250px" height="82px"></a>   
             <div class="header__nav">                            
                 <nav class="header__nav--bar">
                     <ul class="header__nav--list" id= "menu" >
@@ -43,16 +43,17 @@
                     <!-- </div>
                 </article> -->
             </section>
-        <!-- CULATA - FOTO -->              
-            <section class="foto__culata">
-                <h1 class="foto__culata--titulo">LA CULATA</h1><!--title--> 
+        <!-- CULATA - FOTO -->  
+
+            <section class="foto__culata" id="Culata">
+                <h1 class="foto__culata--titulo" >LA CULATA</h1><!--title--> 
             </section> 
          <!-- CULATA - TEXTO -->          
             <section class="texto">                        
                 <article class="texto__contenedor" >
                     <div class="texto__bajofoto">
                         <div class="texto__bajofoto--titulo">
-                            <h1 class="texto__bajofoto--materia">La Culata</h1> 
+                            <h1 class="texto__bajofoto--materia" >La Culata</h1> 
                             <h3 class="texto__bajofoto--comentario"> "Parte fija del motor"</h3>
                         </div> 
                     </div>                 
@@ -61,6 +62,9 @@
                             La culata va enroscada al cilindro y esta, alberga las válvulas y bujías. La culata es uno de los límites fundamentales de la cámara de combustión.</p>
                     </div>
                     </br>
+                    <div class="texto__aclaracion">
+                        <h4 class="texto__aclaracion--numero">Cinco (5) son las partes de una culata. </h4>
+                    </div>
                     <div class="texto__partes">
                         <div class="texto__partes--lista" >
                             <p class="texto__partes--items">Boca admisión</p>
@@ -71,13 +75,11 @@
                         </div>
                     </div>
                     </br>
-                    <div class="texto__aclaracion">
-                        <h4 class="texto__aclaracion--numero">Cinco (5) son las partes de una culata. </h4>
-                    </div>
+                   
                 </article> 
             </section>                             
         <!-- VALVULAS - FOTO -->
-            <section class="foto__valvula">               
+            <section class="foto__valvula" id="Valvula">               
                 <h1 class="foto__valvula--titulo display-3">LAS VÁLVULAS</h1>                
             </section>
         <!-- VALVULAS - TEXTO -->
@@ -95,6 +97,9 @@
                             La válvula de escape permite la salida de los gases, producto de la combustión, hacia el exterior.</p>
                     </div>
                     </br>
+                    <div class="texto__aclaracion">
+                        <h4 class="texto__aclaracion--numero"> Cinco (5) son las partes de una válvula. </h4>
+                    </div>
                     <div class="texto__partes">
                         <div class="texto__partes--lista">
                             <p class="texto__partes--items">Platillo</p>
@@ -105,13 +110,11 @@
                         </div>
                     </div>
                     <br>
-                    <div class="texto__aclaracion">
-                        <h4 class="texto__aclaracion--numero"> Cinco (5) son las partes de una válvula. </h4>
-                    </div>
+                   
                 </article>
             </section>                                
         <!-- CILINDROS - FOTO -->
-            <section CLASS="foto__cilindro" ><!-- TITLE & PHOTO -->              
+            <section CLASS="foto__cilindro" id="Cilindro"><!-- TITLE & PHOTO -->              
                 <h1 class="foto__cilindro--titulo">LOS CILINDROS</h1>
                     </div>
                 </article> 
@@ -133,6 +136,9 @@
                             Por ello, al estudiar las partes de un cilindro consideraremos algunas partes de la Culata propiamente dicha.</p>
                     </div>
                     </br>
+                    <div class="texto__aclaracion">
+                        <h4 class="texto__aclaracion--numero">Siete (7) son las partes de un cilindro.</h4>
+                    </div> 
                     <div class="texto__partes">
                         <div class="texto__partes--lista" >
                             <p class="partes__items">Falda </p>
@@ -145,9 +151,7 @@
                         </div>
                     </div>
                     </br>    
-                    <div class="texto__aclaracion">
-                        <h4 class="texto__aclaracion--numero">Siete (7) son las partes de un cilindro.</h4>
-                    </div> 
+                   
                 </article> 
             </section>                             
         <!-- MECANICO -FOTO -->
@@ -167,6 +171,9 @@
                         <p class="texto__definicion--materia lead">Lugar para la definición de mecánico de aviones</p>
                     </div>
                     </br>
+                    <div class="texto__aclaracion">
+                        <h4 class="texto__aclaracion--numero">¿A qué Licencia deseas aspirar?</h4>
+                    </div>
                     <div class="texto__partes">
                         <div class="texto__partes--mecanico" >
                             <p class="texto__partes--items"> Cat. A</p>
@@ -176,9 +183,7 @@
                         </div>
                     </div>  
                     </br>
-                    <div class="texto__aclaracion">
-                        <h4 class="texto__aclaracion--numero">¿A qué Licencia deseas aspirar?</h4>
-                    </div>
+                  
                 </article>
             </section>  
         <!-- VIDEO -->           
@@ -192,7 +197,7 @@
                 <div class="mapa__index">
                     <h3 class="mapa__index--nombre">Plantas I</h3> 
                     <ul class="mapa__index--opciones">
-                        <li><a class="mapa__index--paginas" href="./Plantas.html">Ir arriba</a></li>
+                        <li><a class="mapa__index--paginas" href="#arriba">Ir arriba</a></li>
                         <li><a class="mapa__index--paginas" href="../index.html">Inicio</a></li>                      
                         <li><a class="mapa__index--paginas" href="./Estructura.html">Estructura I</a></li>
                         <li><a class="mapa__index--paginas" href="./Sistemas.html">Sistemas I</a></li>
