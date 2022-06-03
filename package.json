@@ -4,8 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "build-css": "node-sass --include-path scss sass/style.scss css/styles.css",
-    "watch-css": "nodemon -e scss -x \"npm run build-css\""
+    "start": "sass ./sass/style.scss ./CSS/styles.css -w --no-source-map -s compressed"
   },
   "repository": {
     "type": "git",
