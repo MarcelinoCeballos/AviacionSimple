@@ -1,279 +1,358 @@
 .header {
-  height: 100px;
-  width: 100%;
-  background-color: aliceblue;
-  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.4);
   display: flex;
   flex-direction: row;
-  justify-content: center;
+  justify-content: left;
   align-items: center;
-  position: fixed;
-  top: 0;
-  z-index: 10; }
-  .header .animacion {
+  background-color: aliceblue;
+  min-width: 100%;
+  min-height: 80px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.4); }
+  .header .logo {
     display: flex;
     flex-direction: column;
     justify-content: center;
+    align-items: center;
     background-image: linear-gradient(navy, white);
-    width: 200px;
-    height: 100px; }
-    .header .animacion .imagen__logo:hover {
+    min-width: 15%;
+    min-height: 80px; }
+    .header .logo .logo__imagen {
+      width: 150px;
+      border-radius: 2mm; }
+    .header .logo .logo__imagen:hover {
       transform: rotate(-20deg); }
   .header .nav {
     display: flex;
     flex-direction: row;
-    justify-content: left;
+    justify-content: center;
     align-items: center;
-    width: 100%; }
-    .header .nav .nav__list {
-      width: 750px;
+    width: 600px; }
+    .header .nav .nav__bar {
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+      align-items: center;
+      padding-bottom: 20px; }
+      .header .nav .nav__bar .nav__list {
+        display: flex;
+        flex-direction: row;
+        justify-content: left;
+        align-items: center;
+        list-style-type: none;
+        gap: 2rem;
+        padding-top: 20px; }
+        .header .nav .nav__bar .nav__list .nav__items .nav__enlace {
+          color: blue;
+          text-decoration: none;
+          background-color: aliceblue;
+          border-radius: 2px; }
+  .header .icono .icono__hamburguesa {
+    display: none; }
+
+.main .foto {
+  width: 100%;
+  height: 600px; }
+  .main .foto .foto__plantas {
+    background-image: url(../images/DouglasDC31.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    min-height: 600px;
+    min-width: 100%; }
+    .main .foto .foto__plantas .foto__titulo .foto__titulo--plantas {
       display: flex;
       flex-direction: row;
       justify-content: left;
-      align-items: center;
-      list-style-type: none;
-      gap: 2rem;
-      padding-top: 20px;
-      margin-left: 3%; }
-  .header .icono__hamburguesa {
-    display: none;
+      font-size: 350%;
+      padding-top: 100px;
+      padding-left: 100px;
+      color: black; }
+
+.main .texto .texto__contenedor {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: aliceblue;
+  min-height: 500px;
+  min-width: 100%;
+  padding: 1rem; }
+  .main .texto .texto__contenedor .texto__bajofoto .texto__bajofoto--titulo {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center; }
+    .main .texto .texto__contenedor .texto__bajofoto .texto__bajofoto--titulo .texto__bajofoto--materia {
+      font-size: 300%; }
+    .main .texto .texto__contenedor .texto__bajofoto .texto__bajofoto--titulo .texto__bajofoto--comentario {
+      color: #2f3131; }
+  .main .texto .texto__contenedor .texto__definicion {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%; }
+    .main .texto .texto__contenedor .texto__definicion .texto__definicion--materia {
+      padding-top: 30px;
+      text-align: center;
+      width: 60%; }
+  .main .texto .texto__contenedor .texto__partes .texto__partes--motor {
+    display: flex;
     flex-direction: row;
     justify-content: center;
     align-items: center;
-    padding-right: 20px;
-    color: red;
-    display: none; }
+    gap: 30px; }
 
-main .section .foto__plantas {
+.main .foto {
+  width: 100%;
+  height: 600px; }
+  .main .foto .foto__estructura {
+    background-image: url(../images/Fuselaje1.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    min-width: 100%;
+    min-height: 600px; }
+    .main .foto .foto__estructura .foto__titulo {
+      display: flex;
+      flex-direction: row;
+      justify-content: left;
+      padding-top: 150px;
+      padding-left: 50px;
+      font-size: 350%;
+      color: black; }
+      .main .foto .foto__estructura .foto__titulo .foto__titulo--estructura {
+        display: flex;
+        flex-direction: row;
+        justify-content: left;
+        font-size: 350%;
+        padding-top: 100px;
+        padding-left: 100px;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        color: black; }
+
+.main .texto .texto__contenedor {
   display: flex;
-  background-image: url(../images/DouglasDC3.jpg);
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center;
-  min-height: 600px;
-  width: 1365px;
   flex-direction: column;
-  justify-content: top; }
-  main .section .foto__plantas .contenedor__titulo--foto .nombre__materia--plantas {
+  justify-content: center;
+  align-items: center;
+  background-color: aliceblue;
+  min-height: 500px;
+  min-width: 100%;
+  padding: 1rem; }
+  .main .texto .texto__contenedor .texto__bajofoto .texto__bajofoto--titulo {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center; }
+    .main .texto .texto__contenedor .texto__bajofoto .texto__bajofoto--titulo .texto__bajofoto--materia {
+      font-size: 300%; }
+    .main .texto .texto__contenedor .texto__bajofoto .texto__bajofoto--titulo .texto__bajofoto--comentario {
+      color: #2f3131; }
+  .main .texto .texto__contenedor .texto__definicion {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%; }
+    .main .texto .texto__contenedor .texto__definicion .texto__definicion--materia {
+      padding-top: 30px;
+      text-align: center;
+      width: 60%; }
+  .main .texto .texto__contenedor .texto__partes .texto__partes--avion {
     display: flex;
     flex-direction: row;
-    justify-content: left;
-    padding-top: 150px;
-    padding-left: 50px;
-    font-size: 350%;
-    color: black; }
+    justify-content: center;
+    align-items: center;
+    gap: 30px; }
 
-main .section .contenedor__bajofoto {
+.main .foto {
+  width: 100%;
+  height: 600px; }
+  .main .foto .foto__sistemas {
+    background-image: url(../images/Sistemas1.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    min-height: 600px;
+    min-width: 100%; }
+    .main .foto .foto__sistemas .foto__titulo .foto__titulo--sistemas {
+      display: flex;
+      flex-direction: row;
+      justify-content: left;
+      font-size: 350%;
+      padding-top: 100px;
+      padding-left: 100px;
+      font-family: Verdana, Geneva, Tahoma, sans-serif;
+      color: aliceblue; }
+
+.main .texto .texto__contenedor {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   background-color: aliceblue;
   min-height: 500px;
-  width: 1365px;
+  min-width: 100%;
   padding: 1rem; }
-  main .section .contenedor__bajofoto .contenedor__titulo--bajofoto .alinear__encabezado {
+  .main .texto .texto__contenedor .texto__bajofoto .texto__bajofoto--titulo {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center; }
-    main .section .contenedor__bajofoto .contenedor__titulo--bajofoto .alinear__encabezado .titulo__bajofoto {
-      font-size: xx-large; }
-    main .section .contenedor__bajofoto .contenedor__titulo--bajofoto .alinear__encabezado .comentario__titulo--bajofoto {
+    .main .texto .texto__contenedor .texto__bajofoto .texto__bajofoto--titulo .texto__bajofoto--materia {
+      font-size: 300%; }
+    .main .texto .texto__contenedor .texto__bajofoto .texto__bajofoto--titulo .texto__bajofoto--comentario {
       color: #2f3131; }
-
-main .section .contenedor__definicionmateria {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  width: 100%; }
-  main .section .contenedor__definicionmateria .definicion__materia {
-    padding-top: 30px;
-    text-align: center; }
-
-main .section .contenedor__partes--motor .partes__del--motor {
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  align-items: center;
-  gap: 30px; }
-
-main .section .foto__estructura {
-  display: flex;
-  background-image: url(../images/Fuselaje1.jpg);
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center;
-  min-height: 500px;
-  width: 1365px;
-  flex-direction: column;
-  justify-content: top; }
-  main .section .foto__estructura .contenedor__titulo--foto .nombre__materia--estructura {
+  .main .texto .texto__contenedor .texto__definicion {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%; }
+    .main .texto .texto__contenedor .texto__definicion .texto__definicion--materia {
+      padding-top: 30px;
+      text-align: center;
+      width: 60%; }
+  .main .texto .texto__contenedor .texto__partes .texto__partes--sistemas {
     display: flex;
     flex-direction: row;
-    justify-content: left;
-    padding-top: 50px;
-    padding-left: 50px;
-    font-size: 350%;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-    color: black; }
+    justify-content: center;
+    align-items: center;
+    gap: 30px; }
 
-main .section .contenedor__bajofoto {
+.main .foto {
+  width: 100%;
+  height: 600px; }
+  .main .foto .foto__piloto {
+    background-image: url(../images/Cabina.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    min-height: 600px;
+    min-width: 100%; }
+    .main .foto .foto__piloto .foto__titulo .foto__titulo--piloto {
+      display: flex;
+      flex-direction: row;
+      justify-content: left;
+      font-size: 350%;
+      padding-top: 100px;
+      padding-left: 100px;
+      font-family: Verdana, Geneva, Tahoma, sans-serif;
+      color: aliceblue; }
+
+.main .texto .texto__contenedor {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   background-color: aliceblue;
   min-height: 500px;
-  width: 1365px;
+  min-width: 100%;
   padding: 1rem; }
-  main .section .contenedor__bajofoto .contenedor__titulo--bajofoto .alinear__encabezado {
+  .main .texto .texto__contenedor .texto__bajofoto .texto__bajofoto--titulo {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center; }
-    main .section .contenedor__bajofoto .contenedor__titulo--bajofoto .alinear__encabezado .titulo__bajofoto {
-      font-size: xx-large; }
-    main .section .contenedor__bajofoto .contenedor__titulo--bajofoto .alinear__encabezado .comentario__titulo--bajofoto {
+    .main .texto .texto__contenedor .texto__bajofoto .texto__bajofoto--titulo .texto__bajofoto--materia {
+      font-size: 300%; }
+    .main .texto .texto__contenedor .texto__bajofoto .texto__bajofoto--titulo .texto__bajofoto--comentario {
       color: #2f3131; }
-
-main .section .contenedor__definicionmateria {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  width: 100%; }
-  main .section .contenedor__definicionmateria .definicion__materia {
-    padding-top: 30px;
-    text-align: center; }
-
-main .section .contenedor__partes--motor .partes__del--motor {
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  align-items: center;
-  gap: 30px; }
-
-main .section .foto__sistemas {
-  display: flex;
-  background-image: url(../images/Sistemas1.jpg);
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center;
-  min-height: 500px;
-  width: 1365px;
-  flex-direction: column;
-  justify-content: top; }
-  main .section .foto__sistemas .contendedor__titulo--foto .nombre__materia--sistemas {
-    margin-left: 50px;
-    padding-left: 50px;
-    padding-top: 130px;
-    font-size: 350%;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-    color: azure; }
-
-main .section .contenedor__bajofoto {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  background-color: aliceblue;
-  min-height: 500px;
-  width: 1365px;
-  padding: 1rem; }
-  main .section .contenedor__bajofoto .contenedor__titulo--bajofoto .alinear__encabezado {
+  .main .texto .texto__contenedor .texto__definicion {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    align-items: center; }
-    main .section .contenedor__bajofoto .contenedor__titulo--bajofoto .alinear__encabezado .titulo__bajofoto {
-      font-size: xx-large; }
-    main .section .contenedor__bajofoto .contenedor__titulo--bajofoto .alinear__encabezado .comentario__titulo--bajofoto {
-      color: #2f3131; }
-
-main .section .contenedor__definicionmateria {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  width: 100%; }
-  main .section .contenedor__definicionmateria .definicion__materia {
-    padding-top: 30px;
-    text-align: center; }
-
-main .section .contenedor__partes--motor .partes__del--motor {
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  align-items: center;
-  gap: 30px; }
-
-main .section .foto__volar {
-  display: flex;
-  background-image: url(../images/Cabina.jpg);
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center;
-  min-height: 500px;
-  width: 1365px;
-  flex-direction: column;
-  justify-content: top; }
-  main .section .foto__volar .contendedor__titulo--foto .nombre__materia--piloto {
-    margin-left: 50px;
-    padding-left: 50px;
-    padding-top: 130px;
-    font-size: 350%;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-    color: azure; }
-
-main .section .contenedor__bajofoto {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  background-color: aliceblue;
-  min-height: 500px;
-  width: 1365px;
-  padding: 1rem; }
-  main .section .contenedor__bajofoto .contenedor__titulo--bajofoto .alinear__encabezado {
+    align-items: center;
+    width: 100%; }
+    .main .texto .texto__contenedor .texto__definicion .texto__definicion--materia {
+      padding-top: 30px;
+      text-align: center;
+      width: 60%; }
+  .main .texto .texto__contenedor .texto__partes .texto__partes--piloto {
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     justify-content: center;
-    align-items: center; }
-    main .section .contenedor__bajofoto .contenedor__titulo--bajofoto .alinear__encabezado .titulo__bajofoto {
-      font-size: xx-large; }
-    main .section .contenedor__bajofoto .contenedor__titulo--bajofoto .alinear__encabezado .comentario__titulo--bajofoto {
-      color: #2f3131; }
+    align-items: center;
+    gap: 30px; }
 
-main .section .contenedor__definicionmateria {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  width: 100%; }
-  main .section .contenedor__definicionmateria .definicion__materia {
-    padding-top: 30px;
-    text-align: center; }
-
-main .section .contenedor__partes--motor .partes__del--motor {
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  align-items: center;
-  gap: 30px; }
-
-main .section .contenedor__volar .contenedor__volar {
+.main .video .video__volar .video__volar--contenedor {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   background-color: blue;
   min-height: 500px;
-  width: 1365px;
+  min-width: 100%;
   padding: 1rem;
   grid-template-columns: 1fr 1fr; }
-  main .section .contenedor__volar .contenedor__volar .contenedor__video--volar .video__volar {
-    width: 450px;
-    height: 225px;
+  .main .video .video__volar .video__volar--contenedor .video__Video {
+    width: 600px;
+    height: 300px;
     border-radius: 2mm; }
+
+.footer .mapa {
+  display: grid;
+  grid-template-columns: 260px 260px 260px 260px 260px;
+  grid-template-rows: 300px 300px;
+  background-color: blueviolet;
+  min-width: 100%; }
+  .footer .mapa .mapa__index {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center; }
+  .footer .mapa .mapa__plantas {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center; }
+  .footer .mapa .mapa__estructura {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center; }
+  .footer .mapa .mapa__sistemas {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center; }
+  .footer .mapa .mapa__contacto {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center; }
+  .footer .mapa .link {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem; }
+  .footer .mapa .link {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem; }
+    .footer .mapa .link .link__anac {
+      width: 100px;
+      height: 50px; }
+  .footer .mapa .link {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem; }
+    .footer .mapa .link .link__fada {
+      width: 175px; }
+  .footer .mapa .link {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem; }
+    .footer .mapa .link .link__face {
+      width: 60px; }
+  .footer .mapa .link {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem; }
+    .footer .mapa .link .link__you {
+      width: 60px; }
