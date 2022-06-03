@@ -27,9 +27,6 @@
     border-radius: 2mm;
     padding-left: 5px;     
 }
-.menu__nav--list {
-
-}
 .header__nav {
     display: flex;
     flex-direction: row;
@@ -154,10 +151,12 @@
     color:black;
 }
 .foto__estructura--titulo {
+    display:flex;
+    flex-direction: row;
+    justify-content: center;    
     background-color: aliceblue;
     border-radius: 2mm;
-    border-color: navy;
-    border-width: 2mm;
+    width: 650px;
 }
 /* Sección texto */
 .texto__partes--avion {
@@ -223,7 +222,7 @@
     align-items:center;
     gap: 30px
 }
-/* INDEX */
+/* INDEX.HTML */
 /* PILOTO */
 /* Sección Video */
 .video__volar {
@@ -231,19 +230,17 @@
     flex-direction: column;
     justify-content:center;
     align-items:center;
-    background-color: blue;
-    min-height: 300px;
-    min-width: 100%;
-    padding: 1rem;
-    grid-template-columns: 1fr 1fr;
+    background-color: rgb(107, 107, 227);
+    min-height: 500px;
+    min-width: 100%;   
 }
 .video__volar--video {
-    width: 600px;
-    height: 300px;
+    width: 450px;
+    height: 225px;
     border-radius: 2mm;    
 }
 /* FOOTER */
-/* MAPA */
+/* Mapa */
 .mapa {
     display: flex;
     flex-direction: row;
@@ -260,6 +257,10 @@
     justify-content: center;
     align-items: center;
 }
+.mapa__index--nombre {
+    display:flex;
+    justify-content: center;
+}
 .mapa__index--opciones {
     display: flex;
     flex-direction: column;
@@ -267,13 +268,16 @@
     align-items: center;
     list-style: none; 
     gap: 10px;
-    margin-top: 10px;  
+    margin-top: 10px;
+    padding-left: 0px;  
 }
 .mapa__index--paginas {
     font-style: none;
     color: black;
     
 }
+/* FOOTER */
+/* Links */
 .link {
     display: flex;
     flex-direction: row;
@@ -389,13 +393,21 @@
     min-height: 600px;
     min-width: 100%;
 }
-.foto__cilindro--titulo {
+.foto__cilindro--titulobox {
     margin-left: 50px;
     font-size: 350%;
     padding-top: 100px;
     padding-left: 100px;
     font-family:Verdana, Geneva, Tahoma, sans-serif;
     color:black;
+}
+.foto__cilindro--titulo {
+    display:flex;
+    flex-direction: row;
+    justify-content: center;
+    background-color: aliceblue;
+    border-radius: 2mm;
+    width: 350px;
 }
 /* seccion texto */
 .texto__partes--cilindro {
@@ -406,7 +418,7 @@
     gap: 30px
 }
 /* PLANTAS.HTML */
-/* EL MECANICO */
+/* MECANICO */
 /* seccion foto*/
 .foto__mecanico--plantas {
     background-image: url(../images/PowerplantMechanic.jpg);  
@@ -431,27 +443,8 @@
     align-items:center;
     gap: 30px
 }
-/* PLANTAS.HTML */
-/* MECANICO */
-/* Sección Video */
-.video__volar {
-    display: flex;
-    flex-direction: column;
-    justify-content:center;
-    align-items:center;
-    background-color: blue;
-    min-height: 500px;
-    min-width: 100%;
-    padding: 1rem;
-    grid-template-columns: 1fr 1fr;
-}
-.video__volar--video {
-    width: 450px;
-    height: 225px;
-    border-radius: 2mm;    
-}
 /* ESTRUCTURA.HTML */
-/* FUSELAJE */
+/* ALA */
 /* seccion foto*/
 .foto__ala {
     background-image: url(../images/Alas.jpg);  
@@ -468,13 +461,10 @@
     padding-top: 150px;
     padding-left: 200px;
     color:black;
-}
-.texto__bajofoto--parte {
-    font-size: 300%;
-}
+}       
 /* ESTRUCTURA.HTML */
 /* EMPENAJE */
-/* FOTO */
+/* Seccion foto */
 .foto__empenaje {
     background-image: url(../images/Empenaje1.jpg);  
     background-repeat: no-repeat;
@@ -482,9 +472,6 @@
     min-height: 600px;
     min-width: 100%;  
 }
-/* ESTRUCTURA.HTML */
-/* EMPENAJE */
-/* seccion foto*/
 .foto__empenaje--titulo {
     display: flex;
     flex-direction: row;
@@ -517,6 +504,9 @@
     border-radius: 2mm;
     color:black;
 }
+/* ESTRUCTURA.HTML */
+/* MECANICO */
+/* seccion foto*/
 .foto__mecanico--estructurabox {
     background-image: url(../images/AirframeMechanic.jpg);  
     background-repeat: no-repeat;
@@ -534,7 +524,6 @@
     font-family:Verdana, Geneva, Tahoma, sans-serif;
     color:black;
 }
-
 /* SISTEMAS.HTML */
 /* HIDRÁULICO */
 /* sección foto*/
@@ -559,7 +548,7 @@
     color:aliceblue;
 }
 /* SISTEMAS.HTML */
-/* HIDRÁULICO */
+/* COMBUSTIBLE */
 /* sección foto */
 .foto__combustible {
     background-image: url(../images/Combustible.jpg);  
@@ -627,41 +616,46 @@
 }
 /* CONTACTO.HTML */
 /* FORMULARIO */
+/* sección foto */
 .formulario {
     padding-top: 20px;
 }
 .formulario__foto {
     background-image: url(../images/formulario.png);
     background-repeat: no-repeat;
-    height: 600px;
-    
+    height: 300px;  
 }
-.formulario__box {
+.formulario__foto--titulo {
+    padding-left: 750px;
+    padding-top: 100px;
+}
+/* sección texto */
+.formulario__texto {
     display: flex;
     flex-direction: column;
-    justify-content: flex-end;
+    justify-content: center;
     align-items: center;
-    padding-left: 600px;
-    padding-top: 100px;  
+    padding-top: 75px;
+    height: 500px;
+    background-color:blanchedalmond;
 }
-.formulario__foto--bienvenida {
-    font-size: xx-large;
-}
-.form {
+.formulario__form {
     display:flex;
     flex-direction: column;
     justify-content: center;
-    align-items:flex-end;  
-    padding-top: 50px;
+    align-items:center; 
     gap: 1rem
 }
+
 @media screen and (max-width: 425px) {
 
+    /* Ajustes Páginas */
     * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
     }
+    /* Header */
     .header {
         max-width: 100%;
         height: 80px;
@@ -691,7 +685,6 @@
         font-size: 2rem;
         padding-right: 20px;
     }
-    
     
     /* INDEX.HTML */
     .foto__plantas {
@@ -736,9 +729,9 @@
         background-position: right ;
     }
     .foto__estructura--titulobox {
-        padding-left: 200px;
+        padding-left: 10px;     
         padding-top: 50px;
-          
+        width: 390px;    
     }
     .foto__estructura--titulo {
         font-size:24px;
@@ -771,7 +764,13 @@
         padding-top: 120px;
         padding-left: 150px;
     }
+    .video__volar--video {
+        width: 90%;
+    }
     /* PLANTAS.HTML */ 
+    .historia__texto {
+        width: 100%;
+    }
     .foto__culata {
         width: 100%;
         height: 600px;
@@ -799,8 +798,15 @@
         object-fit: cover;
         background-position: left;
     }
+    .foto__cilindro--titulobox {
+        display: flex;
+        padding-top: 500px;
+        padding-left: 0px;
+        margin-left: 20px;     
+    }
     .foto__cilindro--titulo {
-        font-size: 24px;  
+        font-size: 24px; 
+        width: 200px;   
     }
     .foto__mecanico--plantas {
         width: 100%;
@@ -852,8 +858,6 @@
         background-color: aliceblue;
         border-radius: 2mm;
         color:black;
-    
-
     }
     .foto__mecanico--estructurabox {
         padding-left: 20px;
@@ -904,18 +908,24 @@
         width: 100%;
         height: 600px;
         object-fit: cover;
-        background-position: center;
-      
+        background-position: center; 
     }
     .foto__mecanico--sistemastitulobox {
         padding-left: 30px;
-        padding-top: 100px;
+        padding-top: 80px;
     }
     .foto__mecanico--sistemastitulo {
         font-size: 24px;
         background-color: aliceblue;
-        width: 300px;
+        width: 280px;
     } 
+    /* CONTACTO.HTML */
+    .formulario__foto--titulo {
+        font-size: 24px;
+        padding-top: 10px;       
+        padding-left: 50px;              
+    }
+    /* FOOTER */
     .footer {
         width: 100%;
     }
@@ -937,28 +947,7 @@
         justify-content: center;
         align-items: center;
         width: 100%;
-    }
-    .video__volar--video {
-        width: 100%;
-    }
-    .historia__texto {
-        width: 100%;
-    }
-    .formulario__box {       
-        display: flex;
-        flex-direction: column;
-        justify-content: flex-end;
-        align-items: center;
-        padding-left: 0px;
-        padding-top: 0px;         
-    }
-    .formulario__foto--bienvenida {
-        font-size: 30px;
-        padding-top: 10px;
-    }
-    form {
-        margin-top: 200px;
-    }
+    }  
 } 
 
 

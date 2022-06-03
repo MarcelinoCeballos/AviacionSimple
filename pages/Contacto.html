@@ -34,37 +34,37 @@
             </div>                                  
         </header>              
         <main>
-            <section class="formulario">
-                <article class="formulario__foto">
-                    <div class="formulario__box">                                            
-                        <h1 class="formulario__foto--bienvenida">¡Cómo podemos ayudarte!</h1>                                     
-                        <form class="form" action="submeter-formulario.php" method="post">
-                            
-                            <div class="form-floating mb-3">
-                                <input type="email" class="form-control" id="floatingInput" placeholder="name@example.com">
-                                <label for="floatingInput">Correo Electrónico</label>
-                            </div>
-                            <div class="form-floating">
-                                <select class="form-select" id="floatingSelect" aria-label="Floating label select example">
-                                    <option selected>Indicá materia</option>
-                                    <option value="1">Plantas</option>
-                                    <option value="2">Estructura</option>
-                                    <option value="3">Sistemas</option>
-                                    <option value="4">Mecánico</option>
-                                    <option value="5">Técnico</option>
-                                    <option value="6">Piloto</option>
-                                    <option value="7">Otro</option>
-                                </select>
-                                <label for="floatingSelect"></label>
-                            </div>
-                            <div class="form-floating">
-                                <textarea class="form-control" placeholder="Leave a comment here" id="floatingTextarea"></textarea>
-                                <label for="floatingTextarea">Escribinos tu pregunta</label>
-                            </div>
-                            <button type="submit" class="btn btn-primary">Enviar</button>                             
-                        </form> 
-                    </div>
-                </article>         
+            <section class="formulario">                
+                <div class="formulario__foto">                                            
+                    <h1 class="formulario__foto--titulo">¡Cómo podemos ayudarte!</h1> 
+                </div>
+                <div class="formulario__texto">                                   
+                    <form class="formulario__form" action="submeter-formulario.php" method="post">                       
+                        <div class="form-floating mb-3">
+                            <input type="email" class="form-control" id="floatingInput" placeholder="name@example.com">
+                            <label for="floatingInput">Correo Electrónico</label>
+                        </div>
+                        <div class="form-floating">
+                            <select class="form-select" id="floatingSelect" aria-label="Floating label select example">
+                                <option selected>Indicá materia</option>
+                                <option value="1">Plantas</option>
+                                <option value="2">Estructura</option>
+                                <option value="3">Sistemas</option>
+                                <option value="4">Mecánico</option>
+                                <option value="5">Técnico</option>
+                                <option value="6">Piloto</option>
+                                <option value="7">Otro</option>
+                            </select>
+                            <label for="floatingSelect"></label>
+                        </div>
+                        <div class="form-floating">
+                            <textarea class="form-control" placeholder="Leave a comment here" id="floatingTextarea"></textarea>
+                            <label for="floatingTextarea">Escribinos tu pregunta</label>
+                        </div>
+                        <button type="submit" class="btn btn-primary">Enviar</button>                             
+                    </form> 
+                </div>
+                    
             </section>
         </main>
          <!--FOOTER -->
