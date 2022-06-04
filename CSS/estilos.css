@@ -717,7 +717,7 @@
         padding-left: 130px;  
     }
     .foto__plantas--titulo {
-        width: 280px;
+        width: 260px;
     }
     .texto__contenedor {
         padding: 0px 20px 0px 20px;
@@ -749,11 +749,10 @@
     }
     .foto__estructura--titulobox {
         padding-left: 10px;     
-        padding-top: 50px;
-        width: 390px;    
+        padding-top: 50px;   
     }
     .foto__estructura--titulo {
-        font-size:24px;
+        width: 395px;
     }
     .foto__sistemas {
         width: 100%;
@@ -761,12 +760,13 @@
         object-fit: cover;
         background-position: left;
     }
+    .foto__sistemas--titulobox {
+       padding-left: 20px;
+       padding-top: 120px;
+    }
     .foto__sistemas--titulo {
-        display: flex;
-        flex-direction: row;
-        justify-content: left;
-        font-size: 24px;
-        padding-left: 50px;
+        padding-left: 0px;
+        padding-top: 0px;
     }
     .foto__piloto {
         width: 100%;
@@ -813,7 +813,7 @@
         padding-top: 300px; 
     }
     .foto__valvula--titulo {
-        width: 170px;
+        width: 150px;
     }
     .foto__cilindro {
         width: 100%;
@@ -827,7 +827,7 @@
         padding-left: 50px;    
     }
     .foto__cilindro--titulo { 
-        width: 170px;   
+        width: 150px;   
     }
     .foto__mecanico--plantas {
         width: 100%;
@@ -836,7 +836,7 @@
         background-position: right;
     }
     .foto__mecanico--plantastitulobox {
-        padding-left: 140px;
+        padding-left: 120px;
         padding-top: 30px;
     }
     .foto__mecanico--plantastitulo {
