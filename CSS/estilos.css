@@ -82,10 +82,16 @@
     display: flex;
     flex-direction: row;
     justify-content:left;  
-    font-size: 350%;
-    padding-top: 88px;
-    padding-left: 90px;
+    padding-top: 130px;
+    padding-left: 170px;
     color:black;   
+}
+.foto__plantas--titulo {
+    display:flex;
+    justify-content: center;
+    background-color: aliceblue;
+    border-radius: 2mm;
+    width: 400px;
 }
 /* Sección texto */ /* TODAS LAS SECCIONES */
 .texto__contenedor {
@@ -144,10 +150,8 @@
     display: flex;
     flex-direction: row;
     justify-content:left;  
-    font-size: 350%;
-    padding-top: 500px;
-    padding-left: 100px;
-    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    padding-top: 65px;
+    padding-left: 60px; 
     color:black;
 }
 .foto__estructura--titulo {
@@ -156,7 +160,7 @@
     justify-content: center;    
     background-color: aliceblue;
     border-radius: 2mm;
-    width: 650px;
+    width: 580px;
 }
 /* Sección texto */
 .texto__partes--avion {
@@ -180,11 +184,11 @@
     display: flex;
     flex-direction: row;
     justify-content:left;  
-    font-size: 350%;
-    padding-top: 100px;
-    padding-left: 100px;
-    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    padding-top: 150px;
+    padding-left: 130px;
     color:aliceblue;
+
+    
 }
 /* Sección texto */
 .texto__partes--sistemas {
@@ -208,10 +212,8 @@
     display: flex;
     flex-direction: row;
     justify-content:left;  
-    font-size: 350%;
     padding-top: 230px;
-    padding-left: 120px;
-    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    padding-left: 150px;
     color:aliceblue;
 }
 /* Sección texto */
@@ -340,12 +342,17 @@
     min-height: 600px;
     min-width: 100%; 
 }
-.foto__culata--titulo {
-    font-size: 350%;
-    font-family:Verdana, Geneva, Tahoma, sans-serif;
-    color:black;
+.foto__culata--titulobox {   
     padding-top: 30px;
-    padding-left: 25px;
+    padding-left: 250px;
+}
+.foto__culata--titulo {
+    display: flex;
+    justify-content: center;
+    color:aliceblue;
+    background-color: black;
+    border-radius: 2mm;
+    width: 220px;
 }
 /* seccion texto */
 .texto__bajofoto--parte {
@@ -368,12 +375,17 @@
     min-height: 600px;
     min-width: 100%;
 }
-.foto__valvula--titulo {
-    font-size: 350%;
+.foto__valvula--titulobox {
     padding-top: 100px;
     padding-left: 400px;
-    font-family:Verdana, Geneva, Tahoma, sans-serif;
-    color:black;
+}
+.foto__valvula--titulo {
+    display: flex;
+    justify-content: center;
+    color:aliceblue;
+    background-color: black;
+    border-radius: 2mm;
+    width: 230px;
 }
 /* seccion texto */
 .texto__partes--valvula {
@@ -394,20 +406,17 @@
     min-width: 100%;
 }
 .foto__cilindro--titulobox {
-    margin-left: 50px;
-    font-size: 350%;
     padding-top: 100px;
-    padding-left: 100px;
-    font-family:Verdana, Geneva, Tahoma, sans-serif;
-    color:black;
+    padding-left: 150px;
+    
 }
 .foto__cilindro--titulo {
     display:flex;
-    flex-direction: row;
     justify-content: center;
-    background-color: aliceblue;
+    color:aliceblue;
+    background-color: black;
     border-radius: 2mm;
-    width: 350px;
+    width: 220px;
 }
 /* seccion texto */
 .texto__partes--cilindro {
@@ -427,13 +436,18 @@
     min-height: 600px;
     min-width: 100%;   
 }
-.foto__mecanico--plantastitulo {
-    margin-left: 50px;
-    padding-left: 150px;
-    padding-top: 130px;
-    font-size:350%;
-    font-family:Verdana, Geneva, Tahoma, sans-serif;
+.foto__mecanico--plantastitulobox {
+    padding-left: 250px;
+    padding-top: 150px;
     color:azure;
+}
+.foto__mecanico--plantastitulo {
+    display: flex;
+    justify-content: center;
+    color:azure;
+    background-color: black;
+    border-radius: 2mm;
+    width:400px;
 }
 /* seccion texto */
 .texto__partes--mecanico {
@@ -453,14 +467,17 @@
     min-height: 600px;
     min-width: 100%;
 }
+.foto__ala--titulobox {
+    padding-top: 250px;
+    padding-left: 310px;
+}
 .foto__ala--titulo {
     display: flex;
-    flex-direction: row;
-    justify-content:left;  
-    font-size: 350%;
-    padding-top: 150px;
-    padding-left: 200px;
-    color:black;
+    justify-content:center;  
+    color:aliceblue;
+    background-color: black;
+    border-radius: 2mm;
+    width: 130px;
 }       
 /* ESTRUCTURA.HTML */
 /* EMPENAJE */
@@ -472,14 +489,18 @@
     min-height: 600px;
     min-width: 100%;  
 }
-.foto__empenaje--titulo {
-    display: flex;
-    flex-direction: row;
-    justify-content:left;  
-    font-size: 350%;
+.foto__empenaje--titulobox {
     padding-top: 100px;
     padding-left: 700px;
-    color:black;
+}
+.foto__empenaje--titulo {
+    display: flex;
+    justify-content:center;  
+    color:aliceblue;
+    background-color: black;
+    border-radius: 2mm;
+    width: 280px;
+
 }
 /* ESTRUCTURA.HTML */
 /* TREN ATERRIZAJE */
@@ -497,12 +518,11 @@
 }
 .foto__tren--titulo {
     display: flex;
-    flex-direction: row;
     justify-content: center;
-    width: 450px;
     background-color: aliceblue;
     border-radius: 2mm;
     color:black;
+    width: 450px;
 }
 /* ESTRUCTURA.HTML */
 /* MECANICO */
@@ -520,8 +540,6 @@
     display: flex;
     flex-direction: row;
     justify-content: left;
-    font-size:350%;
-    font-family:Verdana, Geneva, Tahoma, sans-serif;
     color:black;
 }
 /* SISTEMAS.HTML */
@@ -537,15 +555,17 @@
     min-height: 600px;
     min-width: 100%;
 }
+.foto__hidraulico--titulobox {
+    padding-top: 100px;
+    padding-left: 150px;
+}
 .foto__hidraulico--titulo {
     display: flex;
-    flex-direction: row;
-    justify-content: left;
-    padding-top: 100px;
-    padding-left: 50px;
-    font-size: 350%;
-    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    justify-content: center;
     color:aliceblue;
+    background-color: black;
+    border-radius: 2mm;
+    width: 400px;
 }
 /* SISTEMAS.HTML */
 /* COMBUSTIBLE */
@@ -557,15 +577,18 @@
     min-height: 600px;
     min-width: 100%;    
 }
+.foto__combustible--titulobox {
+    padding-top: 150px;
+    padding-left: 100px;
+}
 .foto__combustible--titulo {
     display: flex;
-    flex-direction: row;
-    justify-content: left;
-    padding-top: 150px;
-    padding-left: 50px;
-    font-size: 350%;
-    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    justify-content: center;
     color:black;
+    background-color: aliceblue;
+    border-radius: 2mm;
+    width: 520px;
+
 }
 /* SISTEMAS.HTML */
 /* NEUMATICO */
@@ -577,15 +600,17 @@
     min-height: 600px;
     min-width: 100%; 
 }
+.foto__neumatico--titulobox {
+    padding-top: 400px;
+    padding-left: 200px;
+}
 .foto__neumatico--titulo {
     display: flex;
-    flex-direction: row;
-    justify-content: left;
-    padding-top: 400px;
-    padding-left: 100px;
-    font-size:350%;
-    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    justify-content: center;
     color:black;
+    background-color: aliceblue;
+    border-radius: 2mm;
+    width: 410px;
 }
 /* SISTEMAS.HTML */
 /* MECANICO */
@@ -598,14 +623,8 @@
     min-width: 100%; 
 }
 .foto__mecanico--sistemastitulobox {
-    display: flex;
-    flex-direction: row;
-    justify-content: left;
     padding-top: 100px;
-    padding-left: 100px;
-    font-size:350%;
-    font-family:Verdana, Geneva, Tahoma, sans-serif;
-    color:black;
+    padding-left: 300px;
 }
 .foto__mecanico--sistemastitulo {
     display: flex;
@@ -627,7 +646,7 @@
 }
 .formulario__foto--titulo {
     padding-left: 750px;
-    padding-top: 100px;
+    padding-top: 150px;
 }
 /* sección texto */
 .formulario__texto {
@@ -637,7 +656,7 @@
     align-items: center;
     padding-top: 75px;
     height: 500px;
-    background-color:blanchedalmond;
+    background-color:white;
 }
 .formulario__form {
     display:flex;
@@ -694,11 +713,11 @@
         background-position: right ;
     }
     .foto__plantas--titulobox {
-        padding-top: 500px;
+        padding-top: 500px; 
+        padding-left: 130px;  
     }
     .foto__plantas--titulo {
-        background-color: aliceblue;
-        border-radius: 2mm;
+        width: 280px;
     }
     .texto__contenedor {
         padding: 0px 20px 0px 20px;
@@ -777,9 +796,11 @@
         object-fit: cover;
         background-position: left;
     }
+    .foto__culata--titulobox {
+        padding-left: 50px;
+    }
     .foto__culata--titulo {
-        font-size: 24px;
-        padding-left: 40px;
+        width: 150px;
     }
     .foto__valvula {
         width: 100%;
@@ -787,10 +808,12 @@
         object-fit: cover;
         background-position: left;
     }
-    .foto__valvula--titulo {
-        font-size: 24px;
-        padding-left: 30px; 
+    .foto__valvula--titulobox {
+        padding-left: 50px; 
         padding-top: 300px; 
+    }
+    .foto__valvula--titulo {
+        width: 170px;
     }
     .foto__cilindro {
         width: 100%;
@@ -801,12 +824,10 @@
     .foto__cilindro--titulobox {
         display: flex;
         padding-top: 500px;
-        padding-left: 0px;
-        margin-left: 20px;     
+        padding-left: 50px;    
     }
-    .foto__cilindro--titulo {
-        font-size: 24px; 
-        width: 200px;   
+    .foto__cilindro--titulo { 
+        width: 170px;   
     }
     .foto__mecanico--plantas {
         width: 100%;
@@ -814,9 +835,12 @@
         object-fit: cover;
         background-position: right;
     }
+    .foto__mecanico--plantastitulobox {
+        padding-left: 140px;
+        padding-top: 30px;
+    }
     .foto__mecanico--plantastitulo {
-        font-size: 24px;
-        padding-right: 10px;
+        width: 280px;
     }
     /* ESTRUCTURA.HTML */ 
     .foto__ala {
@@ -825,9 +849,12 @@
         object-fit: cover;
         background-position: left;
     }
-    .foto__ala--titulo {
-        font-size: 24px;
+    .foto__ala--titulobox {
+        padding-top: 100px;
         padding-left: 100px;
+    }
+    .foto__ala--titulo {
+        width: 100px;
     }
     .foto__empenaje {
         width: 100%;
@@ -835,10 +862,12 @@
         object-fit: cover;
         background-position: left;
     }
-    .foto__empenaje--titulo {
-        font-size: 24px;
+    .foto__empenaje--titulobox {
         padding-left: 20px;
         padding-top: 300px;
+    }
+    .foto__empenaje--titulo {
+        width: 200px;
     }
     .foto__tren {
         width: 100%;
@@ -852,12 +881,11 @@
     }
     .foto__tren--titulo {
         display: flex;
-        flex-direction: row;
         justify-content: center;
-        width: 330px;
         background-color: aliceblue;
         border-radius: 2mm;
         color:black;
+        width: 280px;
     }
     .foto__mecanico--estructurabox {
         padding-left: 20px;
@@ -865,32 +893,42 @@
     }
     .foto__mecanico--estructuratitulo {
         display: flex;
-        flex-direction: row;
-        justify-content: center;
-        width: 280px;
-        font-size: 24px;     
-        color:aliceblue;
+        justify-content: center;        
         background-color: black;
         border-radius: 2mm;
+        color:aliceblue;
+        width: 260px; 
     }
     /* SITEMAS.HTML */
-    .foto__hidraulico--titulo {
-        font-size: 24px;
+    .foto__hidraulico--titulobox {
         padding-left: 30px;
-        padding-top: 50px;
-        color:aliceblue;
+        padding-top: 150px;
+    }
+    .foto__hidraulico--titulo {
+        display: flex;
+        justify-content: center;
+        background-color: black;
+        border-radius: 2mm;
+        width: 280px;
     }
     .foto__combustible {
         width: 100%;
         height: 600px;
         object-fit: cover;
         background-position: center;
+        color:aliceblue;
+    }
+    .foto__combustible--titulobox {
+        padding-left: 30px;
+        padding-top: 50px;  
     }
     .foto__combustible--titulo {
-        font-size:x-large;
-        padding-left: 30px;
-        padding-top: 50px;
+        display: flex;
+        justify-content: center;
+        background-color: aliceblue;
+        border-radius: 2mm;
         color:black;
+        width: 350px;
     }
     .foto__neumatico {
         width: 100%;
@@ -898,12 +936,19 @@
         object-fit: cover;
         background-position: right;
     }
-    .foto__neumatico--titulo {
-        font-size: 24px;
+    .foto__neumatico--titulobox {
         padding-left: 30px;
         padding-top: 450px;
-        color:black;
+      
     }  
+    .foto__neumatico--titulo {
+        display: flex;
+        justify-content: center;
+        background-color: aliceblue;
+        border-radius: 2mm;
+        color:black;
+        width: 300px;
+    }
     .foto__mecanico--sistemas {
         width: 100%;
         height: 600px;
