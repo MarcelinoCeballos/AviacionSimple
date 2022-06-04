@@ -7,8 +7,7 @@
 /* FUENTE DE LA PAGINA */
 .body {
     font-family: Verdana, Geneva, Tahoma, sans-serif;   
-    width: 100%; 
-    cursor: url(../images/Cursor.png) 
+    width: 100%;  
 }
 /* HEADER */
 .header {
@@ -79,8 +78,7 @@
     object-fit: contain;     
 }
 .foto__plantas--titulobox {  
-    padding-top: 550px;
-   
+    padding-top: 530px; 
 }
 .foto__plantas--titulo {
     background-image: url(../images/FondoDifuminado.jpg);  
@@ -133,7 +131,8 @@
     flex-direction: row;
     justify-content: center;
     align-items:center;
-    gap: 30px
+    gap: 30px;
+    padding-top: 50px;
 }
 /* INDEX */
 /* ESTRUCTURA */
@@ -234,17 +233,16 @@
 /* Sección Video */
 .video__volar {
     display: flex;
-    flex-direction: column;
-    justify-content:center;
-    align-items:center;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
     background-color: rgb(107, 107, 227);
-    min-height: 500px;
-    min-width: 100%;   
+    height: 500px;
+    width: 100%;   
 }
-.video__volar--video {
-    width: 450px;
-    height: 225px;
-    border-radius: 2mm;    
+.video__volar--video { 
+    width: 500px;
+    height: 300px;
 }
 /* FOOTER */
 /* Mapa */
@@ -605,7 +603,6 @@
     align-items: center;
     min-width: 100%;
     height: 35px
-
 }
 /* SISTEMAS.HTML */
 /* NEUMATICO */
@@ -641,7 +638,7 @@
     min-width: 100%; 
 }
 .foto__mecanico--sistemastitulobox {
-    padding-top: 100px;
+    padding-top: 530px;
 }
 .foto__mecanico--sistemastitulo {
     background-image: url(../images/FondoDifuminado.jpg);  
@@ -668,12 +665,11 @@
 .formulario__foto--titulo {
     background-image: url(../images/FondoDifuminado.jpg);  
     background-repeat: no-repeat;
-    background-size: ;
     display:flex;
     justify-content: center;
     align-items: center;
     margin-right: 50px;
-    height: 50px
+    height: 50px;
 }
 /* sección texto */
 .formulario__form--box {
@@ -727,7 +723,6 @@
         font-size: 2rem;
         padding-right: 20px;
     }
-    
     /* INDEX.HTML */
     .foto__plantas {
         max-width: 50%;
@@ -736,7 +731,7 @@
         background-position: right ;
     }
     .foto__plantas--titulobox {
-        padding-top: 500px; 
+        padding-top: 530px; 
         padding-left: 0px;  
     }
     .texto__contenedor {
@@ -768,8 +763,7 @@
         background-position: right ;
     }
     .foto__estructura--titulobox {
-        padding-left: 0px;     
-        padding-top: 50px;   
+        padding-left: 0px;       
     }
     .foto__sistemas {
         width: 100%;
@@ -779,8 +773,6 @@
     }
     .foto__sistemas--titulobox {
        padding-left: 0px;
-       padding-top: 120px;
-    }
     }
     .foto__piloto {
         width: 100%;
@@ -807,7 +799,6 @@
     .foto__culata--titulobox {
         padding-left: 0px;
     }
-
     .foto__valvula {
         width: 100%;
         height: 600px;
@@ -843,8 +834,8 @@
         background-position: left;
     }
     .foto__ala--titulobox {
-        padding-top: 100px;
         padding-left: 0px;
+        padding-top: 50px;
     }
     .foto__empenaje {
         width: 100%;
@@ -862,7 +853,7 @@
         background-position: left;
     }
     .foto__tren--titulobox {
-        padding-top: 500px;
+        padding-top: 530px;
     }
     .foto__mecanico--estructurabox {
         padding-left: 0px;
@@ -909,13 +900,9 @@
     .formulario__foto--titulo {
         font-size: 24px;
         width: 100%;
-        transform: translateY(-220px);
-                
+        transform: translateY(-220px);            
     }
     /* FOOTER */
-    .footer {
-        width: 100%;
-    }
     .mapa {
         display: flex;
         flex-direction: column;
